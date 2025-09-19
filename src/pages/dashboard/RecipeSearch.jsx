@@ -171,7 +171,7 @@ const RecipeSearch = () => {
     console.log('Selected Recipe:', recipe)
     localStorage.setItem('selectedRecipe', JSON.stringify(recipe))
     // Navigate to nutrition page
-    navigate('/nutrition')
+    navigate('/dashboard/nutrition')
   }
 
   return (
