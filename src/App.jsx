@@ -8,18 +8,24 @@ import {
 
 // Import your components
 import LandingPage from './pages/LandingPage'
-<<<<<<< HEAD
-import ShadcnTest from './components/ShadcnTest'
-import ThemedShadcnTest from './components/ThemedShadcnTest'
-import RecipeSearch from './pages/SearchPage'
-// import Dashboard from './components/Dashboard'
-=======
+import ProtectedRoute from './components/ProtectedRoute'
+
+// Dashboard Components
+import DashboardLayout from './components/dashboard/DashboardLayout'
 import DashboardHome from './pages/DashboardHome'
->>>>>>> 58ff1362665030ee98234222713474d52a1a1d01
-// import SearchPage from './components/SearchPage'
-// import AIAssistantPage from './components/AIAssistantPage'
-// import NutritionPage from './components/NutritionPage'
-// import CalculatorPage from './components/CalculatorPage'
+import RecipeSearch from './pages/dashboard/RecipeSearch'
+import AISuggestions from './pages/dashboard/AISuggestions'
+import RecentRecipes from './pages/dashboard/RecentRecipes'
+import SavedRecipes from './pages/dashboard/SavedRecipes'
+import MealCalendar from './pages/dashboard/MealCalendar'
+import DailyPlanner from './pages/dashboard/DailyPlanner'
+import GeneratePlans from './pages/dashboard/GeneratePlans'
+import GroceryList from './pages/dashboard/GroceryList'
+import NutritionOverview from './pages/dashboard/NutritionOverview'
+import RecipeScaling from './pages/dashboard/RecipeScaling'
+import CookingHistory from './pages/dashboard/CookingHistory'
+import Preferences from './pages/dashboard/Preferences'
+
 import './index.css'
 
 // Protected Route Component
@@ -34,27 +40,46 @@ function App() {
           <Route path="/" element={<LandingPage />} />
          <Route path="/search" element={<RecipeSearch />} />
 
-          {/* Protected Routes */}
-          <Route path="/dashboard" element={<DashboardHome />} />
-
-          {/* <Route path="/search" element={<SearchPage />} />
-
-          <Route path="/ai-assistant" element={<AIAssistantPage />} />
-
-          <Route path="/nutrition" element={<NutritionPage />} />
-
-          <Route path="/calculator" element={<CalculatorPage />} /> */} 
-
-          {/* Catch all route - redirect to dashboard if authenticated, otherwise to landing */}
-          {/* <Route
-            path="*"
+          {/* Protected Dashboard Routes */}
+          <Route 
+            path="/dashboard" 
             element={
-              <Navigate
-                to={localStorage.getItem('user') ? '/dashboard' : '/'}
-                replace
-              />
+              <ProtectedRoute>
+                <DashboardLayout />
+              </ProtectedRoute>
             }
-          /> */}
+          >
+            {/* Dashboard Overview */}
+            <Route index element={<DashboardHome />} />
+            
+            {/* Recipe Discovery */}
+            <Route path="recipe-search" element={<RecipeSearch />} />
+            <Route path="ai-suggestions" element={<AISuggestions />} />
+            <Route path="recent-recipes" element={<RecentRecipes />} />
+            <Route path="saved-recipes" element={<SavedRecipes />} />
+            
+            {/* Meal Planning */}
+            <Route path="meal-calendar" element={<MealCalendar />} />
+            <Route path="daily-planner" element={<DailyPlanner />} />
+            <Route path="generate-plans" element={<GeneratePlans />} />
+            
+            {/* Smart Grocery */}
+            <Route path="grocery-list" element={<GroceryList />} />
+            
+            {/* Analytics */}
+            <Route path="nutrition" element={<NutritionOverview />} />
+            <Route path="recipe-scaling" element={<RecipeScaling />} />
+            <Route path="cooking-history" element={<CookingHistory />} />
+            
+            {/* Settings */}
+            <Route path="preferences" element={<Preferences />} />
+          </Route>
+
+          {/* Catch all route */}
+          <Route
+            path="*"
+            element={<Navigate to="/" replace />}
+          />
         </Routes>
       </div>
     </Router>

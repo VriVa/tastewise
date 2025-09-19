@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import {
   ChefHat,
@@ -341,7 +342,9 @@ const LandingPage = () => {
               whileHover={{ scale: 1.05, y: -3 }}
               whileTap={{ scale: 0.95 }}
             >
-              Explore Recipes Now
+              <Link to="/dashboard">
+                Explore Recipes Now
+              </Link>
             </motion.button>
           </motion.div>
         </div>
