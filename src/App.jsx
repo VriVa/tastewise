@@ -8,10 +8,14 @@ import {
 
 // Import your components
 import LandingPage from './pages/LandingPage'
+<<<<<<< HEAD
 import ShadcnTest from './components/ShadcnTest'
 import ThemedShadcnTest from './components/ThemedShadcnTest'
 import RecipeSearch from './pages/SearchPage'
 // import Dashboard from './components/Dashboard'
+=======
+import DashboardHome from './pages/DashboardHome'
+>>>>>>> 58ff1362665030ee98234222713474d52a1a1d01
 // import SearchPage from './components/SearchPage'
 // import AIAssistantPage from './components/AIAssistantPage'
 // import NutritionPage from './components/NutritionPage'
@@ -28,20 +32,18 @@ function App() {
         <Routes>
           {/* Public Routes */}
           <Route path="/" element={<LandingPage />} />
-          <Route path="/test-shadcn" element={<ShadcnTest />} />
-          <Route path="/themed-test" element={<ThemedShadcnTest />} />
-          <Route path="/search" element={<RecipeSearch />} />
+         <Route path="/search" element={<RecipeSearch />} />
 
           {/* Protected Routes */}
-          {/* <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/dashboard" element={<DashboardHome />} />
 
-          <Route path="/search" element={<SearchPage />} />
+          {/* <Route path="/search" element={<SearchPage />} />
 
           <Route path="/ai-assistant" element={<AIAssistantPage />} />
 
           <Route path="/nutrition" element={<NutritionPage />} />
 
-          <Route path="/calculator" element={<CalculatorPage />} /> */}
+          <Route path="/calculator" element={<CalculatorPage />} /> */} 
 
           {/* Catch all route - redirect to dashboard if authenticated, otherwise to landing */}
           {/* <Route
