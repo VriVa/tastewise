@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 import {
   Search,
   Filter,
@@ -12,7 +13,7 @@ import {
 } from 'lucide-react'
 import Fuse from 'fuse.js'
 
-// Import theme and data (assuming these files exist in the lib directory)
+// Import theme and data
 import { theme } from '../../lib/theme.js'
 import recipesData from '../../lib/data.json'
 
@@ -30,7 +31,7 @@ const RecipeSearch = () => {
     ingredients: '',
   })
 
-  // Initialize Fuse.js for fuzzy search
+  // Initialize Fuse.js for fuzzy search with different thresholds
   useEffect(() => {
     if (recipes.length > 0) {
       const options = {
@@ -38,7 +39,7 @@ const RecipeSearch = () => {
           'name',
           'diet',
           'cuisine',
-          'ingredients',
+          'ingredients.name',
           { name: 'nutrition.calories', weight: 0.5 },
         ],
         threshold: 0.4,
@@ -73,15 +74,31 @@ const RecipeSearch = () => {
   const applyFilters = () => {
     let filtered = [...recipes]
 
-    // Create a Fuse instance for each filter type
+    // Diet filter with exact matching for specific categories
     if (filterInputs.diet.trim()) {
-      const dietFuse = new Fuse(filtered, {
-        keys: ['diet'],
-        threshold: 0,
-      })
-      filtered = dietFuse.search(filterInputs.diet).map((result) => result.item)
+      const dietQuery = filterInputs.diet.toLowerCase().trim()
+      if (
+        ['vegetarian', 'vegan', 'non-vegetarian', 'gluten-free'].includes(
+          dietQuery
+        )
+      ) {
+        // Exact match for specific diet types
+        filtered = filtered.filter(
+          (recipe) => recipe.diet.toLowerCase() === dietQuery
+        )
+      } else {
+        // Fuzzy search for other diet queries
+        const dietFuse = new Fuse(filtered, {
+          keys: ['diet'],
+          threshold: 0.4,
+        })
+        filtered = dietFuse
+          .search(filterInputs.diet)
+          .map((result) => result.item)
+      }
     }
 
+    // Cuisine filter (fuzzy search)
     if (filterInputs.cuisine.trim()) {
       const cuisineFuse = new Fuse(filtered, {
         keys: ['cuisine'],
@@ -113,7 +130,7 @@ const RecipeSearch = () => {
     // Ingredients filter (fuzzy search)
     if (filterInputs.ingredients.trim()) {
       const ingredientsFuse = new Fuse(filtered, {
-        keys: ['ingredients'],
+        keys: ['ingredients.name'],
         threshold: 0.4,
       })
       filtered = ingredientsFuse
@@ -146,6 +163,14 @@ const RecipeSearch = () => {
     }))
   }
 
+  // Extract unique values for suggestions
+  const dietOptions = [...new Set(recipes.map((recipe) => recipe.diet))]
+  const cuisineOptions = [...new Set(recipes.map((recipe) => recipe.cuisine))]
+  const allIngredients = recipes.flatMap((recipe) =>
+    recipe.ingredients.map((i) => i.name)
+  )
+  const ingredientOptions = [...new Set(allIngredients)]
+
   return (
     <div
       className="min-h-screen"
@@ -155,16 +180,22 @@ const RecipeSearch = () => {
     >
       <div className="max-w-6xl mx-auto p-4 md:p-8">
         {/* Header */}
-        <div className="flex items-center justify-between mb-8">
+        <motion.div
+          initial={{ y: -50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          className="flex items-center justify-between mb-8"
+        >
           <div className="flex items-center space-x-3">
-            <div
+            <motion.div
+              animate={{ rotate: [0, -5, 0] }}
+              transition={{ duration: 2, repeat: Infinity }}
               className="p-3 rounded-2xl shadow-lg"
               style={{
                 background: `linear-gradient(to right, ${theme.colors.primary[500]}, ${theme.colors.secondary[500]})`,
               }}
             >
               <ChefHat className="h-8 w-8 text-white" />
-            </div>
+            </motion.div>
             <div>
               <h1
                 className="text-2xl font-bold"
@@ -181,7 +212,9 @@ const RecipeSearch = () => {
             </div>
           </div>
 
-          <button
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
             onClick={() => setShowFilters(!showFilters)}
             className="flex items-center space-x-2 px-4 py-2 rounded-xl font-medium transition-all"
             style={{
@@ -196,11 +229,16 @@ const RecipeSearch = () => {
           >
             <SlidersHorizontal size={18} />
             <span>Filters</span>
-          </button>
-        </div>
+          </motion.button>
+        </motion.div>
 
         {/* Search Bar */}
-        <div className="relative mb-8">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1 }}
+          className="relative mb-8"
+        >
           <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
             <Search
               className="h-5 w-5"
@@ -219,188 +257,208 @@ const RecipeSearch = () => {
               focusRingColor: theme.colors.primary[100],
             }}
           />
-        </div>
+        </motion.div>
 
         {/* Filters Panel */}
-        {showFilters && (
-          <div
-            className="bg-white rounded-2xl shadow-lg p-6 mb-8"
-            style={{ border: `1px solid ${theme.colors.gray[200]}` }}
-          >
-            <div className="flex justify-between items-center mb-6">
-              <h2
-                className="text-xl font-bold"
-                style={{ color: theme.colors.gray[900] }}
-              >
-                Filter Recipes
-              </h2>
-              <button onClick={() => setShowFilters(false)}>
-                <X size={20} style={{ color: theme.colors.gray[500] }} />
-              </button>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {/* Diet Filter */}
-              <div>
-                <h3
-                  className="font-medium mb-3"
-                  style={{ color: theme.colors.gray[700] }}
+        <AnimatePresence>
+          {showFilters && (
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: 'auto' }}
+              exit={{ opacity: 0, height: 0 }}
+              className="bg-white rounded-2xl shadow-lg p-6 mb-8 overflow-hidden"
+              style={{ border: `1px solid ${theme.colors.gray[200]}` }}
+            >
+              <div className="flex justify-between items-center mb-6">
+                <h2
+                  className="text-xl font-bold"
+                  style={{ color: theme.colors.gray[900] }}
                 >
-                  Diet Type
-                </h3>
-                <input
-                  type="text"
-                  placeholder="e.g. vegetarian, vegan, gluten-free"
-                  value={filterInputs.diet}
-                  onChange={(e) => handleFilterChange('diet', e.target.value)}
-                  className="w-full px-4 py-2 rounded-xl border-2 focus:outline-none"
-                  style={{
-                    borderColor: theme.colors.gray[200],
-                    focusBorderColor: theme.colors.primary[500],
-                  }}
-                />
+                  Filter Recipes
+                </h2>
+                <button onClick={() => setShowFilters(false)}>
+                  <X size={20} style={{ color: theme.colors.gray[500] }} />
+                </button>
               </div>
 
-              {/* Cuisine Filter */}
-              <div>
-                <h3
-                  className="font-medium mb-3"
-                  style={{ color: theme.colors.gray[700] }}
-                >
-                  Cuisine Type
-                </h3>
-                <input
-                  type="text"
-                  placeholder="e.g. Italian, Indian, Mexican"
-                  value={filterInputs.cuisine}
-                  onChange={(e) =>
-                    handleFilterChange('cuisine', e.target.value)
-                  }
-                  className="w-full px-4 py-2 rounded-xl border-2 focus:outline-none"
-                  style={{
-                    borderColor: theme.colors.gray[200],
-                    focusBorderColor: theme.colors.primary[500],
-                  }}
-                />
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {/* Diet Filter */}
+                <div>
+                  <h3
+                    className="font-medium mb-3"
+                    style={{ color: theme.colors.gray[700] }}
+                  >
+                    Diet Type
+                  </h3>
+                  <input
+                    type="text"
+                    placeholder="e.g. vegetarian, vegan, non-vegetarian"
+                    value={filterInputs.diet}
+                    onChange={(e) => handleFilterChange('diet', e.target.value)}
+                    className="w-full px-4 py-2 rounded-xl border-2 focus:outline-none"
+                    style={{
+                      borderColor: theme.colors.gray[200],
+                      focusBorderColor: theme.colors.primary[500],
+                    }}
+                  />
+                  <p
+                    className="text-sm mt-1"
+                    style={{ color: theme.colors.gray[500] }}
+                  >
+                    Try: vegetarian, vegan, non-vegetarian, gluten-free
+                  </p>
+                </div>
+
+                {/* Cuisine Filter */}
+                <div>
+                  <h3
+                    className="font-medium mb-3"
+                    style={{ color: theme.colors.gray[700] }}
+                  >
+                    Cuisine Type
+                  </h3>
+                  <input
+                    type="text"
+                    placeholder="e.g. Italian, Indian, Mexican"
+                    value={filterInputs.cuisine}
+                    onChange={(e) =>
+                      handleFilterChange('cuisine', e.target.value)
+                    }
+                    className="w-full px-4 py-2 rounded-xl border-2 focus:outline-none"
+                    style={{
+                      borderColor: theme.colors.gray[200],
+                      focusBorderColor: theme.colors.primary[500],
+                    }}
+                  />
+                </div>
+
+                {/* Time Filter */}
+                <div>
+                  <h3
+                    className="font-medium mb-3"
+                    style={{ color: theme.colors.gray[700] }}
+                  >
+                    Max Cooking Time (minutes)
+                  </h3>
+                  <input
+                    type="number"
+                    placeholder="e.g. 30, 60, 120"
+                    min="5"
+                    max="240"
+                    value={filterInputs.time}
+                    onChange={(e) => handleFilterChange('time', e.target.value)}
+                    className="w-full px-4 py-2 rounded-xl border-2 focus:outline-none"
+                    style={{
+                      borderColor: theme.colors.gray[200],
+                      focusBorderColor: theme.colors.primary[500],
+                    }}
+                  />
+                </div>
+
+                {/* Calories Filter */}
+                <div>
+                  <h3
+                    className="font-medium mb-3"
+                    style={{ color: theme.colors.gray[700] }}
+                  >
+                    Max Calories
+                  </h3>
+                  <input
+                    type="number"
+                    placeholder="e.g. 300, 500, 800"
+                    min="100"
+                    max="1000"
+                    value={filterInputs.maxCalories}
+                    onChange={(e) =>
+                      handleFilterChange('maxCalories', e.target.value)
+                    }
+                    className="w-full px-4 py-2 rounded-xl border-2 focus:outline-none"
+                    style={{
+                      borderColor: theme.colors.gray[200],
+                      focusBorderColor: theme.colors.primary[500],
+                    }}
+                  />
+                </div>
+
+                {/* Ingredients Filter */}
+                <div className="md:col-span-2">
+                  <h3
+                    className="font-medium mb-3"
+                    style={{ color: theme.colors.gray[700] }}
+                  >
+                    Ingredients
+                  </h3>
+                  <input
+                    type="text"
+                    placeholder="e.g. chicken, tomato, basil"
+                    value={filterInputs.ingredients}
+                    onChange={(e) =>
+                      handleFilterChange('ingredients', e.target.value)
+                    }
+                    className="w-full px-4 py-2 rounded-xl border-2 focus:outline-none"
+                    style={{
+                      borderColor: theme.colors.gray[200],
+                      focusBorderColor: theme.colors.primary[500],
+                    }}
+                  />
+                </div>
               </div>
 
-              {/* Time Filter */}
-              <div>
-                <h3
-                  className="font-medium mb-3"
-                  style={{ color: theme.colors.gray[700] }}
-                >
-                  Max Cooking Time (minutes)
-                </h3>
-                <input
-                  type="number"
-                  placeholder="e.g. 30, 60, 120"
-                  min="5"
-                  max="240"
-                  value={filterInputs.time}
-                  onChange={(e) => handleFilterChange('time', e.target.value)}
-                  className="w-full px-4 py-2 rounded-xl border-2 focus:outline-none"
+              {/* Action Buttons */}
+              <div className="flex justify-end space-x-4 mt-8">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  onClick={resetFilters}
+                  className="px-6 py-2 rounded-xl font-medium"
                   style={{
-                    borderColor: theme.colors.gray[200],
-                    focusBorderColor: theme.colors.primary[500],
+                    backgroundColor: theme.colors.gray[100],
+                    color: theme.colors.gray[700],
                   }}
-                />
-              </div>
-
-              {/* Calories Filter */}
-              <div>
-                <h3
-                  className="font-medium mb-3"
-                  style={{ color: theme.colors.gray[700] }}
                 >
-                  Max Calories
-                </h3>
-                <input
-                  type="number"
-                  placeholder="e.g. 300, 500, 800"
-                  min="100"
-                  max="1000"
-                  value={filterInputs.maxCalories}
-                  onChange={(e) =>
-                    handleFilterChange('maxCalories', e.target.value)
-                  }
-                  className="w-full px-4 py-2 rounded-xl border-2 focus:outline-none"
+                  Reset All
+                </motion.button>
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  onClick={applyFilters}
+                  className="px-6 py-2 rounded-xl font-medium text-white"
                   style={{
-                    borderColor: theme.colors.gray[200],
-                    focusBorderColor: theme.colors.primary[500],
+                    background: `linear-gradient(to right, ${theme.colors.primary[500]}, ${theme.colors.secondary[500]})`,
                   }}
-                />
-              </div>
-
-              {/* Ingredients Filter */}
-              <div className="md:col-span-2">
-                <h3
-                  className="font-medium mb-3"
-                  style={{ color: theme.colors.gray[700] }}
                 >
-                  Ingredients
-                </h3>
-                <input
-                  type="text"
-                  placeholder="e.g. chicken, tomato, basil"
-                  value={filterInputs.ingredients}
-                  onChange={(e) =>
-                    handleFilterChange('ingredients', e.target.value)
-                  }
-                  className="w-full px-4 py-2 rounded-xl border-2 focus:outline-none"
-                  style={{
-                    borderColor: theme.colors.gray[200],
-                    focusBorderColor: theme.colors.primary[500],
-                  }}
-                />
-                <p
-                  className="text-sm mt-1"
-                  style={{ color: theme.colors.gray[500] }}
-                >
-                  Search for recipes containing specific ingredients
-                </p>
+                  Apply Filters
+                </motion.button>
               </div>
-            </div>
-
-            {/* Action Buttons */}
-            <div className="flex justify-end space-x-4 mt-8">
-              <button
-                onClick={resetFilters}
-                className="px-6 py-2 rounded-xl font-medium"
-                style={{
-                  backgroundColor: theme.colors.gray[100],
-                  color: theme.colors.gray[700],
-                }}
-              >
-                Reset All
-              </button>
-              <button
-                onClick={applyFilters}
-                className="px-6 py-2 rounded-xl font-medium text-white"
-                style={{
-                  background: `linear-gradient(to right, ${theme.colors.primary[500]}, ${theme.colors.secondary[500]})`,
-                }}
-              >
-                Apply Filters
-              </button>
-            </div>
-          </div>
-        )}
+            </motion.div>
+          )}
+        </AnimatePresence>
 
         {/* Results Count */}
-        <div className="mb-6">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.2 }}
+          className="mb-6"
+        >
           <p style={{ color: theme.colors.gray[600] }}>
             Found {filteredRecipes.length} recipe
             {filteredRecipes.length !== 1 ? 's' : ''}
           </p>
-        </div>
+        </motion.div>
 
         {/* Recipe Grid */}
         {filteredRecipes.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.3 }}
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          >
             {filteredRecipes.map((recipe) => (
-              <div
+              <motion.div
                 key={recipe.id}
+                whileHover={{ y: -5 }}
                 className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all"
                 style={{ border: `1px solid ${theme.colors.gray[200]}` }}
               >
@@ -464,19 +522,19 @@ const RecipeSearch = () => {
                       className="font-medium mb-2"
                       style={{ color: theme.colors.gray[700] }}
                     >
-                      Ingredients:
+                      Key Ingredients:
                     </h4>
                     <div className="flex flex-wrap gap-2">
                       {recipe.ingredients.slice(0, 4).map((ingredient) => (
                         <span
-                          key={ingredient}
+                          key={ingredient.name}
                           className="text-sm px-2 py-1 rounded-full"
                           style={{
                             backgroundColor: theme.colors.gray[100],
                             color: theme.colors.gray[700],
                           }}
                         >
-                          {ingredient}
+                          {ingredient.name}
                         </span>
                       ))}
                       {recipe.ingredients.length > 4 && (
@@ -493,20 +551,26 @@ const RecipeSearch = () => {
                     </div>
                   </div>
 
-                  <button
+                  <motion.button
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
                     className="w-full py-3 rounded-xl font-medium text-white text-center"
                     style={{
                       background: `linear-gradient(to right, ${theme.colors.primary[500]}, ${theme.colors.secondary[500]})`,
                     }}
                   >
-                    View Recipe
-                  </button>
+                    View Recipe & Nutrition
+                  </motion.button>
                 </div>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         ) : (
-          <div className="text-center py-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-center py-16"
+          >
             <ChefHat
               size={64}
               className="mx-auto mb-4"
@@ -521,7 +585,7 @@ const RecipeSearch = () => {
             <p style={{ color: theme.colors.gray[500] }}>
               Try adjusting your search or filters
             </p>
-          </div>
+          </motion.div>
         )}
       </div>
     </div>
