@@ -1,4 +1,21 @@
-// theme.js
+// Import all icons from lucide-react
+import {
+  ChefHat,
+  Search,
+  Zap,
+  BarChart3,
+  Calculator,
+  Star,
+  Clock,
+  Users,
+  ArrowRight,
+  Play,
+  Sparkles,
+  Heart,
+  TrendingUp,
+} from 'lucide-react'
+
+// Original theme.js
 export const theme = {
   colors: {
     primary: {
@@ -53,19 +70,21 @@ export const theme = {
   },
 }
 
-// Import all icons from lucide-react
-import {
-  ChefHat,
-  Search,
-  Zap,
-  BarChart3,
-  Calculator,
-  Star,
-  Clock,
-  Users,
-  ArrowRight,
-  Play,
-  Sparkles,
-  Heart,
-  TrendingUp,
-} from 'lucide-react'
+// shadcn/ui compatible theme classes
+export const shadcnTheme = {
+  colors: {
+    primary: 'bg-primary text-primary-foreground hover:bg-primary/90',
+    secondary: 'bg-secondary text-secondary-foreground hover:bg-secondary/80',
+    destructive: 'bg-destructive text-destructive-foreground hover:bg-destructive/90',
+    outline: 'border border-input bg-background hover:bg-accent hover:text-accent-foreground',
+    ghost: 'hover:bg-accent hover:text-accent-foreground',
+    muted: 'bg-muted text-muted-foreground hover:bg-muted/80',
+  },
+  gradients: {
+    primary: 'bg-gradient-to-r from-primary to-secondary',
+    background: 'bg-gradient-to-br from-orange-50 via-white to-orange-50',
+    card: 'bg-gradient-to-r from-primary/10 to-secondary/10',
+  },
+  animations: theme.animations,
+  icons: theme.icons,
+}

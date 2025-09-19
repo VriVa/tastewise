@@ -8,6 +8,8 @@ import {
 
 // Import your components
 import LandingPage from './pages/LandingPage'
+import ShadcnTest from './components/ShadcnTest'
+import ThemedShadcnTest from './components/ThemedShadcnTest'
 // import Dashboard from './components/Dashboard'
 // import SearchPage from './components/SearchPage'
 // import AIAssistantPage from './components/AIAssistantPage'
@@ -25,6 +27,8 @@ function App() {
         <Routes>
           {/* Public Routes */}
           <Route path="/" element={<LandingPage />} />
+          <Route path="/test-shadcn" element={<ShadcnTest />} />
+          <Route path="/themed-test" element={<ThemedShadcnTest />} />
 
           {/* Protected Routes */}
           {/* <Route path="/dashboard" element={<Dashboard />} />
