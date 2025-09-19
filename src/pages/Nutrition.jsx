@@ -16,27 +16,18 @@ import {
   Wheat,
   Apple,
   Calendar,
-  Scale,
 } from 'lucide-react'
-import { theme } from '../../lib/theme.js'
-import recipesData from '../../lib/data.json'
+import { theme } from '../lib/theme.js'
+import recipesData from '../lib/data.json'
 
 const NutritionalAnalysis = () => {
   const [selectedRecipe, setSelectedRecipe] = useState(null)
   const [showDetails, setShowDetails] = useState(false)
-  const [servingSize, setServingSize] = useState(1)
 
   // Select a random recipe on component mount
   useEffect(() => {
-    const storedRecipe = localStorage.getItem('selectedRecipe')
-    if (storedRecipe) {
-      setSelectedRecipe(JSON.parse(storedRecipe))
-    } else {
-      const randomRecipe =
-        recipesData[Math.floor(Math.random() * recipesData.length)]
-      setSelectedRecipe(randomRecipe)
-      localStorage.setItem('selectedRecipe', JSON.stringify(randomRecipe))
-    }
+    const randomIndex = Math.floor(Math.random() * recipesData.length)
+    setSelectedRecipe(recipesData[randomIndex])
   }, [])
 
   // Animation variants
@@ -62,39 +53,24 @@ const NutritionalAnalysis = () => {
     },
   }
 
+  const cardVariants = {
+    hidden: { scale: 0.9, opacity: 0 },
+    visible: {
+      scale: 1,
+      opacity: 1,
+      transition: {
+        type: 'spring',
+        stiffness: 100,
+        delay: 0.2,
+      },
+    },
+  }
+
   if (!selectedRecipe) {
     return <div>Loading...</div>
   }
 
-  const {
-    name,
-    diet,
-    cuisine,
-    time,
-    ingredients,
-    nutrition,
-    scaling_notes,
-    summary,
-    health_benefits,
-  } = selectedRecipe
-  console.log(selectedRecipe)
-
-  // Calculate scaled nutritional values
-  const scaledNutrition = {
-    calories: Math.round(nutrition.calories * servingSize),
-    protein: Math.round(nutrition.protein * servingSize),
-    carbs: Math.round(nutrition.carbs * servingSize),
-    fat: Math.round(nutrition.fat * servingSize),
-    vitamins_minerals: {
-      vitamin_c_mg: Math.round(
-        nutrition.vitamins_minerals.vitamin_c_mg * servingSize
-      ),
-      iron_mg: Math.round(nutrition.vitamins_minerals.iron_mg * servingSize),
-      calcium_mg: Math.round(
-        nutrition.vitamins_minerals.calcium_mg * servingSize
-      ),
-    },
-  }
+  const { name, diet, cuisine, time, ingredients, nutrition } = selectedRecipe
 
   // Calculate percentage of daily values (based on 2000 calorie diet)
   const dailyValues = {
@@ -102,38 +78,26 @@ const NutritionalAnalysis = () => {
     protein: 50, // grams
     carbs: 300, // grams
     fat: 65, // grams
-    vitamin_c: 90, // mg
-    iron: 18, // mg
-    calcium: 1000, // mg
   }
 
   const caloriePercentage = Math.round(
-    (scaledNutrition.calories / dailyValues.calories) * 100
+    (nutrition.calories / dailyValues.calories) * 100
   )
   const proteinPercentage = Math.round(
-    (scaledNutrition.protein / dailyValues.protein) * 100
+    (nutrition.protein / dailyValues.protein) * 100
   )
   const carbsPercentage = Math.round(
-    (scaledNutrition.carbs / dailyValues.carbs) * 100
+    (nutrition.carbs / dailyValues.carbs) * 100
   )
-  const fatPercentage = Math.round(
-    (scaledNutrition.fat / dailyValues.fat) * 100
-  )
-  const vitaminCPercentage = Math.round(
-    (scaledNutrition.vitamins_minerals.vitamin_c_mg / dailyValues.vitamin_c) *
-      100
-  )
-  const ironPercentage = Math.round(
-    (scaledNutrition.vitamins_minerals.iron_mg / dailyValues.iron) * 100
-  )
-  const calciumPercentage = Math.round(
-    (scaledNutrition.vitamins_minerals.calcium_mg / dailyValues.calcium) * 100
-  )
+  const fatPercentage = Math.round((nutrition.fat / dailyValues.fat) * 100)
 
-  // Estimated scaling factor for time
-  const estimatedTime = Math.round(
-    time * (servingSize > 1 ? servingSize * 0.7 : servingSize)
-  )
+  // Generate random vitamin and mineral data for demonstration
+  const vitaminsMinerals = [
+    { name: 'Vitamin A', value: '15%', icon: Carrot },
+    { name: 'Vitamin C', value: '35%', icon: Apple },
+    { name: 'Calcium', value: '20%', icon: Sparkles },
+    { name: 'Iron', value: '25%', icon: Zap },
+  ]
 
   return (
     <div
@@ -175,55 +139,11 @@ const NutritionalAnalysis = () => {
           </p>
         </motion.div>
 
-        {/* Serving Size Selector */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2 }}
-          className="bg-white rounded-3xl p-6 shadow-lg mb-8 flex items-center justify-between"
-          style={{ border: `1px solid ${theme.colors.gray[200]}` }}
-        >
-          <div className="flex items-center">
-            <Scale
-              size={24}
-              style={{ color: theme.colors.primary[500] }}
-              className="mr-3"
-            />
-            <span
-              className="font-medium"
-              style={{ color: theme.colors.gray[700] }}
-            >
-              Serving Size:
-            </span>
-          </div>
-          <div className="flex items-center space-x-2">
-            {[1, 2, 4, 6].map((size) => (
-              <motion.button
-                key={size}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                onClick={() => setServingSize(size)}
-                className={`px-4 py-2 rounded-xl font-medium ${
-                  servingSize === size ? 'text-white' : 'text-gray-700'
-                }`}
-                style={{
-                  background:
-                    servingSize === size
-                      ? `linear-gradient(to right, ${theme.colors.primary[500]}, ${theme.colors.secondary[500]})`
-                      : theme.colors.gray[100],
-                }}
-              >
-                {size} {size === 1 ? 'serving' : 'servings'}
-              </motion.button>
-            ))}
-          </div>
-        </motion.div>
-
         {/* Recipe Card */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3 }}
+          variants={cardVariants}
+          initial="hidden"
+          animate="visible"
           className="bg-white rounded-3xl shadow-xl overflow-hidden mb-8"
           style={{ border: `1px solid ${theme.colors.gray[200]}` }}
         >
@@ -235,7 +155,7 @@ const NutritionalAnalysis = () => {
                   style={{ color: theme.colors.gray[900] }}
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.4 }}
+                  transition={{ delay: 0.3 }}
                 >
                   {name}
                 </motion.h2>
@@ -248,7 +168,7 @@ const NutritionalAnalysis = () => {
                     }}
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
-                    transition={{ delay: 0.5 }}
+                    transition={{ delay: 0.4 }}
                   >
                     {diet}
                   </motion.span>
@@ -260,38 +180,25 @@ const NutritionalAnalysis = () => {
                     }}
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
-                    transition={{ delay: 0.6 }}
+                    transition={{ delay: 0.5 }}
                   >
                     {cuisine}
                   </motion.span>
                 </div>
-                <motion.p
-                  className="text-sm"
-                  style={{ color: theme.colors.gray[600] }}
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.7 }}
-                >
-                  {summary}
-                </motion.p>
               </div>
 
               <motion.div
                 className="flex items-center space-x-4"
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.7 }}
+                transition={{ delay: 0.6 }}
               >
                 <div
                   className="flex items-center"
                   style={{ color: theme.colors.gray[600] }}
                 >
                   <Clock size={20} className="mr-1" />
-                  <span>
-                    {servingSize > 1
-                      ? `${estimatedTime} min (est.)`
-                      : `${time} min`}
-                  </span>
+                  <span>{time} min</span>
                 </div>
                 <motion.button
                   whileHover={{ scale: 1.05 }}
@@ -320,51 +227,25 @@ const NutritionalAnalysis = () => {
                     className="text-lg font-semibold mb-3"
                     style={{ color: theme.colors.gray[700] }}
                   >
-                    Ingredients ({servingSize} serving
-                    {servingSize > 1 ? 's' : ''}):
+                    Ingredients:
                   </h3>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-6">
+                  <div className="flex flex-wrap gap-2 mb-6">
                     {ingredients.map((ingredient, index) => (
-                      <motion.div
-                        key={ingredient.name}
-                        className="flex justify-between items-center p-2 rounded-lg"
-                        style={{ backgroundColor: theme.colors.gray[50] }}
-                        initial={{ opacity: 0, x: -20 }}
-                        animate={{ opacity: 1, x: 0 }}
+                      <motion.span
+                        key={ingredient}
+                        className="px-3 py-1 rounded-full text-sm"
+                        style={{
+                          backgroundColor: theme.colors.gray[100],
+                          color: theme.colors.gray[700],
+                        }}
+                        initial={{ opacity: 0, scale: 0.8 }}
+                        animate={{ opacity: 1, scale: 1 }}
                         transition={{ delay: 0.1 * index }}
                       >
-                        <span style={{ color: theme.colors.gray[700] }}>
-                          {ingredient.name}
-                        </span>
-                        <span
-                          className="font-medium"
-                          style={{ color: theme.colors.primary[600] }}
-                        >
-                          {Math.round(
-                            parseInt(ingredient.measurement.split(' ')[0]) *
-                              servingSize
-                          )}{' '}
-                          g
-                        </span>
-                      </motion.div>
+                        {ingredient}
+                      </motion.span>
                     ))}
                   </div>
-                  {scaling_notes && (
-                    <motion.div
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      transition={{ delay: 0.5 }}
-                      className="p-3 rounded-lg mb-4"
-                      style={{ backgroundColor: theme.colors.primary[50] }}
-                    >
-                      <p
-                        className="text-sm"
-                        style={{ color: theme.colors.primary[700] }}
-                      >
-                        <strong>Scaling Note:</strong> {scaling_notes}
-                      </p>
-                    </motion.div>
-                  )}
                 </motion.div>
               )}
             </AnimatePresence>
@@ -406,23 +287,23 @@ const NutritionalAnalysis = () => {
                 className="text-5xl font-bold mb-2"
                 style={{ color: theme.colors.primary[600] }}
               >
-                {scaledNutrition.calories}
+                {nutrition.calories}
               </motion.div>
               <div className="w-full bg-gray-200 rounded-full h-4">
                 <motion.div
                   className="h-4 rounded-full"
                   style={{
                     backgroundColor: theme.colors.primary[500],
-                    width: `${Math.min(caloriePercentage, 100)}%`,
+                    width: `${caloriePercentage}%`,
                     maxWidth: '100%',
                   }}
                   initial={{ width: 0 }}
-                  animate={{ width: `${Math.min(caloriePercentage, 100)}%` }}
+                  animate={{ width: `${caloriePercentage}%` }}
                   transition={{ duration: 1, delay: 0.5 }}
                 />
               </div>
               <p className="mt-2" style={{ color: theme.colors.gray[600] }}>
-                {Math.min(caloriePercentage, 100)}% of daily value
+                {caloriePercentage}% of daily value
               </p>
             </div>
           </motion.div>
@@ -462,8 +343,7 @@ const NutritionalAnalysis = () => {
                     Protein
                   </span>
                   <span style={{ color: theme.colors.gray[600] }}>
-                    {scaledNutrition.protein}g (
-                    {Math.min(proteinPercentage, 100)}%)
+                    {nutrition.protein}g ({proteinPercentage}%)
                   </span>
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2">
@@ -490,7 +370,7 @@ const NutritionalAnalysis = () => {
                     Carbs
                   </span>
                   <span style={{ color: theme.colors.gray[600] }}>
-                    {scaledNutrition.carbs}g ({Math.min(carbsPercentage, 100)}%)
+                    {nutrition.carbs}g ({carbsPercentage}%)
                   </span>
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2">
@@ -517,7 +397,7 @@ const NutritionalAnalysis = () => {
                     Fat
                   </span>
                   <span style={{ color: theme.colors.gray[600] }}>
-                    {scaledNutrition.fat}g ({Math.min(fatPercentage, 100)}%)
+                    {nutrition.fat}g ({fatPercentage}%)
                   </span>
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2">
@@ -555,30 +435,8 @@ const NutritionalAnalysis = () => {
             <Sparkles size={24} style={{ color: theme.colors.primary[500] }} />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {[
-              {
-                name: 'Vitamin C',
-                value: `${scaledNutrition.vitamins_minerals.vitamin_c_mg}mg`,
-                percentage: vitaminCPercentage,
-                icon: Apple,
-                color: theme.colors.primary[400],
-              },
-              {
-                name: 'Iron',
-                value: `${scaledNutrition.vitamins_minerals.iron_mg}mg`,
-                percentage: ironPercentage,
-                icon: Zap,
-                color: theme.colors.secondary[500],
-              },
-              {
-                name: 'Calcium',
-                value: `${scaledNutrition.vitamins_minerals.calcium_mg}mg`,
-                percentage: calciumPercentage,
-                icon: Carrot,
-                color: theme.colors.primary[500],
-              },
-            ].map((item, index) => {
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {vitaminsMinerals.map((item, index) => {
               const IconComponent = item.icon
               return (
                 <motion.div
@@ -606,7 +464,7 @@ const NutritionalAnalysis = () => {
                   >
                     <IconComponent
                       size={32}
-                      style={{ color: item.color }}
+                      style={{ color: theme.colors.primary[500] }}
                       className="mx-auto mb-2"
                     />
                   </motion.div>
@@ -617,28 +475,10 @@ const NutritionalAnalysis = () => {
                     {item.name}
                   </h4>
                   <p
-                    className="text-lg font-bold mb-2"
-                    style={{ color: item.color }}
+                    className="text-lg font-bold"
+                    style={{ color: theme.colors.primary[600] }}
                   >
                     {item.value}
-                  </p>
-                  <div className="w-full bg-gray-200 rounded-full h-2">
-                    <motion.div
-                      className="h-2 rounded-full"
-                      style={{
-                        backgroundColor: item.color,
-                        width: `${Math.min(item.percentage, 100)}%`,
-                      }}
-                      initial={{ width: 0 }}
-                      animate={{ width: `${Math.min(item.percentage, 100)}%` }}
-                      transition={{ duration: 1, delay: 0.7 + index * 0.1 }}
-                    />
-                  </div>
-                  <p
-                    className="text-sm mt-1"
-                    style={{ color: theme.colors.gray[600] }}
-                  >
-                    {Math.min(item.percentage, 100)}% of daily value
                   </p>
                 </motion.div>
               )
@@ -666,41 +506,37 @@ const NutritionalAnalysis = () => {
             animate="visible"
             className="grid grid-cols-1 md:grid-cols-2 gap-4"
           >
-            {health_benefits && health_benefits.length > 0 ? (
-              health_benefits.map((benefit, index) => (
+            {[
+              'Supports muscle growth and repair',
+              'Provides sustained energy release',
+              'Promotes heart health',
+              'Rich in essential vitamins and minerals',
+            ].map((benefit, index) => (
+              <motion.div
+                key={index}
+                variants={itemVariants}
+                className="flex items-start space-x-3 p-3 rounded-xl"
+                style={{ backgroundColor: theme.colors.primary[50] }}
+                whileHover={{
+                  scale: 1.02,
+                  backgroundColor: theme.colors.primary[100],
+                }}
+              >
                 <motion.div
-                  key={index}
-                  variants={itemVariants}
-                  className="flex items-start space-x-3 p-3 rounded-xl"
-                  style={{ backgroundColor: theme.colors.primary[50] }}
-                  whileHover={{
-                    scale: 1.02,
-                    backgroundColor: theme.colors.primary[100],
+                  animate={{
+                    scale: [1, 1.2, 1],
+                  }}
+                  transition={{
+                    duration: 2,
+                    repeat: Infinity,
+                    delay: index * 0.5,
                   }}
                 >
-                  <motion.div
-                    animate={{
-                      scale: [1, 1.2, 1],
-                    }}
-                    transition={{
-                      duration: 2,
-                      repeat: Infinity,
-                      delay: index * 0.5,
-                    }}
-                  >
-                    <Zap
-                      size={20}
-                      style={{ color: theme.colors.primary[500] }}
-                    />
-                  </motion.div>
-                  <p style={{ color: theme.colors.gray[700] }}>{benefit}</p>
+                  <Zap size={20} style={{ color: theme.colors.primary[500] }} />
                 </motion.div>
-              ))
-            ) : (
-              <p style={{ color: theme.colors.gray[600] }}>
-                No health benefits available for this recipe.
-              </p>
-            )}
+                <p style={{ color: theme.colors.gray[700] }}>{benefit}</p>
+              </motion.div>
+            ))}
           </motion.div>
         </motion.div>
       </div>
