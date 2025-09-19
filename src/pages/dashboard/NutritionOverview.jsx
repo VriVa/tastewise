@@ -138,9 +138,6 @@ const NutritionalAnalysis = () => {
   return (
     <div
       className="min-h-screen py-8 px-4"
-      style={{
-        background: `linear-gradient(to bottom right, ${theme.colors.primary[50]}, white, ${theme.colors.primary[50]})`,
-      }}
     >
       <div className="max-w-4xl mx-auto">
         {/* Header */}
@@ -224,7 +221,7 @@ const NutritionalAnalysis = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
-          className="bg-white rounded-3xl shadow-xl overflow-hidden mb-8"
+          className="bg-card rounded-3xl shadow-xl overflow-hidden mb-8"
           style={{ border: `1px solid ${theme.colors.gray[200]}` }}
         >
           <div className="p-8">
