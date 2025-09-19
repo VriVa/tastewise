@@ -17,8 +17,8 @@ import {
   Apple,
   Calendar,
 } from 'lucide-react'
-import { theme } from '../../lib/theme.js'
-import recipesData from '../../lib/data.json'
+import { theme } from '../lib/theme.js'
+import recipesData from '../lib/data.json'
 
 const NutritionalAnalysis = () => {
   const [selectedRecipe, setSelectedRecipe] = useState(null)

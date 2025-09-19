@@ -4,24 +4,75 @@
     "diet": "vegan",
     "cuisine": "Japanese",
     "time": 30,
-    "ingredients": ["sushi rice", "nori", "cucumber", "avocado", "carrot"],
-    "nutrition": { "calories": 200, "protein": 5, "carbs": 35, "fat": 4 }
+    "ingredients": [
+      { "name": "sushi rice", "measurement": "200 g" },
+      { "name": "nori", "measurement": "10 g" },
+      { "name": "cucumber", "measurement": "150 g" },
+      { "name": "avocado", "measurement": "140 g" },
+      { "name": "carrot", "measurement": "100 g" }
+    ],
+    "nutrition": {
+      "calories": 200,
+      "protein": 5,
+      "carbs": 35,
+      "fat": 4,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 10,
+        "iron_mg": 1.5,
+        "calcium_mg": 20
+      }
+    },
+    "scaling_notes": "For larger batches, increase rice cooking time by 5 minutes per additional 200 g."
   },
   {
     "name": "Butter Chicken",
     "diet": "non-vegetarian",
     "cuisine": "Indian",
     "time": 50,
-    "ingredients": ["chicken", "butter", "tomatoes", "cream", "garam masala"],
-    "nutrition": { "calories": 550, "protein": 38, "carbs": 15, "fat": 35 }
+    "ingredients": [
+      { "name": "chicken", "measurement": "500 g" },
+      { "name": "butter", "measurement": "30 g" },
+      { "name": "tomatoes", "measurement": "400 g" },
+      { "name": "cream", "measurement": "120 g" },
+      { "name": "garam masala", "measurement": "2 g" }
+    ],
+    "nutrition": {
+      "calories": 550,
+      "protein": 38,
+      "carbs": 15,
+      "fat": 35,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 15,
+        "iron_mg": 2.5,
+        "calcium_mg": 100
+      }
+    },
+    "scaling_notes": "Double servings may require 10-15 extra minutes for sauce to thicken."
   },
   {
     "name": "Greek Salad",
     "diet": "vegetarian",
     "cuisine": "Greek",
     "time": 15,
-    "ingredients": ["cucumber", "tomato", "feta", "olives", "olive oil"],
-    "nutrition": { "calories": 220, "protein": 6, "carbs": 10, "fat": 18 }
+    "ingredients": [
+      { "name": "cucumber", "measurement": "150 g" },
+      { "name": "tomato", "measurement": "300 g" },
+      { "name": "feta", "measurement": "100 g" },
+      { "name": "olives", "measurement": "50 g" },
+      { "name": "olive oil", "measurement": "30 g" }
+    ],
+    "nutrition": {
+      "calories": 220,
+      "protein": 6,
+      "carbs": 10,
+      "fat": 18,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 20,
+        "iron_mg": 0.8,
+        "calcium_mg": 150
+      }
+    },
+    "scaling_notes": "No time adjustment needed; chop ingredients in proportion."
   },
   {
     "name": "Lentil Curry",
@@ -29,21 +80,48 @@
     "cuisine": "Indian",
     "time": 40,
     "ingredients": [
-      "lentils",
-      "coconut milk",
-      "tomato",
-      "curry powder",
-      "onion"
+      { "name": "lentils", "measurement": "200 g" },
+      { "name": "coconut milk", "measurement": "240 g" },
+      { "name": "tomato", "measurement": "150 g" },
+      { "name": "curry powder", "measurement": "6 g" },
+      { "name": "onion", "measurement": "100 g" }
     ],
-    "nutrition": { "calories": 350, "protein": 16, "carbs": 45, "fat": 10 }
+    "nutrition": {
+      "calories": 350,
+      "protein": 16,
+      "carbs": 45,
+      "fat": 10,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 12,
+        "iron_mg": 4.5,
+        "calcium_mg": 50
+      }
+    },
+    "scaling_notes": "Add 5-10 minutes for larger portions to ensure lentils are fully cooked."
   },
   {
     "name": "Grilled Cheese Sandwich",
     "diet": "vegetarian",
     "cuisine": "American",
     "time": 15,
-    "ingredients": ["bread", "cheddar", "butter", "tomato"],
-    "nutrition": { "calories": 400, "protein": 12, "carbs": 35, "fat": 20 }
+    "ingredients": [
+      { "name": "bread", "measurement": "100 g" },
+      { "name": "cheddar", "measurement": "100 g" },
+      { "name": "butter", "measurement": "15 g" },
+      { "name": "tomato", "measurement": "50 g" }
+    ],
+    "nutrition": {
+      "calories": 400,
+      "protein": 12,
+      "carbs": 35,
+      "fat": 20,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 5,
+        "iron_mg": 1.2,
+        "calcium_mg": 200
+      }
+    },
+    "scaling_notes": "Grill in batches for larger servings; no significant time change."
   },
   {
     "name": "Pad Thai",
@@ -51,21 +129,49 @@
     "cuisine": "Thai",
     "time": 30,
     "ingredients": [
-      "rice noodles",
-      "shrimp",
-      "peanuts",
-      "bean sprouts",
-      "tamarind"
+      { "name": "rice noodles", "measurement": "200 g" },
+      { "name": "shrimp", "measurement": "150 g" },
+      { "name": "peanuts", "measurement": "50 g" },
+      { "name": "bean sprouts", "measurement": "100 g" },
+      { "name": "tamarind", "measurement": "30 g" }
     ],
-    "nutrition": { "calories": 500, "protein": 25, "carbs": 60, "fat": 18 }
+    "nutrition": {
+      "calories": 500,
+      "protein": 25,
+      "carbs": 60,
+      "fat": 18,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 10,
+        "iron_mg": 2.0,
+        "calcium_mg": 80
+      }
+    },
+    "scaling_notes": "Increase stir-fry time by 5 minutes for double portions."
   },
   {
     "name": "Hummus Platter",
     "diet": "vegan",
     "cuisine": "Middle Eastern",
     "time": 20,
-    "ingredients": ["chickpeas", "tahini", "olive oil", "garlic", "lemon"],
-    "nutrition": { "calories": 300, "protein": 8, "carbs": 30, "fat": 15 }
+    "ingredients": [
+      { "name": "chickpeas", "measurement": "200 g" },
+      { "name": "tahini", "measurement": "30 g" },
+      { "name": "olive oil", "measurement": "30 g" },
+      { "name": "garlic", "measurement": "5 g" },
+      { "name": "lemon", "measurement": "50 g" }
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 8,
+      "carbs": 30,
+      "fat": 15,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 15,
+        "iron_mg": 2.5,
+        "calcium_mg": 40
+      }
+    },
+    "scaling_notes": "No time adjustment needed; blend in larger batches as needed."
   },
   {
     "name": "BBQ Pork Ribs",
@@ -73,13 +179,24 @@
     "cuisine": "American",
     "time": 120,
     "ingredients": [
-      "pork ribs",
-      "bbq sauce",
-      "paprika",
-      "garlic",
-      "brown sugar"
+      { "name": "pork ribs", "measurement": "1000 g" },
+      { "name": "bbq sauce", "measurement": "120 g" },
+      { "name": "paprika", "measurement": "6 g" },
+      { "name": "garlic", "measurement": "10 g" },
+      { "name": "brown sugar", "measurement": "30 g" }
     ],
-    "nutrition": { "calories": 700, "protein": 40, "carbs": 30, "fat": 45 }
+    "nutrition": {
+      "calories": 700,
+      "protein": 40,
+      "carbs": 30,
+      "fat": 45,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 5,
+        "iron_mg": 3.0,
+        "calcium_mg": 60
+      }
+    },
+    "scaling_notes": "Add 15-20 minutes per additional 1000 g of ribs for even cooking."
   },
   {
     "name": "Spinach Lasagna",
@@ -87,37 +204,99 @@
     "cuisine": "Italian",
     "time": 60,
     "ingredients": [
-      "lasagna noodles",
-      "spinach",
-      "ricotta",
-      "mozzarella",
-      "tomato sauce"
+      { "name": "lasagna noodles", "measurement": "200 g" },
+      { "name": "spinach", "measurement": "200 g" },
+      { "name": "ricotta", "measurement": "250 g" },
+      { "name": "mozzarella", "measurement": "150 g" },
+      { "name": "tomato sauce", "measurement": "240 g" }
     ],
-    "nutrition": { "calories": 450, "protein": 20, "carbs": 50, "fat": 18 }
+    "nutrition": {
+      "calories": 450,
+      "protein": 20,
+      "carbs": 50,
+      "fat": 18,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 20,
+        "iron_mg": 3.5,
+        "calcium_mg": 250
+      }
+    },
+    "scaling_notes": "Increase baking time by 10-15 minutes for larger pans."
   },
   {
     "name": "Tofu Stir-Fry",
     "diet": "vegan",
     "cuisine": "Chinese",
     "time": 25,
-    "ingredients": ["tofu", "broccoli", "soy sauce", "ginger", "bell peppers"],
-    "nutrition": { "calories": 320, "protein": 15, "carbs": 25, "fat": 14 }
+    "ingredients": [
+      { "name": "tofu", "measurement": "200 g" },
+      { "name": "broccoli", "measurement": "100 g" },
+      { "name": "soy sauce", "measurement": "30 g" },
+      { "name": "ginger", "measurement": "5 g" },
+      { "name": "bell peppers", "measurement": "150 g" }
+    ],
+    "nutrition": {
+      "calories": 320,
+      "protein": 15,
+      "carbs": 25,
+      "fat": 14,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 30,
+        "iron_mg": 2.8,
+        "calcium_mg": 150
+      }
+    },
+    "scaling_notes": "Stir-fry in batches for larger servings to avoid overcrowding."
   },
   {
     "name": "Fish and Chips",
     "diet": "non-vegetarian",
     "cuisine": "British",
     "time": 45,
-    "ingredients": ["cod", "potatoes", "flour", "beer", "oil"],
-    "nutrition": { "calories": 600, "protein": 30, "carbs": 55, "fat": 28 }
+    "ingredients": [
+      { "name": "cod", "measurement": "400 g" },
+      { "name": "potatoes", "measurement": "500 g" },
+      { "name": "flour", "measurement": "100 g" },
+      { "name": "beer", "measurement": "240 g" },
+      { "name": "oil", "measurement": "50 g" }
+    ],
+    "nutrition": {
+      "calories": 600,
+      "protein": 30,
+      "carbs": 55,
+      "fat": 28,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 15,
+        "iron_mg": 1.8,
+        "calcium_mg": 40
+      }
+    },
+    "scaling_notes": "Fry in batches for larger portions; add 5 minutes per batch."
   },
   {
     "name": "Quinoa Salad",
     "diet": "vegan",
     "cuisine": "Fusion",
     "time": 20,
-    "ingredients": ["quinoa", "cucumber", "tomato", "feta", "olive oil"],
-    "nutrition": { "calories": 280, "protein": 8, "carbs": 35, "fat": 12 }
+    "ingredients": [
+      { "name": "quinoa", "measurement": "150 g" },
+      { "name": "cucumber", "measurement": "150 g" },
+      { "name": "tomato", "measurement": "200 g" },
+      { "name": "feta", "measurement": "100 g" },
+      { "name": "olive oil", "measurement": "30 g" }
+    ],
+    "nutrition": {
+      "calories": 280,
+      "protein": 8,
+      "carbs": 35,
+      "fat": 12,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 18,
+        "iron_mg": 2.0,
+        "calcium_mg": 120
+      }
+    },
+    "scaling_notes": "No time adjustment needed; prepare ingredients in proportion."
   },
   {
     "name": "Eggplant Parmesan",
@@ -125,13 +304,24 @@
     "cuisine": "Italian",
     "time": 50,
     "ingredients": [
-      "eggplant",
-      "mozzarella",
-      "parmesan",
-      "tomato sauce",
-      "breadcrumbs"
+      { "name": "eggplant", "measurement": "300 g" },
+      { "name": "mozzarella", "measurement": "150 g" },
+      { "name": "parmesan", "measurement": "50 g" },
+      { "name": "tomato sauce", "measurement": "240 g" },
+      { "name": "breadcrumbs", "measurement": "100 g" }
     ],
-    "nutrition": { "calories": 400, "protein": 18, "carbs": 40, "fat": 20 }
+    "nutrition": {
+      "calories": 400,
+      "protein": 18,
+      "carbs": 40,
+      "fat": 20,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 12,
+        "iron_mg": 1.5,
+        "calcium_mg": 200
+      }
+    },
+    "scaling_notes": "Increase baking time by 10 minutes for larger portions."
   },
   {
     "name": "Beef Bulgogi",
@@ -139,13 +329,24 @@
     "cuisine": "Korean",
     "time": 35,
     "ingredients": [
-      "beef",
-      "soy sauce",
-      "sesame oil",
-      "garlic",
-      "green onions"
+      { "name": "beef", "measurement": "400 g" },
+      { "name": "soy sauce", "measurement": "30 g" },
+      { "name": "sesame oil", "measurement": "15 g" },
+      { "name": "garlic", "measurement": "10 g" },
+      { "name": "green onions", "measurement": "50 g" }
     ],
-    "nutrition": { "calories": 450, "protein": 30, "carbs": 15, "fat": 28 }
+    "nutrition": {
+      "calories": 450,
+      "protein": 30,
+      "carbs": 15,
+      "fat": 28,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 8,
+        "iron_mg": 3.2,
+        "calcium_mg": 30
+      }
+    },
+    "scaling_notes": "Marinate longer for larger batches; add 5 minutes cooking time."
   },
   {
     "name": "Chickpea Tikka Masala",
@@ -153,13 +354,24 @@
     "cuisine": "Indian",
     "time": 45,
     "ingredients": [
-      "chickpeas",
-      "tomatoes",
-      "coconut milk",
-      "garam masala",
-      "onion"
+      { "name": "chickpeas", "measurement": "200 g" },
+      { "name": "tomatoes", "measurement": "300 g" },
+      { "name": "coconut milk", "measurement": "240 g" },
+      { "name": "garam masala", "measurement": "2 g" },
+      { "name": "onion", "measurement": "100 g" }
     ],
-    "nutrition": { "calories": 380, "protein": 14, "carbs": 45, "fat": 15 }
+    "nutrition": {
+      "calories": 380,
+      "protein": 14,
+      "carbs": 45,
+      "fat": 15,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 15,
+        "iron_mg": 3.0,
+        "calcium_mg": 60
+      }
+    },
+    "scaling_notes": "Add 10 minutes for larger portions to simmer sauce."
   },
   {
     "name": "Caesar Salad",
@@ -167,13 +379,24 @@
     "cuisine": "American",
     "time": 15,
     "ingredients": [
-      "romaine",
-      "croutons",
-      "parmesan",
-      "caesar dressing",
-      "anchovies"
+      { "name": "romaine", "measurement": "200 g" },
+      { "name": "croutons", "measurement": "50 g" },
+      { "name": "parmesan", "measurement": "30 g" },
+      { "name": "caesar dressing", "measurement": "60 g" },
+      { "name": "anchovies", "measurement": "20 g" }
     ],
-    "nutrition": { "calories": 250, "protein": 8, "carbs": 15, "fat": 18 }
+    "nutrition": {
+      "calories": 250,
+      "protein": 8,
+      "carbs": 15,
+      "fat": 18,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 20,
+        "iron_mg": 1.0,
+        "calcium_mg": 100
+      }
+    },
+    "scaling_notes": "No time adjustment needed; mix ingredients in proportion."
   },
   {
     "name": "Mushroom Risotto",
@@ -181,77 +404,222 @@
     "cuisine": "Italian",
     "time": 40,
     "ingredients": [
-      "arborio rice",
-      "mushrooms",
-      "parmesan",
-      "white wine",
-      "onion"
+      { "name": "arborio rice", "measurement": "200 g" },
+      { "name": "mushrooms", "measurement": "150 g" },
+      { "name": "parmesan", "measurement": "50 g" },
+      { "name": "white wine", "measurement": "120 g" },
+      { "name": "onion", "measurement": "100 g" }
     ],
-    "nutrition": { "calories": 420, "protein": 12, "carbs": 60, "fat": 14 }
+    "nutrition": {
+      "calories": 420,
+      "protein": 12,
+      "carbs": 60,
+      "fat": 14,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 5,
+        "iron_mg": 1.5,
+        "calcium_mg": 150
+      }
+    },
+    "scaling_notes": "Add 5-10 minutes for larger portions to cook rice evenly."
   },
   {
     "name": "Jerk Chicken",
     "diet": "non-vegetarian",
     "cuisine": "Jamaican",
     "time": 50,
-    "ingredients": ["chicken", "jerk seasoning", "lime", "garlic", "thyme"],
-    "nutrition": { "calories": 480, "protein": 35, "carbs": 10, "fat": 30 }
+    "ingredients": [
+      { "name": "chicken", "measurement": "500 g" },
+      { "name": "jerk seasoning", "measurement": "10 g" },
+      { "name": "lime", "measurement": "50 g" },
+      { "name": "garlic", "measurement": "10 g" },
+      { "name": "thyme", "measurement": "2 g" }
+    ],
+    "nutrition": {
+      "calories": 480,
+      "protein": 35,
+      "carbs": 10,
+      "fat": 30,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 15,
+        "iron_mg": 2.5,
+        "calcium_mg": 40
+      }
+    },
+    "scaling_notes": "Increase grilling time by 10 minutes for larger portions."
   },
   {
     "name": "Sweet Potato Fries",
     "diet": "vegan",
     "cuisine": "American",
     "time": 30,
-    "ingredients": ["sweet potatoes", "olive oil", "paprika", "salt"],
-    "nutrition": { "calories": 250, "protein": 3, "carbs": 35, "fat": 10 }
+    "ingredients": [
+      { "name": "sweet potatoes", "measurement": "400 g" },
+      { "name": "olive oil", "measurement": "30 g" },
+      { "name": "paprika", "measurement": "2 g" },
+      { "name": "salt", "measurement": "2 g" }
+    ],
+    "nutrition": {
+      "calories": 250,
+      "protein": 3,
+      "carbs": 35,
+      "fat": 10,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 20,
+        "iron_mg": 1.0,
+        "calcium_mg": 30
+      }
+    },
+    "scaling_notes": "Bake in batches for larger servings; add 5 minutes per batch."
   },
   {
     "name": "Lamb Kofta",
     "diet": "non-vegetarian",
     "cuisine": "Middle Eastern",
     "time": 35,
-    "ingredients": ["lamb", "parsley", "cumin", "garlic", "onion"],
-    "nutrition": { "calories": 500, "protein": 30, "carbs": 10, "fat": 35 }
+    "ingredients": [
+      { "name": "lamb", "measurement": "400 g" },
+      { "name": "parsley", "measurement": "20 g" },
+      { "name": "cumin", "measurement": "2 g" },
+      { "name": "garlic", "measurement": "10 g" },
+      { "name": "onion", "measurement": "100 g" }
+    ],
+    "nutrition": {
+      "calories": 500,
+      "protein": 30,
+      "carbs": 10,
+      "fat": 35,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 10,
+        "iron_mg": 3.5,
+        "calcium_mg": 50
+      }
+    },
+    "scaling_notes": "Grill in batches for larger portions; add 5 minutes per batch."
   },
   {
     "name": "Veggie Burger",
     "diet": "vegetarian",
     "cuisine": "American",
     "time": 25,
-    "ingredients": ["black beans", "bun", "lettuce", "tomato", "onion"],
-    "nutrition": { "calories": 350, "protein": 12, "carbs": 50, "fat": 10 }
+    "ingredients": [
+      { "name": "black beans", "measurement": "200 g" },
+      { "name": "bun", "measurement": "100 g" },
+      { "name": "lettuce", "measurement": "50 g" },
+      { "name": "tomato", "measurement": "100 g" },
+      { "name": "onion", "measurement": "50 g" }
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 12,
+      "carbs": 50,
+      "fat": 10,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 15,
+        "iron_mg": 2.5,
+        "calcium_mg": 60
+      }
+    },
+    "scaling_notes": "No significant time change; prepare patties in proportion."
   },
   {
     "name": "Pho",
     "diet": "non-vegetarian",
     "cuisine": "Vietnamese",
     "time": 60,
-    "ingredients": ["beef", "rice noodles", "star anise", "ginger", "cilantro"],
-    "nutrition": { "calories": 450, "protein": 25, "carbs": 50, "fat": 12 }
+    "ingredients": [
+      { "name": "beef", "measurement": "300 g" },
+      { "name": "rice noodles", "measurement": "200 g" },
+      { "name": "star anise", "measurement": "2 g" },
+      { "name": "ginger", "measurement": "10 g" },
+      { "name": "cilantro", "measurement": "20 g" }
+    ],
+    "nutrition": {
+      "calories": 450,
+      "protein": 25,
+      "carbs": 50,
+      "fat": 12,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 10,
+        "iron_mg": 2.8,
+        "calcium_mg": 40
+      }
+    },
+    "scaling_notes": "Add 10-15 minutes for larger broth volumes to simmer."
   },
   {
     "name": "Stuffed Bell Peppers",
     "diet": "vegan",
     "cuisine": "Mexican",
     "time": 45,
-    "ingredients": ["bell peppers", "quinoa", "black beans", "corn", "salsa"],
-    "nutrition": { "calories": 320, "protein": 10, "carbs": 50, "fat": 8 }
+    "ingredients": [
+      { "name": "bell peppers", "measurement": "300 g" },
+      { "name": "quinoa", "measurement": "150 g" },
+      { "name": "black beans", "measurement": "200 g" },
+      { "name": "corn", "measurement": "100 g" },
+      { "name": "salsa", "measurement": "120 g" }
+    ],
+    "nutrition": {
+      "calories": 320,
+      "protein": 10,
+      "carbs": 50,
+      "fat": 8,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 50,
+        "iron_mg": 2.0,
+        "calcium_mg": 50
+      }
+    },
+    "scaling_notes": "Increase baking time by 10 minutes for larger portions."
   },
   {
     "name": "Chicken Shawarma",
     "diet": "non-vegetarian",
     "cuisine": "Middle Eastern",
     "time": 40,
-    "ingredients": ["chicken", "pita", "tahini", "garlic", "yogurt"],
-    "nutrition": { "calories": 500, "protein": 30, "carbs": 40, "fat": 20 }
+    "ingredients": [
+      { "name": "chicken", "measurement": "400 g" },
+      { "name": "pita bread", "measurement": "200 g" },
+      { "name": "tahini", "measurement": "30 g" },
+      { "name": "garlic", "measurement": "10 g" },
+      { "name": "yogurt", "measurement": "100 g" }
+    ],
+    "nutrition": {
+      "calories": 500,
+      "protein": 30,
+      "carbs": 40,
+      "fat": 20,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 5,
+        "iron_mg": 2.0,
+        "calcium_mg": 120
+      }
+    },
+    "scaling_notes": "Grill in batches for larger servings; add 5 minutes per batch."
   },
   {
     "name": "Zucchini Noodles",
     "diet": "vegan",
     "cuisine": "Italian",
     "time": 20,
-    "ingredients": ["zucchini", "tomato sauce", "olive oil", "garlic"],
-    "nutrition": { "calories": 200, "protein": 5, "carbs": 15, "fat": 12 }
+    "ingredients": [
+      { "name": "zucchini", "measurement": "300 g" },
+      { "name": "tomato sauce", "measurement": "120 g" },
+      { "name": "olive oil", "measurement": "30 g" },
+      { "name": "garlic", "measurement": "5 g" }
+    ],
+    "nutrition": {
+      "calories": 200,
+      "protein": 5,
+      "carbs": 15,
+      "fat": 12,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 25,
+        "iron_mg": 1.0,
+        "calcium_mg": 30
+      }
+    },
+    "scaling_notes": "No time adjustment needed; spiralize zucchini in proportion."
   },
   {
     "name": "Pork Dumplings",
@@ -259,29 +627,74 @@
     "cuisine": "Chinese",
     "time": 40,
     "ingredients": [
-      "pork",
-      "dumpling wrappers",
-      "ginger",
-      "soy sauce",
-      "cabbage"
+      { "name": "pork", "measurement": "300 g" },
+      { "name": "dumpling wrappers", "measurement": "200 g" },
+      { "name": "ginger", "measurement": "5 g" },
+      { "name": "soy sauce", "measurement": "30 g" },
+      { "name": "cabbage", "measurement": "100 g" }
     ],
-    "nutrition": { "calories": 350, "protein": 15, "carbs": 40, "fat": 12 }
+    "nutrition": {
+      "calories": 350,
+      "protein": 15,
+      "carbs": 40,
+      "fat": 12,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 10,
+        "iron_mg": 1.8,
+        "calcium_mg": 40
+      }
+    },
+    "scaling_notes": "Steam in batches for larger portions; add 5 minutes per batch."
   },
   {
     "name": "Caponata",
     "diet": "vegan",
     "cuisine": "Italian",
     "time": 35,
-    "ingredients": ["eggplant", "tomato", "olives", "capers", "olive oil"],
-    "nutrition": { "calories": 250, "protein": 4, "carbs": 20, "fat": 18 }
+    "ingredients": [
+      { "name": "eggplant", "measurement": "300 g" },
+      { "name": "tomato", "measurement": "200 g" },
+      { "name": "olives", "measurement": "50 g" },
+      { "name": "capers", "measurement": "20 g" },
+      { "name": "olive oil", "measurement": "30 g" }
+    ],
+    "nutrition": {
+      "calories": 250,
+      "protein": 4,
+      "carbs": 20,
+      "fat": 18,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 15,
+        "iron_mg": 1.2,
+        "calcium_mg": 30
+      }
+    },
+    "scaling_notes": "Increase simmering time by 5-10 minutes for larger portions."
   },
   {
     "name": "Salmon Sushi",
     "diet": "non-vegetarian",
     "cuisine": "Japanese",
     "time": 30,
-    "ingredients": ["salmon", "sushi rice", "nori", "avocado", "soy sauce"],
-    "nutrition": { "calories": 300, "protein": 18, "carbs": 35, "fat": 10 }
+    "ingredients": [
+      { "name": "salmon", "measurement": "200 g" },
+      { "name": "sushi rice", "measurement": "200 g" },
+      { "name": "nori", "measurement": "10 g" },
+      { "name": "avocado", "measurement": "140 g" },
+      { "name": "soy sauce", "measurement": "30 g" }
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 18,
+      "carbs": 35,
+      "fat": 10,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 8,
+        "iron_mg": 1.5,
+        "calcium_mg": 20
+      }
+    },
+    "scaling_notes": "Increase rice cooking time by 5 minutes per additional 200 g."
   },
   {
     "name": "Black Bean Enchiladas",
@@ -289,37 +702,99 @@
     "cuisine": "Mexican",
     "time": 40,
     "ingredients": [
-      "black beans",
-      "tortillas",
-      "enchilada sauce",
-      "cheddar",
-      "onion"
+      { "name": "black beans", "measurement": "200 g" },
+      { "name": "tortillas", "measurement": "200 g" },
+      { "name": "enchilada sauce", "measurement": "240 g" },
+      { "name": "cheddar", "measurement": "100 g" },
+      { "name": "onion", "measurement": "100 g" }
     ],
-    "nutrition": { "calories": 400, "protein": 15, "carbs": 50, "fat": 15 }
+    "nutrition": {
+      "calories": 400,
+      "protein": 15,
+      "carbs": 50,
+      "fat": 15,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 10,
+        "iron_mg": 2.5,
+        "calcium_mg": 200
+      }
+    },
+    "scaling_notes": "Increase baking time by 10 minutes for larger portions."
   },
   {
     "name": "Palak Paneer",
     "diet": "vegetarian",
     "cuisine": "Indian",
     "time": 45,
-    "ingredients": ["paneer", "spinach", "tomatoes", "cream", "spices"],
-    "nutrition": { "calories": 450, "protein": 18, "carbs": 20, "fat": 30 }
+    "ingredients": [
+      { "name": "paneer", "measurement": "200 g" },
+      { "name": "spinach", "measurement": "200 g" },
+      { "name": "tomatoes", "measurement": "150 g" },
+      { "name": "cream", "measurement": "100 g" },
+      { "name": "spices", "measurement": "5 g" }
+    ],
+    "nutrition": {
+      "calories": 450,
+      "protein": 18,
+      "carbs": 20,
+      "fat": 30,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 25,
+        "iron_mg": 3.0,
+        "calcium_mg": 250
+      }
+    },
+    "scaling_notes": "Add 5-10 minutes for larger portions to cook spinach evenly."
   },
   {
     "name": "Teriyaki Tofu",
     "diet": "vegan",
     "cuisine": "Japanese",
     "time": 25,
-    "ingredients": ["tofu", "soy sauce", "mirin", "ginger", "green onions"],
-    "nutrition": { "calories": 300, "protein": 12, "carbs": 20, "fat": 15 }
+    "ingredients": [
+      { "name": "tofu", "measurement": "200 g" },
+      { "name": "soy sauce", "measurement": "30 g" },
+      { "name": "mirin", "measurement": "30 g" },
+      { "name": "ginger", "measurement": "5 g" },
+      { "name": "green onions", "measurement": "50 g" }
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 12,
+      "carbs": 20,
+      "fat": 15,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 8,
+        "iron_mg": 2.0,
+        "calcium_mg": 150
+      }
+    },
+    "scaling_notes": "Stir-fry in batches for larger servings; add 5 minutes per batch."
   },
   {
     "name": "Steak Fajitas",
     "diet": "non-vegetarian",
     "cuisine": "Mexican",
     "time": 30,
-    "ingredients": ["steak", "tortillas", "bell peppers", "onion", "lime"],
-    "nutrition": { "calories": 500, "protein": 35, "carbs": 40, "fat": 20 }
+    "ingredients": [
+      { "name": "beef", "measurement": "400 g" },
+      { "name": "tortillas", "measurement": "200 g" },
+      { "name": "bell peppers", "measurement": "150 g" },
+      { "name": "onion", "measurement": "100 g" },
+      { "name": "lime", "measurement": "50 g" }
+    ],
+    "nutrition": {
+      "calories": 500,
+      "protein": 35,
+      "carbs": 40,
+      "fat": 20,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 30,
+        "iron_mg": 3.5,
+        "calcium_mg": 50
+      }
+    },
+    "scaling_notes": "Cook in batches for larger portions; add 5 minutes per batch."
   },
   {
     "name": "Ratatouille",
@@ -327,85 +802,249 @@
     "cuisine": "French",
     "time": 50,
     "ingredients": [
-      "zucchini",
-      "eggplant",
-      "tomato",
-      "bell peppers",
-      "olive oil"
+      { "name": "zucchini", "measurement": "200 g" },
+      { "name": "eggplant", "measurement": "200 g" },
+      { "name": "tomato", "measurement": "300 g" },
+      { "name": "bell peppers", "measurement": "150 g" },
+      { "name": "olive oil", "measurement": "30 g" }
     ],
-    "nutrition": { "calories": 200, "protein": 5, "carbs": 25, "fat": 10 }
+    "nutrition": {
+      "calories": 200,
+      "protein": 5,
+      "carbs": 25,
+      "fat": 10,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 40,
+        "iron_mg": 1.5,
+        "calcium_mg": 40
+      }
+    },
+    "scaling_notes": "Increase simmering time by 10 minutes for larger portions."
   },
   {
     "name": "Chicken Alfredo",
     "diet": "non-vegetarian",
     "cuisine": "Italian",
     "time": 35,
-    "ingredients": ["chicken", "fettuccine", "cream", "parmesan", "garlic"],
-    "nutrition": { "calories": 600, "protein": 30, "carbs": 50, "fat": 25 }
+    "ingredients": [
+      { "name": "chicken", "measurement": "400 g" },
+      { "name": "gluten-free pasta", "measurement": "200 g" },
+      { "name": "cream", "measurement": "240 g" },
+      { "name": "parmesan", "measurement": "50 g" },
+      { "name": "garlic", "measurement": "10 g" }
+    ],
+    "nutrition": {
+      "calories": 600,
+      "protein": 30,
+      "carbs": 50,
+      "fat": 25,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 5,
+        "iron_mg": 2.0,
+        "calcium_mg": 200
+      }
+    },
+    "scaling_notes": "Add 5-10 minutes for larger portions to cook pasta and sauce."
   },
   {
     "name": "Dal Tadka",
     "diet": "vegan",
     "cuisine": "Indian",
     "time": 40,
-    "ingredients": ["lentils", "tomato", "onion", "cumin", "ghee"],
-    "nutrition": { "calories": 300, "protein": 15, "carbs": 40, "fat": 8 }
+    "ingredients": [
+      { "name": "lentils", "measurement": "200 g" },
+      { "name": "tomato", "measurement": "150 g" },
+      { "name": "onion", "measurement": "100 g" },
+      { "name": "cumin", "measurement": "2 g" },
+      { "name": "oil", "measurement": "30 g" }
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 15,
+      "carbs": 40,
+      "fat": 8,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 12,
+        "iron_mg": 4.0,
+        "calcium_mg": 50
+      }
+    },
+    "scaling_notes": "Add 5-10 minutes for larger portions to cook lentils."
   },
   {
     "name": "Cobb Salad",
     "diet": "non-vegetarian",
     "cuisine": "American",
     "time": 20,
-    "ingredients": ["chicken", "bacon", "avocado", "blue cheese", "lettuce"],
-    "nutrition": { "calories": 450, "protein": 25, "carbs": 10, "fat": 35 }
+    "ingredients": [
+      { "name": "chicken", "measurement": "200 g" },
+      { "name": "bacon", "measurement": "50 g" },
+      { "name": "avocado", "measurement": "140 g" },
+      { "name": "cheese", "measurement": "50 g" },
+      { "name": "lettuce", "measurement": "100 g" }
+    ],
+    "nutrition": {
+      "calories": 450,
+      "protein": 25,
+      "carbs": 10,
+      "fat": 35,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 15,
+        "iron_mg": 2.0,
+        "calcium_mg": 120
+      }
+    },
+    "scaling_notes": "No time adjustment needed; assemble in proportion."
   },
   {
     "name": "Veggie Spring Rolls",
     "diet": "vegan",
     "cuisine": "Chinese",
     "time": 30,
-    "ingredients": ["rice paper", "carrots", "cucumber", "avocado", "cilantro"],
-    "nutrition": { "calories": 200, "protein": 5, "carbs": 30, "fat": 5 }
+    "ingredients": [
+      { "name": "dumpling wrappers", "measurement": "200 g" },
+      { "name": "carrots", "measurement": "100 g" },
+      { "name": "cucumber", "measurement": "150 g" },
+      { "name": "avocado", "measurement": "140 g" },
+      { "name": "cilantro", "measurement": "20 g" }
+    ],
+    "nutrition": {
+      "calories": 200,
+      "protein": 5,
+      "carbs": 30,
+      "fat": 5,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 20,
+        "iron_mg": 1.0,
+        "calcium_mg": 30
+      }
+    },
+    "scaling_notes": "Roll in batches for larger servings; no significant time change."
   },
   {
     "name": "Shepherd’s Pie",
     "diet": "non-vegetarian",
     "cuisine": "British",
     "time": 60,
-    "ingredients": ["ground beef", "potatoes", "carrots", "peas", "onion"],
-    "nutrition": { "calories": 550, "protein": 30, "carbs": 50, "fat": 25 }
+    "ingredients": [
+      { "name": "beef", "measurement": "400 g" },
+      { "name": "potatoes", "measurement": "500 g" },
+      { "name": "carrots", "measurement": "100 g" },
+      { "name": "peas", "measurement": "100 g" },
+      { "name": "onion", "measurement": "100 g" }
+    ],
+    "nutrition": {
+      "calories": 550,
+      "protein": 30,
+      "carbs": 50,
+      "fat": 25,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 15,
+        "iron_mg": 3.0,
+        "calcium_mg": 50
+      }
+    },
+    "scaling_notes": "Increase baking time by 10-15 minutes for larger pans."
   },
   {
     "name": "Tabouleh",
     "diet": "vegan",
     "cuisine": "Middle Eastern",
     "time": 20,
-    "ingredients": ["bulgur", "parsley", "tomato", "lemon", "olive oil"],
-    "nutrition": { "calories": 200, "protein": 5, "carbs": 25, "fat": 10 }
+    "ingredients": [
+      { "name": "bulgur", "measurement": "150 g" },
+      { "name": "parsley", "measurement": "50 g" },
+      { "name": "tomato", "measurement": "200 g" },
+      { "name": "lemon", "measurement": "50 g" },
+      { "name": "olive oil", "measurement": "30 g" }
+    ],
+    "nutrition": {
+      "calories": 200,
+      "protein": 5,
+      "carbs": 25,
+      "fat": 10,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 30,
+        "iron_mg": 1.5,
+        "calcium_mg": 40
+      }
+    },
+    "scaling_notes": "No time adjustment needed; mix ingredients in proportion."
   },
   {
     "name": "Shrimp Scampi",
     "diet": "non-vegetarian",
     "cuisine": "Italian",
     "time": 25,
-    "ingredients": ["shrimp", "linguine", "garlic", "white wine", "butter"],
-    "nutrition": { "calories": 450, "protein": 25, "carbs": 50, "fat": 15 }
+    "ingredients": [
+      { "name": "shrimp", "measurement": "300 g" },
+      { "name": "gluten-free pasta", "measurement": "200 g" },
+      { "name": "garlic", "measurement": "10 g" },
+      { "name": "white wine", "measurement": "120 g" },
+      { "name": "butter", "measurement": "30 g" }
+    ],
+    "nutrition": {
+      "calories": 450,
+      "protein": 25,
+      "carbs": 50,
+      "fat": 15,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 5,
+        "iron_mg": 2.0,
+        "calcium_mg": 80
+      }
+    },
+    "scaling_notes": "Cook pasta in batches for larger servings; add 5 minutes."
   },
   {
     "name": "Chana Masala",
     "diet": "vegan",
     "cuisine": "Indian",
     "time": 40,
-    "ingredients": ["chickpeas", "tomato", "onion", "garam masala", "cilantro"],
-    "nutrition": { "calories": 350, "protein": 12, "carbs": 50, "fat": 10 }
+    "ingredients": [
+      { "name": "chickpeas", "measurement": "200 g" },
+      { "name": "tomato", "measurement": "300 g" },
+      { "name": "onion", "measurement": "100 g" },
+      { "name": "garam masala", "measurement": "2 g" },
+      { "name": "cilantro", "measurement": "20 g" }
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 12,
+      "carbs": 50,
+      "fat": 10,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 15,
+        "iron_mg": 3.0,
+        "calcium_mg": 60
+      }
+    },
+    "scaling_notes": "Add 5-10 minutes for larger portions to simmer sauce."
   },
   {
     "name": "Tuna Salad",
     "diet": "non-vegetarian",
     "cuisine": "American",
     "time": 15,
-    "ingredients": ["tuna", "mayonnaise", "celery", "onion", "lettuce"],
-    "nutrition": { "calories": 300, "protein": 20, "carbs": 10, "fat": 18 }
+    "ingredients": [
+      { "name": "tuna", "measurement": "200 g" },
+      { "name": "mayonnaise", "measurement": "50 g" },
+      { "name": "celery", "measurement": "50 g" },
+      { "name": "onion", "measurement": "50 g" },
+      { "name": "lettuce", "measurement": "100 g" }
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 20,
+      "carbs": 10,
+      "fat": 18,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 10,
+        "iron_mg": 1.5,
+        "calcium_mg": 30
+      }
+    },
+    "scaling_notes": "No time adjustment needed; mix ingredients in proportion."
   },
   {
     "name": "Stuffed Zucchini",
@@ -413,29 +1052,74 @@
     "cuisine": "Italian",
     "time": 45,
     "ingredients": [
-      "zucchini",
-      "quinoa",
-      "mozzarella",
-      "tomato sauce",
-      "basil"
+      { "name": "zucchini", "measurement": "300 g" },
+      { "name": "quinoa", "measurement": "150 g" },
+      { "name": "mozzarella", "measurement": "100 g" },
+      { "name": "tomato sauce", "measurement": "120 g" },
+      { "name": "basil", "measurement": "10 g" }
     ],
-    "nutrition": { "calories": 300, "protein": 12, "carbs": 35, "fat": 10 }
+    "nutrition": {
+      "calories": 300,
+      "protein": 12,
+      "carbs": 35,
+      "fat": 10,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 25,
+        "iron_mg": 2.0,
+        "calcium_mg": 150
+      }
+    },
+    "scaling_notes": "Increase baking time by 10 minutes for larger portions."
   },
   {
     "name": "Vegetable Biryani",
     "diet": "vegan",
     "cuisine": "Indian",
     "time": 50,
-    "ingredients": ["basmati rice", "carrots", "peas", "spices", "cilantro"],
-    "nutrition": { "calories": 400, "protein": 10, "carbs": 65, "fat": 10 }
+    "ingredients": [
+      { "name": "basmati rice", "measurement": "200 g" },
+      { "name": "carrots", "measurement": "100 g" },
+      { "name": "peas", "measurement": "100 g" },
+      { "name": "spices", "measurement": "5 g" },
+      { "name": "cilantro", "measurement": "20 g" }
+    ],
+    "nutrition": {
+      "calories": 400,
+      "protein": 10,
+      "carbs": 65,
+      "fat": 10,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 15,
+        "iron_mg": 2.0,
+        "calcium_mg": 40
+      }
+    },
+    "scaling_notes": "Add 5-10 minutes for larger portions to cook rice evenly."
   },
   {
     "name": "Grilled Tofu Skewers",
     "diet": "vegan",
     "cuisine": "Fusion",
     "time": 30,
-    "ingredients": ["tofu", "bell peppers", "soy sauce", "ginger", "zucchini"],
-    "nutrition": { "calories": 250, "protein": 12, "carbs": 15, "fat": 15 }
+    "ingredients": [
+      { "name": "tofu", "measurement": "200 g" },
+      { "name": "bell peppers", "measurement": "150 g" },
+      { "name": "soy sauce", "measurement": "30 g" },
+      { "name": "ginger", "measurement": "5 g" },
+      { "name": "zucchini", "measurement": "150 g" }
+    ],
+    "nutrition": {
+      "calories": 250,
+      "protein": 12,
+      "carbs": 15,
+      "fat": 15,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 30,
+        "iron_mg": 2.0,
+        "calcium_mg": 150
+      }
+    },
+    "scaling_notes": "Grill in batches for larger servings; add 5 minutes per batch."
   },
   {
     "name": "Chicken Parmesan",
@@ -443,53 +1127,149 @@
     "cuisine": "Italian",
     "time": 50,
     "ingredients": [
-      "chicken",
-      "mozzarella",
-      "parmesan",
-      "tomato sauce",
-      "breadcrumbs"
+      { "name": "chicken", "measurement": "400 g" },
+      { "name": "mozzarella", "measurement": "150 g" },
+      { "name": "parmesan", "measurement": "50 g" },
+      { "name": "tomato sauce", "measurement": "240 g" },
+      { "name": "breadcrumbs", "measurement": "100 g" }
     ],
-    "nutrition": { "calories": 550, "protein": 40, "carbs": 30, "fat": 25 }
+    "nutrition": {
+      "calories": 550,
+      "protein": 40,
+      "carbs": 30,
+      "fat": 25,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 10,
+        "iron_mg": 2.5,
+        "calcium_mg": 200
+      }
+    },
+    "scaling_notes": "Increase baking time by 10 minutes for larger portions."
   },
   {
     "name": "Miso Soup",
     "diet": "vegan",
     "cuisine": "Japanese",
     "time": 20,
-    "ingredients": ["miso paste", "tofu", "seaweed", "green onions", "dashi"],
-    "nutrition": { "calories": 150, "protein": 8, "carbs": 15, "fat": 5 }
+    "ingredients": [
+      { "name": "miso paste", "measurement": "30 g" },
+      { "name": "tofu", "measurement": "100 g" },
+      { "name": "seaweed", "measurement": "10 g" },
+      { "name": "green onions", "measurement": "20 g" },
+      { "name": "dashi", "measurement": "240 g" }
+    ],
+    "nutrition": {
+      "calories": 150,
+      "protein": 8,
+      "carbs": 15,
+      "fat": 5,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 5,
+        "iron_mg": 1.0,
+        "calcium_mg": 30
+      }
+    },
+    "scaling_notes": "No time adjustment needed; simmer broth in proportion."
   },
   {
     "name": "Pork Carnitas",
     "diet": "non-vegetarian",
     "cuisine": "Mexican",
     "time": 120,
-    "ingredients": ["pork", "orange", "onion", "garlic", "tortillas"],
-    "nutrition": { "calories": 500, "protein": 35, "carbs": 40, "fat": 20 }
+    "ingredients": [
+      { "name": "pork", "measurement": "1000 g" },
+      { "name": "orange", "measurement": "100 g" },
+      { "name": "onion", "measurement": "100 g" },
+      { "name": "garlic", "measurement": "10 g" },
+      { "name": "tortillas", "measurement": "200 g" }
+    ],
+    "nutrition": {
+      "calories": 500,
+      "protein": 35,
+      "carbs": 40,
+      "fat": 20,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 20,
+        "iron_mg": 3.0,
+        "calcium_mg": 50
+      }
+    },
+    "scaling_notes": "Add 15-20 minutes per additional 1000 g of pork for braising."
   },
   {
     "name": "Veggie Paella",
     "diet": "vegan",
     "cuisine": "Spanish",
     "time": 45,
-    "ingredients": ["rice", "artichokes", "peas", "bell peppers", "saffron"],
-    "nutrition": { "calories": 350, "protein": 8, "carbs": 60, "fat": 8 }
+    "ingredients": [
+      { "name": "rice", "measurement": "200 g" },
+      { "name": "artichokes", "measurement": "150 g" },
+      { "name": "peas", "measurement": "100 g" },
+      { "name": "bell peppers", "measurement": "150 g" },
+      { "name": "saffron", "measurement": "1 g" }
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 8,
+      "carbs": 60,
+      "fat": 8,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 30,
+        "iron_mg": 1.8,
+        "calcium_mg": 40
+      }
+    },
+    "scaling_notes": "Add 5-10 minutes for larger portions to cook rice evenly."
   },
   {
     "name": "Beef Stroganoff",
     "diet": "non-vegetarian",
     "cuisine": "Russian",
     "time": 40,
-    "ingredients": ["beef", "mushrooms", "sour cream", "onion", "noodles"],
-    "nutrition": { "calories": 550, "protein": 35, "carbs": 40, "fat": 25 }
+    "ingredients": [
+      { "name": "beef", "measurement": "400 g" },
+      { "name": "mushrooms", "measurement": "150 g" },
+      { "name": "sour cream", "measurement": "100 g" },
+      { "name": "onion", "measurement": "100 g" },
+      { "name": "noodles", "measurement": "200 g" }
+    ],
+    "nutrition": {
+      "calories": 550,
+      "protein": 35,
+      "carbs": 40,
+      "fat": 25,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 5,
+        "iron_mg": 3.0,
+        "calcium_mg": 80
+      }
+    },
+    "scaling_notes": "Add 5-10 minutes for larger portions to cook sauce and noodles."
   },
   {
     "name": "Falafel Bowl",
     "diet": "vegan",
     "cuisine": "Middle Eastern",
     "time": 30,
-    "ingredients": ["chickpeas", "tahini", "cucumber", "tomato", "parsley"],
-    "nutrition": { "calories": 400, "protein": 12, "carbs": 50, "fat": 15 }
+    "ingredients": [
+      { "name": "chickpeas", "measurement": "200 g" },
+      { "name": "tahini", "measurement": "30 g" },
+      { "name": "cucumber", "measurement": "150 g" },
+      { "name": "tomato", "measurement": "200 g" },
+      { "name": "parsley", "measurement": "20 g" }
+    ],
+    "nutrition": {
+      "calories": 400,
+      "protein": 12,
+      "carbs": 50,
+      "fat": 15,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 20,
+        "iron_mg": 3.0,
+        "calcium_mg": 60
+      }
+    },
+    "scaling_notes": "Fry falafel in batches for larger servings; add 5 minutes per batch."
   },
   {
     "name": "Chicken Satay",
@@ -497,29 +1277,74 @@
     "cuisine": "Thai",
     "time": 35,
     "ingredients": [
-      "chicken",
-      "peanut sauce",
-      "coconut milk",
-      "lime",
-      "cilantro"
+      { "name": "chicken", "measurement": "400 g" },
+      { "name": "peanut butter", "measurement": "50 g" },
+      { "name": "coconut milk", "measurement": "120 g" },
+      { "name": "lime", "measurement": "50 g" },
+      { "name": "cilantro", "measurement": "20 g" }
     ],
-    "nutrition": { "calories": 450, "protein": 30, "carbs": 15, "fat": 25 }
+    "nutrition": {
+      "calories": 450,
+      "protein": 30,
+      "carbs": 15,
+      "fat": 25,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 15,
+        "iron_mg": 2.0,
+        "calcium_mg": 50
+      }
+    },
+    "scaling_notes": "Grill in batches for larger servings; add 5 minutes per batch."
   },
   {
     "name": "Veggie Quesadilla",
     "diet": "vegetarian",
     "cuisine": "Mexican",
     "time": 20,
-    "ingredients": ["tortillas", "cheddar", "bell peppers", "onion", "salsa"],
-    "nutrition": { "calories": 350, "protein": 12, "carbs": 40, "fat": 15 }
+    "ingredients": [
+      { "name": "tortillas", "measurement": "200 g" },
+      { "name": "cheddar", "measurement": "100 g" },
+      { "name": "bell peppers", "measurement": "150 g" },
+      { "name": "onion", "measurement": "100 g" },
+      { "name": "salsa", "measurement": "120 g" }
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 12,
+      "carbs": 40,
+      "fat": 15,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 30,
+        "iron_mg": 1.5,
+        "calcium_mg": 200
+      }
+    },
+    "scaling_notes": "Cook in batches for larger servings; no significant time change."
   },
   {
     "name": "Lamb Curry",
     "diet": "non-vegetarian",
     "cuisine": "Indian",
     "time": 60,
-    "ingredients": ["lamb", "tomatoes", "yogurt", "spices", "onion"],
-    "nutrition": { "calories": 550, "protein": 35, "carbs": 20, "fat": 30 }
+    "ingredients": [
+      { "name": "lamb", "measurement": "500 g" },
+      { "name": "tomatoes", "measurement": "300 g" },
+      { "name": "yogurt", "measurement": "100 g" },
+      { "name": "spices", "measurement": "5 g" },
+      { "name": "onion", "measurement": "100 g" }
+    ],
+    "nutrition": {
+      "calories": 550,
+      "protein": 35,
+      "carbs": 20,
+      "fat": 30,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 15,
+        "iron_mg": 3.5,
+        "calcium_mg": 80
+      }
+    },
+    "scaling_notes": "Add 10-15 minutes for larger portions to simmer sauce."
   },
   {
     "name": "Cauliflower Wings",
@@ -527,21 +1352,49 @@
     "cuisine": "American",
     "time": 35,
     "ingredients": [
-      "cauliflower",
-      "hot sauce",
-      "flour",
-      "almond milk",
-      "paprika"
+      { "name": "cauliflower", "measurement": "300 g" },
+      { "name": "hot sauce", "measurement": "50 g" },
+      { "name": "flour", "measurement": "100 g" },
+      { "name": "almond milk", "measurement": "120 g" },
+      { "name": "paprika", "measurement": "2 g" }
     ],
-    "nutrition": { "calories": 300, "protein": 8, "carbs": 40, "fat": 10 }
+    "nutrition": {
+      "calories": 300,
+      "protein": 8,
+      "carbs": 40,
+      "fat": 10,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 40,
+        "iron_mg": 1.5,
+        "calcium_mg": 40
+      }
+    },
+    "scaling_notes": "Bake in batches for larger servings; add 5 minutes per batch."
   },
   {
     "name": "Shrimp Ceviche",
     "diet": "non-vegetarian",
     "cuisine": "Mexican",
     "time": 20,
-    "ingredients": ["shrimp", "lime", "tomato", "cilantro", "avocado"],
-    "nutrition": { "calories": 250, "protein": 20, "carbs": 15, "fat": 10 }
+    "ingredients": [
+      { "name": "shrimp", "measurement": "200 g" },
+      { "name": "lime", "measurement": "100 g" },
+      { "name": "tomato", "measurement": "200 g" },
+      { "name": "cilantro", "measurement": "20 g" },
+      { "name": "avocado", "measurement": "140 g" }
+    ],
+    "nutrition": {
+      "calories": 250,
+      "protein": 20,
+      "carbs": 15,
+      "fat": 10,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 50,
+        "iron_mg": 1.8,
+        "calcium_mg": 50
+      }
+    },
+    "scaling_notes": "No time adjustment needed; marinate in proportion."
   },
   {
     "name": "Vegetable Korma",
@@ -549,77 +1402,224 @@
     "cuisine": "Indian",
     "time": 45,
     "ingredients": [
-      "mixed vegetables",
-      "coconut milk",
-      "cashews",
-      "spices",
-      "onion"
+      { "name": "mixed vegetables", "measurement": "300 g" },
+      { "name": "coconut milk", "measurement": "240 g" },
+      { "name": "cashews", "measurement": "50 g" },
+      { "name": "spices", "measurement": "5 g" },
+      { "name": "onion", "measurement": "100 g" }
     ],
-    "nutrition": { "calories": 400, "protein": 10, "carbs": 35, "fat": 20 }
+    "nutrition": {
+      "calories": 400,
+      "protein": 10,
+      "carbs": 35,
+      "fat": 20,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 20,
+        "iron_mg": 2.0,
+        "calcium_mg": 60
+      }
+    },
+    "scaling_notes": "Add 5-10 minutes for larger portions to simmer sauce."
   },
   {
     "name": "Tuna Sushi Roll",
     "diet": "non-vegetarian",
     "cuisine": "Japanese",
     "time": 30,
-    "ingredients": ["tuna", "sushi rice", "nori", "avocado", "cucumber"],
-    "nutrition": { "calories": 300, "protein": 20, "carbs": 35, "fat": 8 }
+    "ingredients": [
+      { "name": "tuna", "measurement": "200 g" },
+      { "name": "sushi rice", "measurement": "200 g" },
+      { "name": "nori", "measurement": "10 g" },
+      { "name": "avocado", "measurement": "140 g" },
+      { "name": "cucumber", "measurement": "150 g" }
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 20,
+      "carbs": 35,
+      "fat": 8,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 10,
+        "iron_mg": 1.5,
+        "calcium_mg": 20
+      }
+    },
+    "scaling_notes": "Increase rice cooking time by 5 minutes per additional 200 g."
   },
   {
     "name": "Mushroom Tacos",
     "diet": "vegan",
     "cuisine": "Mexican",
     "time": 25,
-    "ingredients": ["mushrooms", "tortillas", "avocado", "salsa", "cilantro"],
-    "nutrition": { "calories": 300, "protein": 8, "carbs": 40, "fat": 12 }
+    "ingredients": [
+      { "name": "mushrooms", "measurement": "200 g" },
+      { "name": "tortillas", "measurement": "200 g" },
+      { "name": "avocado", "measurement": "140 g" },
+      { "name": "salsa", "measurement": "120 g" },
+      { "name": "cilantro", "measurement": "20 g" }
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 8,
+      "carbs": 40,
+      "fat": 12,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 15,
+        "iron_mg": 1.5,
+        "calcium_mg": 40
+      }
+    },
+    "scaling_notes": "Cook in batches for larger servings; no significant time change."
   },
   {
     "name": "Chicken Noodle Soup",
     "diet": "non-vegetarian",
     "cuisine": "American",
     "time": 40,
-    "ingredients": ["chicken", "noodles", "carrots", "celery", "onion"],
-    "nutrition": { "calories": 350, "protein": 25, "carbs": 30, "fat": 12 }
+    "ingredients": [
+      { "name": "chicken", "measurement": "300 g" },
+      { "name": "noodles", "measurement": "200 g" },
+      { "name": "carrots", "measurement": "100 g" },
+      { "name": "celery", "measurement": "100 g" },
+      { "name": "onion", "measurement": "100 g" }
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 25,
+      "carbs": 30,
+      "fat": 12,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 10,
+        "iron_mg": 2.0,
+        "calcium_mg": 40
+      }
+    },
+    "scaling_notes": "Add 5-10 minutes for larger portions to simmer broth."
   },
   {
     "name": "Veggie Pad See Ew",
     "diet": "vegan",
     "cuisine": "Thai",
     "time": 30,
-    "ingredients": ["rice noodles", "broccoli", "soy sauce", "tofu", "garlic"],
-    "nutrition": { "calories": 400, "protein": 15, "carbs": 55, "fat": 12 }
+    "ingredients": [
+      { "name": "rice noodles", "measurement": "200 g" },
+      { "name": "broccoli", "measurement": "100 g" },
+      { "name": "soy sauce", "measurement": "30 g" },
+      { "name": "tofu", "measurement": "200 g" },
+      { "name": "garlic", "measurement": "10 g" }
+    ],
+    "nutrition": {
+      "calories": 400,
+      "protein": 15,
+      "carbs": 55,
+      "fat": 12,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 25,
+        "iron_mg": 2.0,
+        "calcium_mg": 150
+      }
+    },
+    "scaling_notes": "Stir-fry in batches for larger servings; add 5 minutes per batch."
   },
   {
     "name": "Pork Ramen",
     "diet": "non-vegetarian",
     "cuisine": "Japanese",
     "time": 60,
-    "ingredients": ["pork", "ramen noodles", "soy sauce", "nori", "egg"],
-    "nutrition": { "calories": 500, "protein": 30, "carbs": 50, "fat": 20 }
+    "ingredients": [
+      { "name": "pork", "measurement": "300 g" },
+      { "name": "ramen noodles", "measurement": "200 g" },
+      { "name": "soy sauce", "measurement": "30 g" },
+      { "name": "nori", "measurement": "10 g" },
+      { "name": "egg", "measurement": "50 g" }
+    ],
+    "nutrition": {
+      "calories": 500,
+      "protein": 30,
+      "carbs": 50,
+      "fat": 20,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 5,
+        "iron_mg": 2.5,
+        "calcium_mg": 40
+      }
+    },
+    "scaling_notes": "Add 10-15 minutes for larger broth volumes to simmer."
   },
   {
     "name": "Spinach Quiche",
     "diet": "vegetarian",
     "cuisine": "French",
     "time": 50,
-    "ingredients": ["spinach", "eggs", "cream", "cheddar", "pie crust"],
-    "nutrition": { "calories": 450, "protein": 15, "carbs": 30, "fat": 25 }
+    "ingredients": [
+      { "name": "spinach", "measurement": "200 g" },
+      { "name": "eggs", "measurement": "150 g" },
+      { "name": "cream", "measurement": "120 g" },
+      { "name": "cheddar", "measurement": "100 g" },
+      { "name": "pie crust", "measurement": "200 g" }
+    ],
+    "nutrition": {
+      "calories": 450,
+      "protein": 15,
+      "carbs": 30,
+      "fat": 25,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 20,
+        "iron_mg": 2.5,
+        "calcium_mg": 200
+      }
+    },
+    "scaling_notes": "Increase baking time by 10-15 minutes for larger pans."
   },
   {
     "name": "Beef Pho",
     "diet": "non-vegetarian",
     "cuisine": "Vietnamese",
     "time": 60,
-    "ingredients": ["beef", "rice noodles", "star anise", "ginger", "cilantro"],
-    "nutrition": { "calories": 450, "protein": 25, "carbs": 50, "fat": 12 }
+    "ingredients": [
+      { "name": "beef", "measurement": "300 g" },
+      { "name": "rice noodles", "measurement": "200 g" },
+      { "name": "star anise", "measurement": "2 g" },
+      { "name": "ginger", "measurement": "10 g" },
+      { "name": "cilantro", "measurement": "20 g" }
+    ],
+    "nutrition": {
+      "calories": 450,
+      "protein": 25,
+      "carbs": 50,
+      "fat": 12,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 10,
+        "iron_mg": 2.8,
+        "calcium_mg": 40
+      }
+    },
+    "scaling_notes": "Add 10-15 minutes for larger broth volumes to simmer."
   },
   {
     "name": "Veggie Fried Rice",
     "diet": "vegan",
     "cuisine": "Chinese",
     "time": 25,
-    "ingredients": ["rice", "peas", "carrots", "soy sauce", "green onions"],
-    "nutrition": { "calories": 300, "protein": 8, "carbs": 50, "fat": 8 }
+    "ingredients": [
+      { "name": "rice", "measurement": "200 g" },
+      { "name": "peas", "measurement": "100 g" },
+      { "name": "carrots", "measurement": "100 g" },
+      { "name": "soy sauce", "measurement": "30 g" },
+      { "name": "green onions", "measurement": "50 g" }
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein": 8,
+      "carbs": 50,
+      "fat": 8,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 15,
+        "iron_mg": 1.5,
+        "calcium_mg": 30
+      }
+    },
+    "scaling_notes": "Stir-fry in batches for larger servings; add 5 minutes per batch."
   },
   {
     "name": "Chicken Enchiladas",
@@ -627,852 +1627,223 @@
     "cuisine": "Mexican",
     "time": 45,
     "ingredients": [
-      "chicken",
-      "tortillas",
-      "enchilada sauce",
-      "cheddar",
-      "onion"
+      { "name": "chicken", "measurement": "400 g" },
+      { "name": "tortillas", "measurement": "200 g" },
+      { "name": "enchilada sauce", "measurement": "240 g" },
+      { "name": "cheddar", "measurement": "100 g" },
+      { "name": "onion", "measurement": "100 g" }
     ],
-    "nutrition": { "calories": 500, "protein": 30, "carbs": 40, "fat": 20 }
+    "nutrition": {
+      "calories": 500,
+      "protein": 30,
+      "carbs": 40,
+      "fat": 20,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 10,
+        "iron_mg": 2.5,
+        "calcium_mg": 200
+      }
+    },
+    "scaling_notes": "Increase baking time by 10 minutes for larger portions."
   },
   {
-    "name": "Lentil Burgers",
-    "diet": "vegan",
-    "cuisine": "American",
-    "time": 30,
-    "ingredients": ["lentils", "bun", "lettuce", "tomato", "onion"],
-    "nutrition": { "calories": 350, "protein": 12, "carbs": 50, "fat": 10 }
-  },
-  {
-    "name": "Grilled Swordfish",
-    "diet": "non-vegetarian",
-    "cuisine": "American",
-    "time": 25,
-    "ingredients": ["swordfish", "lemon", "olive oil", "garlic", "parsley"],
-    "nutrition": { "calories": 400, "protein": 35, "carbs": 5, "fat": 25 }
-  },
-  {
-    "name": "Vegetable Stir-Fry",
-    "diet": "vegan",
-    "cuisine": "Chinese",
-    "time": 20,
-    "ingredients": [
-      "broccoli",
-      "carrots",
-      "soy sauce",
-      "ginger",
-      "bell peppers"
-    ],
-    "nutrition": { "calories": 250, "protein": 8, "carbs": 30, "fat": 10 }
-  },
-  {
-    "name": "Braised Lamb Shanks",
-    "diet": "non-vegetarian",
-    "cuisine": "French",
-    "time": 120,
-    "ingredients": [
-      "lamb shanks",
-      "red wine",
-      "tomatoes",
-      "rosemary",
-      "garlic"
-    ],
-    "nutrition": { "calories": 600, "protein": 40, "carbs": 15, "fat": 35 }
-  },
-  {
-    "name": "Veggie Samosas",
-    "diet": "vegan",
-    "cuisine": "Indian",
-    "time": 45,
-    "ingredients": ["potatoes", "peas", "spices", "flour", "oil"],
-    "nutrition": { "calories": 300, "protein": 8, "carbs": 40, "fat": 12 }
-  },
-  {
-    "name": "Chicken Caesar Wrap",
-    "diet": "non-vegetarian",
-    "cuisine": "American",
-    "time": 20,
-    "ingredients": [
-      "chicken",
-      "tortilla",
-      "romaine",
-      "caesar dressing",
-      "parmesan"
-    ],
-    "nutrition": { "calories": 400, "protein": 25, "carbs": 35, "fat": 15 }
-  },
-  {
-    "name": "Mushroom Soup",
-    "diet": "vegetarian",
-    "cuisine": "French",
-    "time": 40,
-    "ingredients": ["mushrooms", "cream", "onion", "garlic", "thyme"],
-    "nutrition": { "calories": 350, "protein": 8, "carbs": 20, "fat": 25 }
-  },
-  {
-    "name": "Pork Bao Buns",
-    "diet": "non-vegetarian",
-    "cuisine": "Chinese",
-    "time": 60,
-    "ingredients": [
-      "pork",
-      "bao dough",
-      "hoisin sauce",
-      "cucumber",
-      "green onions"
-    ],
-    "nutrition": { "calories": 450, "protein": 20, "carbs": 50, "fat": 15 }
-  },
-  {
-    "name": "Veggie Gyro",
-    "diet": "vegetarian",
-    "cuisine": "Greek",
-    "time": 25,
-    "ingredients": ["pita", "tomato", "cucumber", "tzatziki", "feta"],
-    "nutrition": { "calories": 350, "protein": 10, "carbs": 45, "fat": 12 }
-  },
-  {
-    "name": "Shrimp Fried Rice",
-    "diet": "non-vegetarian",
-    "cuisine": "Chinese",
-    "time": 25,
-    "ingredients": ["shrimp", "rice", "peas", "soy sauce", "egg"],
-    "nutrition": { "calories": 400, "protein": 20, "carbs": 50, "fat": 12 }
-  },
-  {
-    "name": "Chickpea Salad",
+    "name": "Lentil Soup",
     "diet": "vegan",
     "cuisine": "Mediterranean",
-    "time": 15,
-    "ingredients": ["chickpeas", "cucumber", "tomato", "olive oil", "lemon"],
-    "nutrition": { "calories": 300, "protein": 10, "carbs": 35, "fat": 12 }
-  },
-  {
-    "name": "Beef Empanadas",
-    "diet": "non-vegetarian",
-    "cuisine": "Latin American",
-    "time": 50,
-    "ingredients": ["beef", "dough", "onion", "olives", "spices"],
-    "nutrition": { "calories": 400, "protein": 20, "carbs": 40, "fat": 18 }
-  },
-  {
-    "name": "Veggie Curry",
-    "diet": "vegan",
-    "cuisine": "Thai",
-    "time": 40,
-    "ingredients": ["coconut milk", "tofu", "eggplant", "curry paste", "basil"],
-    "nutrition": { "calories": 350, "protein": 12, "carbs": 30, "fat": 18 }
-  },
-  {
-    "name": "Chicken Katsu",
-    "diet": "non-vegetarian",
-    "cuisine": "Japanese",
-    "time": 35,
-    "ingredients": ["chicken", "panko", "egg", "flour", "tonkatsu sauce"],
-    "nutrition": { "calories": 500, "protein": 30, "carbs": 40, "fat": 20 }
-  },
-  {
-    "name": "Gluten-Free Pizza",
-    "diet": "gluten-free",
-    "cuisine": "Italian",
-    "time": 40,
-    "ingredients": ["gluten-free dough", "tomato sauce", "mozzarella", "basil"],
-    "nutrition": { "calories": 350, "protein": 12, "carbs": 45, "fat": 15 }
-  },
-  {
-    "name": "Salmon Poke Bowl",
-    "diet": "non-vegetarian",
-    "cuisine": "Hawaiian",
-    "time": 20,
-    "ingredients": ["salmon", "rice", "avocado", "soy sauce", "seaweed"],
-    "nutrition": { "calories": 400, "protein": 25, "carbs": 35, "fat": 15 }
-  },
-  {
-    "name": "Veggie Flatbread",
-    "diet": "vegetarian",
-    "cuisine": "Mediterranean",
-    "time": 30,
-    "ingredients": ["flatbread", "hummus", "tomato", "cucumber", "feta"],
-    "nutrition": { "calories": 350, "protein": 10, "carbs": 45, "fat": 12 }
-  },
-  {
-    "name": "Pork Adobo",
-    "diet": "non-vegetarian",
-    "cuisine": "Filipino",
-    "time": 60,
-    "ingredients": ["pork", "soy sauce", "vinegar", "garlic", "bay leaves"],
-    "nutrition": { "calories": 500, "protein": 35, "carbs": 10, "fat": 30 }
-  },
-  {
-    "name": "Veggie Minestrone",
-    "diet": "vegan",
-    "cuisine": "Italian",
-    "time": 40,
-    "ingredients": ["pasta", "tomatoes", "carrots", "zucchini", "beans"],
-    "nutrition": { "calories": 300, "protein": 10, "carbs": 50, "fat": 8 }
-  },
-  {
-    "name": "Chicken Tacos",
-    "diet": "non-vegetarian",
-    "cuisine": "Mexican",
-    "time": 25,
-    "ingredients": ["chicken", "tortillas", "salsa", "avocado", "cilantro"],
-    "nutrition": { "calories": 400, "protein": 25, "carbs": 35, "fat": 15 }
-  },
-  {
-    "name": "Lentil Stew",
-    "diet": "vegan",
-    "cuisine": "Mediterranean",
-    "time": 45,
-    "ingredients": ["lentils", "tomatoes", "carrots", "onion", "spices"],
-    "nutrition": { "calories": 320, "protein": 15, "carbs": 45, "fat": 6 }
-  },
-  {
-    "name": "Grilled Steak",
-    "diet": "non-vegetarian",
-    "cuisine": "American",
-    "time": 30,
-    "ingredients": ["steak", "olive oil", "garlic", "rosemary", "salt"],
-    "nutrition": { "calories": 500, "protein": 40, "carbs": 5, "fat": 35 }
-  },
-  {
-    "name": "Aloo Gobi",
-    "diet": "vegan",
-    "cuisine": "Indian",
     "time": 40,
     "ingredients": [
-      "potatoes",
-      "cauliflower",
-      "tomatoes",
-      "spices",
-      "cilantro"
+      { "name": "lentils", "measurement": "200 g" },
+      { "name": "carrots", "measurement": "100 g" },
+      { "name": "celery", "measurement": "100 g" },
+      { "name": "tomato", "measurement": "150 g" },
+      { "name": "onion", "measurement": "100 g" }
     ],
-    "nutrition": { "calories": 250, "protein": 6, "carbs": 35, "fat": 10 }
-  },
-  {
-    "name": "Shrimp Pad Thai",
-    "diet": "non-vegetarian",
-    "cuisine": "Thai",
-    "time": 30,
-    "ingredients": ["shrimp", "rice noodles", "tamarind", "peanuts", "egg"],
-    "nutrition": { "calories": 480, "protein": 25, "carbs": 55, "fat": 15 }
-  },
-  {
-    "name": "Veggie Pesto Pasta",
-    "diet": "vegetarian",
-    "cuisine": "Italian",
-    "time": 25,
-    "ingredients": ["pasta", "pesto", "zucchini", "parmesan", "pine nuts"],
-    "nutrition": { "calories": 450, "protein": 12, "carbs": 50, "fat": 20 }
-  },
-  {
-    "name": "Beef Stir-Fry",
-    "diet": "non-vegetarian",
-    "cuisine": "Chinese",
-    "time": 25,
-    "ingredients": ["beef", "broccoli", "soy sauce", "ginger", "garlic"],
-    "nutrition": { "calories": 400, "protein": 30, "carbs": 20, "fat": 18 }
-  },
-  {
-    "name": "Sweet Potato Curry",
-    "diet": "vegan",
-    "cuisine": "Indian",
-    "time": 40,
-    "ingredients": [
-      "sweet potatoes",
-      "coconut milk",
-      "curry paste",
-      "onion",
-      "spinach"
-    ],
-    "nutrition": { "calories": 350, "protein": 8, "carbs": 45, "fat": 15 }
-  },
-  {
-    "name": "Chicken Souvlaki",
-    "diet": "non-vegetarian",
-    "cuisine": "Greek",
-    "time": 35,
-    "ingredients": ["chicken", "yogurt", "lemon", "garlic", "oregano"],
-    "nutrition": { "calories": 400, "protein": 30, "carbs": 10, "fat": 20 }
-  },
-  {
-    "name": "Veggie Naan Pizza",
-    "diet": "vegetarian",
-    "cuisine": "Fusion",
-    "time": 20,
-    "ingredients": [
-      "naan",
-      "tomato sauce",
-      "mozzarella",
-      "bell peppers",
-      "onion"
-    ],
-    "nutrition": { "calories": 400, "protein": 15, "carbs": 50, "fat": 15 }
-  },
-  {
-    "name": "Salmon Teriyaki",
-    "diet": "non-vegetarian",
-    "cuisine": "Japanese",
-    "time": 30,
-    "ingredients": ["salmon", "soy sauce", "mirin", "ginger", "green onions"],
-    "nutrition": { "calories": 450, "protein": 35, "carbs": 15, "fat": 25 }
-  },
-  {
-    "name": "Chickpea Curry",
-    "diet": "vegan",
-    "cuisine": "Indian",
-    "time": 35,
-    "ingredients": [
-      "chickpeas",
-      "tomatoes",
-      "coconut milk",
-      "spices",
-      "cilantro"
-    ],
-    "nutrition": { "calories": 360, "protein": 12, "carbs": 45, "fat": 12 }
-  },
-  {
-    "name": "Pork Chops",
-    "diet": "non-vegetarian",
-    "cuisine": "American",
-    "time": 30,
-    "ingredients": ["pork chops", "olive oil", "garlic", "rosemary", "salt"],
-    "nutrition": { "calories": 450, "protein": 35, "carbs": 5, "fat": 30 }
-  },
-  {
-    "name": "Veggie Tempura",
-    "diet": "vegan",
-    "cuisine": "Japanese",
-    "time": 30,
-    "ingredients": ["sweet potato", "zucchini", "flour", "egg", "oil"],
-    "nutrition": { "calories": 300, "protein": 6, "carbs": 40, "fat": 12 }
-  },
-  {
-    "name": "Chicken Curry",
-    "diet": "non-vegetarian",
-    "cuisine": "Indian",
-    "time": 45,
-    "ingredients": ["chicken", "tomatoes", "coconut milk", "spices", "onion"],
-    "nutrition": { "calories": 500, "protein": 35, "carbs": 20, "fat": 25 }
-  },
-  {
-    "name": "Veggie Couscous Salad",
-    "diet": "vegan",
-    "cuisine": "Mediterranean",
-    "time": 20,
-    "ingredients": ["couscous", "cucumber", "tomato", "olive oil", "lemon"],
-    "nutrition": { "calories": 280, "protein": 8, "carbs": 45, "fat": 10 }
+    "nutrition": {
+      "calories": 300,
+      "protein": 15,
+      "carbs": 45,
+      "fat": 5,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 15,
+        "iron_mg": 4.0,
+        "calcium_mg": 50
+      }
+    },
+    "scaling_notes": "Add 5-10 minutes for larger portions to simmer soup."
   },
   {
     "name": "Beef Tacos",
     "diet": "non-vegetarian",
     "cuisine": "Mexican",
     "time": 25,
-    "ingredients": ["beef", "tortillas", "salsa", "cheddar", "lettuce"],
-    "nutrition": { "calories": 400, "protein": 22, "carbs": 35, "fat": 18 }
+    "ingredients": [
+      { "name": "beef", "measurement": "300 g" },
+      { "name": "tortillas", "measurement": "200 g" },
+      { "name": "salsa", "measurement": "120 g" },
+      { "name": "lettuce", "measurement": "100 g" },
+      { "name": "cheddar", "measurement": "100 g" }
+    ],
+    "nutrition": {
+      "calories": 450,
+      "protein": 25,
+      "carbs": 35,
+      "fat": 20,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 10,
+        "iron_mg": 3.0,
+        "calcium_mg": 150
+      }
+    },
+    "scaling_notes": "Cook in batches for larger servings; no significant time change."
   },
   {
-    "name": "Eggplant Curry",
+    "name": "Caprese Salad",
+    "diet": "vegetarian",
+    "cuisine": "Italian",
+    "time": 15,
+    "ingredients": [
+      { "name": "tomato", "measurement": "300 g" },
+      { "name": "mozzarella", "measurement": "150 g" },
+      { "name": "basil", "measurement": "20 g" },
+      { "name": "olive oil", "measurement": "30 g" },
+      { "name": "balsamic vinegar", "measurement": "15 g" }
+    ],
+    "nutrition": {
+      "calories": 250,
+      "protein": 10,
+      "carbs": 10,
+      "fat": 20,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 20,
+        "iron_mg": 1.0,
+        "calcium_mg": 200
+      }
+    },
+    "scaling_notes": "No time adjustment needed; assemble in proportion."
+  },
+  {
+    "name": "Veggie Curry",
     "diet": "vegan",
     "cuisine": "Indian",
     "time": 40,
-    "ingredients": ["eggplant", "tomatoes", "coconut milk", "spices", "onion"],
-    "nutrition": { "calories": 300, "protein": 6, "carbs": 35, "fat": 15 }
+    "ingredients": [
+      { "name": "mixed vegetables", "measurement": "300 g" },
+      { "name": "coconut milk", "measurement": "240 g" },
+      { "name": "curry powder", "measurement": "6 g" },
+      { "name": "tomato", "measurement": "150 g" },
+      { "name": "onion", "measurement": "100 g" }
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 10,
+      "carbs": 40,
+      "fat": 15,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 25,
+        "iron_mg": 2.0,
+        "calcium_mg": 50
+      }
+    },
+    "scaling_notes": "Add 5-10 minutes for larger portions to simmer sauce."
   },
   {
-    "name": "Grilled Chicken Salad",
+    "name": "Salmon Teriyaki",
     "diet": "non-vegetarian",
+    "cuisine": "Japanese",
+    "time": 30,
+    "ingredients": [
+      { "name": "salmon", "measurement": "400 g" },
+      { "name": "soy sauce", "measurement": "30 g" },
+      { "name": "mirin", "measurement": "30 g" },
+      { "name": "ginger", "measurement": "5 g" },
+      { "name": "green onions", "measurement": "50 g" }
+    ],
+    "nutrition": {
+      "calories": 450,
+      "protein": 35,
+      "carbs": 15,
+      "fat": 25,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 10,
+        "iron_mg": 2.0,
+        "calcium_mg": 40
+      }
+    },
+    "scaling_notes": "Grill in batches for larger servings; add 5 minutes per batch."
+  },
+  {
+    "name": "Vegetable Lasagna",
+    "diet": "vegetarian",
+    "cuisine": "Italian",
+    "time": 60,
+    "ingredients": [
+      { "name": "lasagna noodles", "measurement": "200 g" },
+      { "name": "zucchini", "measurement": "200 g" },
+      { "name": "ricotta", "measurement": "250 g" },
+      { "name": "mozzarella", "measurement": "150 g" },
+      { "name": "tomato sauce", "measurement": "240 g" }
+    ],
+    "nutrition": {
+      "calories": 400,
+      "protein": 18,
+      "carbs": 45,
+      "fat": 15,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 20,
+        "iron_mg": 2.0,
+        "calcium_mg": 250
+      }
+    },
+    "scaling_notes": "Increase baking time by 10-15 minutes for larger pans."
+  },
+  {
+    "name": "Beef Stir-Fry",
+    "diet": "non-vegetarian",
+    "cuisine": "Chinese",
+    "time": 25,
+    "ingredients": [
+      { "name": "beef", "measurement": "300 g" },
+      { "name": "broccoli", "measurement": "100 g" },
+      { "name": "soy sauce", "measurement": "30 g" },
+      { "name": "ginger", "measurement": "5 g" },
+      { "name": "bell peppers", "measurement": "150 g" }
+    ],
+    "nutrition": {
+      "calories": 400,
+      "protein": 30,
+      "carbs": 20,
+      "fat": 20,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 30,
+        "iron_mg": 3.0,
+        "calcium_mg": 50
+      }
+    },
+    "scaling_notes": "Stir-fry in batches for larger servings; add 5 minutes per batch."
+  },
+  {
+    "name": "Avocado Toast",
+    "diet": "vegan",
     "cuisine": "American",
-    "time": 25,
-    "ingredients": ["chicken", "lettuce", "tomato", "cucumber", "dressing"],
-    "nutrition": { "calories": 350, "protein": 30, "carbs": 15, "fat": 15 }
-  },
-  {
-    "name": "Veggie Ramen",
-    "diet": "vegan",
-    "cuisine": "Japanese",
-    "time": 35,
+    "time": 10,
     "ingredients": [
-      "ramen noodles",
-      "mushrooms",
-      "soy sauce",
-      "nori",
-      "spinach"
+      { "name": "bread", "measurement": "100 g" },
+      { "name": "avocado", "measurement": "140 g" },
+      { "name": "tomato", "measurement": "100 g" },
+      { "name": "olive oil", "measurement": "15 g" },
+      { "name": "lemon", "measurement": "10 g" }
     ],
-    "nutrition": { "calories": 350, "protein": 10, "carbs": 50, "fat": 10 }
-  },
-  {
-    "name": "Lamb Tagine",
-    "diet": "non-vegetarian",
-    "cuisine": "Moroccan",
-    "time": 90,
-    "ingredients": ["lamb", "apricots", "onion", "spices", "couscous"],
-    "nutrition": { "calories": 550, "protein": 35, "carbs": 40, "fat": 25 }
-  },
-  {
-    "name": "Veggie Lettuce Wraps",
-    "diet": "vegan",
-    "cuisine": "Chinese",
-    "time": 20,
-    "ingredients": ["lettuce", "tofu", "soy sauce", "mushrooms", "carrots"],
-    "nutrition": { "calories": 250, "protein": 12, "carbs": 20, "fat": 10 }
-  },
-  {
-    "name": "Shrimp Tacos",
-    "diet": "non-vegetarian",
-    "cuisine": "Mexican",
-    "time": 25,
-    "ingredients": ["shrimp", "tortillas", "cabbage", "salsa", "lime"],
-    "nutrition": { "calories": 350, "protein": 25, "carbs": 30, "fat": 12 }
-  },
-  {
-    "name": "Veggie Lasagna",
-    "diet": "vegetarian",
-    "cuisine": "Italian",
-    "time": 60,
-    "ingredients": [
-      "lasagna noodles",
-      "zucchini",
-      "ricotta",
-      "mozzarella",
-      "tomato sauce"
-    ],
-    "nutrition": { "calories": 400, "protein": 18, "carbs": 45, "fat": 15 }
-  },
-  {
-    "name": "Beef Kebabs",
-    "diet": "non-vegetarian",
-    "cuisine": "Middle Eastern",
-    "time": 35,
-    "ingredients": ["beef", "bell peppers", "onion", "garlic", "spices"],
-    "nutrition": { "calories": 450, "protein": 35, "carbs": 15, "fat": 25 }
-  },
-  {
-    "name": "Veggie Pho",
-    "diet": "vegan",
-    "cuisine": "Vietnamese",
-    "time": 45,
-    "ingredients": [
-      "rice noodles",
-      "mushrooms",
-      "star anise",
-      "ginger",
-      "cilantro"
-    ],
-    "nutrition": { "calories": 300, "protein": 8, "carbs": 50, "fat": 5 }
-  },
-  {
-    "name": "Chicken Fried Rice",
-    "diet": "non-vegetarian",
-    "cuisine": "Chinese",
-    "time": 25,
-    "ingredients": ["chicken", "rice", "peas", "soy sauce", "egg"],
-    "nutrition": { "calories": 400, "protein": 25, "carbs": 50, "fat": 12 }
-  },
-  {
-    "name": "Veggie Enchiladas",
-    "diet": "vegetarian",
-    "cuisine": "Mexican",
-    "time": 40,
-    "ingredients": [
-      "tortillas",
-      "zucchini",
-      "enchilada sauce",
-      "cheddar",
-      "corn"
-    ],
-    "nutrition": { "calories": 350, "protein": 12, "carbs": 45, "fat": 15 }
-  },
-  {
-    "name": "Pork Stir-Fry",
-    "diet": "non-vegetarian",
-    "cuisine": "Chinese",
-    "time": 25,
-    "ingredients": ["pork", "bell peppers", "soy sauce", "ginger", "garlic"],
-    "nutrition": { "calories": 400, "protein": 30, "carbs": 20, "fat": 18 }
-  },
-  {
-    "name": "Veggie Buddha Bowl",
-    "diet": "vegan",
-    "cuisine": "Fusion",
-    "time": 25,
-    "ingredients": ["quinoa", "avocado", "sweet potato", "kale", "tahini"],
-    "nutrition": { "calories": 400, "protein": 12, "carbs": 50, "fat": 15 }
-  },
-  {
-    "name": "Chicken Biryani",
-    "diet": "non-vegetarian",
-    "cuisine": "Indian",
-    "time": 60,
-    "ingredients": ["chicken", "basmati rice", "spices", "yogurt", "onion"],
-    "nutrition": { "calories": 550, "protein": 35, "carbs": 60, "fat": 20 }
-  },
-  {
-    "name": "Veggie Tikka Masala",
-    "diet": "vegetarian",
-    "cuisine": "Indian",
-    "time": 45,
-    "ingredients": [
-      "mixed vegetables",
-      "tomatoes",
-      "cream",
-      "garam masala",
-      "onion"
-    ],
-    "nutrition": { "calories": 400, "protein": 10, "carbs": 35, "fat": 20 }
-  },
-  {
-    "name": "Grilled Tuna Steak",
-    "diet": "non-vegetarian",
-    "cuisine": "American",
-    "time": 25,
-    "ingredients": ["tuna", "olive oil", "lemon", "garlic", "parsley"],
-    "nutrition": { "calories": 400, "protein": 35, "carbs": 5, "fat": 25 }
-  },
-  {
-    "name": "Veggie Gyoza",
-    "diet": "vegan",
-    "cuisine": "Japanese",
-    "time": 35,
-    "ingredients": [
-      "dumpling wrappers",
-      "cabbage",
-      "mushrooms",
-      "soy sauce",
-      "ginger"
-    ],
-    "nutrition": { "calories": 300, "protein": 8, "carbs": 40, "fat": 10 }
-  },
-  {
-    "name": "Beef Burrito",
-    "diet": "non-vegetarian",
-    "cuisine": "Mexican",
-    "time": 30,
-    "ingredients": ["beef", "tortilla", "rice", "beans", "salsa"],
-    "nutrition": { "calories": 500, "protein": 25, "carbs": 60, "fat": 18 }
-  },
-  {
-    "name": "Veggie Ratatouille",
-    "diet": "vegan",
-    "cuisine": "French",
-    "time": 50,
-    "ingredients": ["zucchini", "eggplant", "tomato", "bell peppers", "herbs"],
-    "nutrition": { "calories": 200, "protein": 5, "carbs": 25, "fat": 10 }
-  },
-  {
-    "name": "Chicken Pad Thai",
-    "diet": "non-vegetarian",
-    "cuisine": "Thai",
-    "time": 30,
-    "ingredients": ["chicken", "rice noodles", "tamarind", "peanuts", "egg"],
-    "nutrition": { "calories": 480, "protein": 25, "carbs": 55, "fat": 15 }
-  },
-  {
-    "name": "Veggie Frittata",
-    "diet": "vegetarian",
-    "cuisine": "Italian",
-    "time": 35,
-    "ingredients": ["eggs", "zucchini", "tomato", "cheddar", "onion"],
-    "nutrition": { "calories": 350, "protein": 15, "carbs": 15, "fat": 20 }
-  },
-  {
-    "name": "Shrimp Curry",
-    "diet": "non-vegetarian",
-    "cuisine": "Indian",
-    "time": 40,
-    "ingredients": ["shrimp", "coconut milk", "tomatoes", "spices", "onion"],
-    "nutrition": { "calories": 400, "protein": 25, "carbs": 20, "fat": 20 }
-  },
-  {
-    "name": "Veggie Sushi Bowl",
-    "diet": "vegan",
-    "cuisine": "Japanese",
-    "time": 25,
-    "ingredients": ["sushi rice", "avocado", "cucumber", "carrot", "nori"],
-    "nutrition": { "calories": 300, "protein": 8, "carbs": 45, "fat": 10 }
-  },
-  {
-    "name": "Beef Ramen",
-    "diet": "non-vegetarian",
-    "cuisine": "Japanese",
-    "time": 60,
-    "ingredients": ["beef", "ramen noodles", "soy sauce", "nori", "egg"],
-    "nutrition": { "calories": 500, "protein": 30, "carbs": 50, "fat": 20 }
-  },
-  {
-    "name": "Veggie Tacos",
-    "diet": "vegan",
-    "cuisine": "Mexican",
-    "time": 20,
-    "ingredients": ["tortillas", "black beans", "avocado", "salsa", "corn"],
-    "nutrition": { "calories": 300, "protein": 10, "carbs": 45, "fat": 10 }
-  },
-  {
-    "name": "Chicken Fajitas",
-    "diet": "non-vegetarian",
-    "cuisine": "Mexican",
-    "time": 30,
-    "ingredients": ["chicken", "tortillas", "bell peppers", "onion", "lime"],
-    "nutrition": { "calories": 450, "protein": 30, "carbs": 40, "fat": 15 }
-  },
-  {
-    "name": "Veggie Moussaka",
-    "diet": "vegetarian",
-    "cuisine": "Greek",
-    "time": 60,
-    "ingredients": [
-      "eggplant",
-      "potatoes",
-      "tomato sauce",
-      "bechamel",
-      "cheese"
-    ],
-    "nutrition": { "calories": 400, "protein": 15, "carbs": 40, "fat": 20 }
-  },
-  {
-    "name": "Pork Tamales",
-    "diet": "non-vegetarian",
-    "cuisine": "Mexican",
-    "time": 90,
-    "ingredients": ["pork", "corn masa", "chili sauce", "corn husks", "spices"],
-    "nutrition": { "calories": 450, "protein": 25, "carbs": 40, "fat": 20 }
-  },
-  {
-    "name": "Veggie Pad Thai",
-    "diet": "vegan",
-    "cuisine": "Thai",
-    "time": 30,
-    "ingredients": [
-      "rice noodles",
-      "tofu",
-      "tamarind",
-      "peanuts",
-      "bean sprouts"
-    ],
-    "nutrition": { "calories": 400, "protein": 12, "carbs": 55, "fat": 12 }
-  },
-  {
-    "name": "Beef Lasagna",
-    "diet": "non-vegetarian",
-    "cuisine": "Italian",
-    "time": 60,
-    "ingredients": [
-      "beef",
-      "lasagna noodles",
-      "mozzarella",
-      "tomato sauce",
-      "ricotta"
-    ],
-    "nutrition": { "calories": 550, "protein": 35, "carbs": 40, "fat": 25 }
-  },
-  {
-    "name": "Veggie Lentil Soup",
-    "diet": "vegan",
-    "cuisine": "Mediterranean",
-    "time": 40,
-    "ingredients": ["lentils", "carrots", "celery", "tomato", "spices"],
-    "nutrition": { "calories": 300, "protein": 15, "carbs": 45, "fat": 5 }
-  },
-  {
-    "name": "Chicken Ramen",
-    "diet": "non-vegetarian",
-    "cuisine": "Japanese",
-    "time": 50,
-    "ingredients": ["chicken", "ramen noodles", "soy sauce", "nori", "egg"],
-    "nutrition": { "calories": 450, "protein": 30, "carbs": 50, "fat": 15 }
-  },
-  {
-    "name": "Veggie Stir-Fry Noodles",
-    "diet": "vegan",
-    "cuisine": "Chinese",
-    "time": 25,
-    "ingredients": ["noodles", "broccoli", "soy sauce", "carrots", "mushrooms"],
-    "nutrition": { "calories": 350, "protein": 10, "carbs": 50, "fat": 10 }
-  },
-  {
-    "name": "Shrimp Alfredo",
-    "diet": "non-vegetarian",
-    "cuisine": "Italian",
-    "time": 35,
-    "ingredients": ["shrimp", "fettuccine", "cream", "parmesan", "garlic"],
-    "nutrition": { "calories": 550, "protein": 30, "carbs": 50, "fat": 25 }
-  },
-  {
-    "name": "Veggie Burrito",
-    "diet": "vegetarian",
-    "cuisine": "Mexican",
-    "time": 25,
-    "ingredients": ["tortilla", "black beans", "rice", "cheddar", "salsa"],
-    "nutrition": { "calories": 400, "protein": 12, "carbs": 55, "fat": 12 }
-  },
-  {
-    "name": "Beef Curry",
-    "diet": "non-vegetarian",
-    "cuisine": "Indian",
-    "time": 50,
-    "ingredients": ["beef", "tomatoes", "coconut milk", "spices", "onion"],
-    "nutrition": { "calories": 500, "protein": 35, "carbs": 20, "fat": 25 }
-  },
-  {
-    "name": "Veggie Poke Bowl",
-    "diet": "vegan",
-    "cuisine": "Hawaiian",
-    "time": 20,
-    "ingredients": ["rice", "tofu", "avocado", "cucumber", "soy sauce"],
-    "nutrition": { "calories": 350, "protein": 12, "carbs": 45, "fat": 12 }
-  },
-  {
-    "name": "Chicken Gyro",
-    "diet": "non-vegetarian",
-    "cuisine": "Greek",
-    "time": 30,
-    "ingredients": ["chicken", "pita", "tzatziki", "tomato", "onion"],
-    "nutrition": { "calories": 400, "protein": 25, "carbs": 35, "fat": 15 }
-  },
-  {
-    "name": "Veggie Dal",
-    "diet": "vegan",
-    "cuisine": "Indian",
-    "time": 40,
-    "ingredients": ["lentils", "tomatoes", "spices", "onion", "cilantro"],
-    "nutrition": { "calories": 300, "protein": 15, "carbs": 40, "fat": 8 }
-  },
-  {
-    "name": "Grilled Lamb Chops",
-    "diet": "non-vegetarian",
-    "cuisine": "American",
-    "time": 30,
-    "ingredients": ["lamb chops", "olive oil", "rosemary", "garlic", "salt"],
-    "nutrition": { "calories": 500, "protein": 35, "carbs": 5, "fat": 35 }
-  },
-  {
-    "name": "Veggie Fried Noodles",
-    "diet": "vegan",
-    "cuisine": "Chinese",
-    "time": 25,
-    "ingredients": [
-      "noodles",
-      "cabbage",
-      "soy sauce",
-      "carrots",
-      "green onions"
-    ],
-    "nutrition": { "calories": 350, "protein": 10, "carbs": 50, "fat": 10 }
-  },
-  {
-    "name": "Shrimp Sushi Roll",
-    "diet": "non-vegetarian",
-    "cuisine": "Japanese",
-    "time": 30,
-    "ingredients": ["shrimp", "sushi rice", "nori", "avocado", "cucumber"],
-    "nutrition": { "calories": 300, "protein": 20, "carbs": 35, "fat": 8 }
-  },
-  {
-    "name": "Veggie Pita Wrap",
-    "diet": "vegetarian",
-    "cuisine": "Mediterranean",
-    "time": 20,
-    "ingredients": ["pita", "hummus", "cucumber", "tomato", "feta"],
-    "nutrition": { "calories": 350, "protein": 10, "carbs": 45, "fat": 12 }
-  },
-  {
-    "name": "Beef Bulgogi Bowl",
-    "diet": "non-vegetarian",
-    "cuisine": "Korean",
-    "time": 35,
-    "ingredients": ["beef", "rice", "soy sauce", "sesame oil", "carrots"],
-    "nutrition": { "calories": 450, "protein": 30, "carbs": 40, "fat": 18 }
-  },
-  {
-    "name": "Veggie Coconut Curry",
-    "diet": "vegan",
-    "cuisine": "Thai",
-    "time": 40,
-    "ingredients": ["coconut milk", "tofu", "zucchini", "curry paste", "basil"],
-    "nutrition": { "calories": 350, "protein": 12, "carbs": 30, "fat": 18 }
-  },
-  {
-    "name": "Chicken Teriyaki",
-    "diet": "non-vegetarian",
-    "cuisine": "Japanese",
-    "time": 30,
-    "ingredients": ["chicken", "soy sauce", "mirin", "ginger", "green onions"],
-    "nutrition": { "calories": 400, "protein": 30, "carbs": 15, "fat": 20 }
-  },
-  {
-    "name": "Veggie Minestrone Soup",
-    "diet": "vegan",
-    "cuisine": "Italian",
-    "time": 40,
-    "ingredients": ["pasta", "tomatoes", "carrots", "beans", "zucchini"],
-    "nutrition": { "calories": 300, "protein": 10, "carbs": 50, "fat": 8 }
-  },
-  {
-    "name": "Pork Fried Rice",
-    "diet": "non-vegetarian",
-    "cuisine": "Chinese",
-    "time": 25,
-    "ingredients": ["pork", "rice", "peas", "soy sauce", "egg"],
-    "nutrition": { "calories": 400, "protein": 20, "carbs": 50, "fat": 12 }
-  },
-  {
-    "name": "Veggie Quinoa Bowl",
-    "diet": "vegan",
-    "cuisine": "Fusion",
-    "time": 25,
-    "ingredients": ["quinoa", "avocado", "black beans", "corn", "lime"],
-    "nutrition": { "calories": 350, "protein": 12, "carbs": 50, "fat": 12 }
-  },
-  {
-    "name": "Shrimp Fajitas",
-    "diet": "non-vegetarian",
-    "cuisine": "Mexican",
-    "time": 30,
-    "ingredients": ["shrimp", "tortillas", "bell peppers", "onion", "lime"],
-    "nutrition": { "calories": 400, "protein": 25, "carbs": 35, "fat": 15 }
-  },
-  {
-    "name": "Veggie Focaccia",
-    "diet": "vegan",
-    "cuisine": "Italian",
-    "time": 45,
-    "ingredients": [
-      "focaccia dough",
-      "olive oil",
-      "tomato",
-      "rosemary",
-      "zucchini"
-    ],
-    "nutrition": { "calories": 300, "protein": 8, "carbs": 45, "fat": 10 }
-  },
-  {
-    "name": "Beef Shawarma",
-    "diet": "non-vegetarian",
-    "cuisine": "Middle Eastern",
-    "time": 40,
-    "ingredients": ["beef", "pita", "tahini", "garlic", "yogurt"],
-    "nutrition": { "calories": 500, "protein": 30, "carbs": 40, "fat": 20 }
-  },
-  {
-    "name": "Veggie Stuffed Mushrooms",
-    "diet": "vegetarian",
-    "cuisine": "American",
-    "time": 30,
-    "ingredients": [
-      "mushrooms",
-      "breadcrumbs",
-      "parmesan",
-      "garlic",
-      "spinach"
-    ],
-    "nutrition": { "calories": 250, "protein": 10, "carbs": 20, "fat": 12 }
-  },
-  {
-    "name": "Chicken Adobo",
-    "diet": "non-vegetarian",
-    "cuisine": "Filipino",
-    "time": 50,
-    "ingredients": ["chicken", "soy sauce", "vinegar", "garlic", "bay leaves"],
-    "nutrition": { "calories": 450, "protein": 35, "carbs": 10, "fat": 25 }
+    "nutrition": {
+      "calories": 250,
+      "protein": 5,
+      "carbs": 25,
+      "fat": 15,
+      "vitamins_minerals": {
+        "vitamin_c_mg": 15,
+        "iron_mg": 1.0,
+        "calcium_mg": 30
+      }
+    },
+    "scaling_notes": "No time adjustment needed; toast in batches for larger servings."
   }
 ]
