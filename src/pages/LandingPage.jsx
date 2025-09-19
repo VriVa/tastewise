@@ -1,5 +1,5 @@
 import React, { useState} from 'react';
-import { AnimatePresence } from 'framer-motion';
+import { AnimatePresence,motion } from 'framer-motion';
 import { ChefHat, Search, Zap, BarChart3, Calculator, Star, Clock, Users, ArrowRight, Play, Sparkles, Heart, TrendingUp } from 'lucide-react';
 
 const LandingPage = () => {
