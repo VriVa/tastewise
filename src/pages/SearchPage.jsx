@@ -77,7 +77,7 @@ const RecipeSearch = () => {
     if (filterInputs.diet.trim()) {
       const dietFuse = new Fuse(filtered, {
         keys: ['diet'],
-        threshold: 0.4,
+        threshold: 0,
       })
       filtered = dietFuse.search(filterInputs.diet).map((result) => result.item)
     }

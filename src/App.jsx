@@ -38,11 +38,12 @@ function App() {
         <Routes>
           {/* Public Routes */}
           <Route path="/" element={<LandingPage />} />
-         <Route path="/search" element={<RecipeSearch />} />
+          <Route path="/search" element={<RecipeSearch />} />
 
           {/* Protected Dashboard Routes */}
           <Route 
             path="/dashboard" 
+
             element={
               <ProtectedRoute>
                 <DashboardLayout />
