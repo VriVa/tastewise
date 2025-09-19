@@ -3,9 +3,9 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Badge } from '@/components/ui/badge';
-import { Bell, Search, Sun, Moon, User } from 'lucide-react';
+import { Bell, Search, Sun, Moon, User, Menu } from 'lucide-react';
 
-const Navbar = () => {
+const Navbar = ({ sidebarOpen, toggleSidebar }) => {
   const [isDark, setIsDark] = React.useState(false);
 
   const toggleTheme = () => {
@@ -14,10 +14,22 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
-      <div className="flex h-14 items-center px-4">
-        {/* Logo/Brand */}
-        <div className="flex items-center space-x-2 mr-6">
+    <nav className="border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50 w-full">
+      <div className="flex h-14 items-center px-4 w-full">
+        {/* Sidebar Toggle */}
+        <Button
+          variant="ghost"
+          size="sm"
+          onClick={toggleSidebar}
+          className={`h-9 w-9 p-0 mr-4 ${sidebarOpen ? 'text-primary' : 'text-muted-foreground'}`}
+        >
+          <Menu className="h-4 w-4" />
+        </Button>
+
+        {/* Logo/Brand - Adjust position based on sidebar */}
+        <div className={`flex items-center space-x-2 mr-6 transition-all duration-300 ${
+          sidebarOpen ? 'ml-64' : 'ml-0'
+        }`}>
           <span className="font-bold text-xl text-primary">TasteWise</span>
         </div>
 
@@ -33,7 +45,7 @@ const Navbar = () => {
         </div>
 
         {/* Right side actions */}
-        <div className="flex items-center space-x-4 ml-6">
+        <div className="flex items-center space-x-4 ml-auto">
           {/* Theme Toggle */}
           <Button
             variant="ghost"
