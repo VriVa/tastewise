@@ -1,4 +1,5 @@
 import React from 'react'
+import SplineTest from './SplineTest';
 import {
   BrowserRouter as Router,
   Routes,
@@ -26,6 +27,12 @@ import RecipeScaling from './pages/dashboard/RecipeScaling'
 import CookingHistory from './pages/dashboard/CookingHistory'
 import Preferences from './pages/dashboard/Preferences'
 
+
+// import Dashboard from './components/Dashboard'
+// import SearchPage from './components/SearchPage'
+// import AIAssistantPage from './components/AIAssistantPage'
+// import NutritionPage from './components/NutritionPage'
+// import CalculatorPage from './components/CalculatorPage'
 import './index.css'
 
 // Protected Route Component
@@ -39,6 +46,8 @@ function App() {
           {/* Public Routes */}
           <Route path="/" element={<LandingPage />} />
           <Route path="/search" element={<RecipeSearch />} />
+      
+          <Route path="/spline-test" element={<SplineTest />} />
 
           {/* Protected Dashboard Routes */}
           <Route 
