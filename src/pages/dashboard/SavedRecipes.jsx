@@ -210,7 +210,7 @@ const RecipeSearch = () => {
                 className="text-sm font-medium"
                 style={{ color: theme.colors.primary[600] }}
               >
-                Advanced Recipe Search
+                Saved Recipes by You
               </p>
             </div>
           </div>

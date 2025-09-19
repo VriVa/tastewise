@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { motion } from 'framer-motion'
+
 // src/components/LandingPage.jsx
-import React, { useRef, useEffect, useState } from 'react';
+import  { useRef, useEffect, useState } from 'react';
 import Spline from '@splinetool/react-spline';
 import { motion, useScroll, useTransform, useMotionValue } from 'framer-motion';
 import Typewriter from 'typewriter-effect';

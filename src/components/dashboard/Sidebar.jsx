@@ -47,6 +47,11 @@ const Sidebar = ({ isOpen }) => {
           href: '/dashboard/saved-recipes',
           icon: Heart,
         },
+         {
+          title: 'AI Suggestions',
+          href: '/dashboard/ai-suggestions',
+          icon: Sparkles,
+        },
       ],
     },
     {
@@ -79,11 +84,7 @@ const Sidebar = ({ isOpen }) => {
           icon: BarChart3,
         },
         
-        {
-          title: 'History',
-          href: '/dashboard/history',
-          icon: History,
-        },
+        
       ],
     },
     {
