@@ -222,7 +222,7 @@ const LandingPage = () => {
                 className="px-12 py-5 bg-white text-gray-700 text-xl font-semibold rounded-2xl shadow-lg hover:shadow-xl transition-all flex items-center space-x-3 border-2 border-gray-200"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
-                 onClick={() => navigate('/dashboard')}
+                onClick={() => navigate('/dashboard')}
               >
                 <Play className="h-6 w-6" />
                 <span>Watch Demo</span>
