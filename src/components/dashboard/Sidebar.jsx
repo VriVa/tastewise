@@ -43,16 +43,6 @@ const Sidebar = ({ isOpen }) => {
           icon: Search,
         },
         {
-          title: 'AI Suggestions',
-          href: '/dashboard/ai-suggestions',
-          icon: Sparkles,
-        },
-        {
-          title: 'Recently Viewed',
-          href: '/dashboard/recently-viewed',
-          icon: Clock,
-        },
-        {
           title: 'Saved Recipes',
           href: '/dashboard/saved-recipes',
           icon: Heart,
@@ -66,17 +56,7 @@ const Sidebar = ({ isOpen }) => {
           title: 'Weekly Calendar',
           href: '/dashboard/weekly-calendar',
           icon: Calendar,
-        },
-        {
-          title: 'Daily Planner',
-          href: '/dashboard/daily-planner',
-          icon: CalendarDays,
-        },
-        {
-          title: 'Meal Prep',
-          href: '/dashboard/meal-prep',
-          icon: Wand2,
-        },
+        }
       ],
     },
     {
