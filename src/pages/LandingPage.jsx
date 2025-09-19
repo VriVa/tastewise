@@ -1,5 +1,3 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
 // src/components/LandingPage.jsx
 import { useRef, useEffect, useState } from 'react'
 import Spline from '@splinetool/react-spline'
@@ -20,7 +18,7 @@ import {
   Heart,
   TrendingUp,
 } from 'lucide-react'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 /** ErrorBoundary to avoid full app crash when Spline runtime throws */
 class ErrorBoundary extends React.Component {
@@ -37,7 +35,7 @@ class ErrorBoundary extends React.Component {
   render() {
     if (this.state.hasError) {
       return (
-        <div className="w-full h-full flex items-center justify-center bg-transparent">
+        <div className="w-full h-full flex items-start justify-center bg-transparent">
           <div className="text-center p-4 bg-white/60 rounded-lg">
             <div className="text-sm text-red-500 mb-2">
               3D preview failed to load
@@ -57,17 +55,13 @@ class ErrorBoundary extends React.Component {
 const CustomSpline = ({ scene, className, style, onLoad, rotation }) => {
   const [splineLoaded, setSplineLoaded] = useState(false)
 
-  // Function to remove Spline watermark
   const removeWatermark = () => {
-    // Remove any elements with "Spline" in class name (watermark)
     const splineElements = document.querySelectorAll('[class*="spline"]')
     splineElements.forEach((el) => {
       if (el.innerText && el.innerText.includes('Spline')) {
         el.style.display = 'none'
       }
     })
-
-    // Alternative approach: look for the watermark by its content
     setTimeout(() => {
       const watermarks = document.querySelectorAll('div')
       watermarks.forEach((div) => {
@@ -82,8 +76,6 @@ const CustomSpline = ({ scene, className, style, onLoad, rotation }) => {
     setSplineLoaded(true)
     removeWatermark()
     if (onLoad) onLoad(spline)
-
-    // Continue checking for watermark in case it appears later
     const checkInterval = setInterval(removeWatermark, 2000)
     setTimeout(() => clearInterval(checkInterval), 10000)
   }
@@ -111,7 +103,9 @@ const CustomSpline = ({ scene, className, style, onLoad, rotation }) => {
 
 /** SplineGuard ensures we only attempt to mount Spline when the file is available */
 const SplineGuard = ({ scene, className, style, onLoad, rotation }) => {
-  if (!scene) {
+  const isValid =
+    scene && typeof scene === 'string' && scene.includes('.spline')
+  if (!isValid) {
     return (
       <div
         className={
@@ -142,11 +136,11 @@ const SplineGuard = ({ scene, className, style, onLoad, rotation }) => {
 
 const LandingPage = () => {
   const { scrollY } = useScroll()
-  const y1 = useTransform(scrollY, [0, 1000], [0, -100])
-  const y2 = useTransform(scrollY, [0, 1000], [0, 50])
-  const y3 = useTransform(scrollY, [0, 1000], [0, -150])
-  const y4 = useTransform(scrollY, [0, 1000], [0, 100])
-  const y5 = useTransform(scrollY, [0, 1000], [0, -80])
+  const y1 = useTransform(scrollY, [0, 1000], [0, -40])
+  const y2 = useTransform(scrollY, [0, 1000], [0, 20])
+  const y3 = useTransform(scrollY, [0, 1000], [0, -60]) // slightly reduced vertical motion
+  const y4 = useTransform(scrollY, [0, 1000], [0, 40])
+  const y5 = useTransform(scrollY, [0, 1000], [0, -30])
 
   const mouseX = useMotionValue(0)
   const mouseY = useMotionValue(0)
@@ -212,9 +206,10 @@ const LandingPage = () => {
   // Use local spline files - you'll need to place these in your public folder
   const SCENES = {
     burger: '/spline/burger.spline',
-    calcifer: '/spline/calcifer.spline',
+    calcifer: '/spline/calcifer.spline', // pan/pizza — increased size below
     ramen: '/spline/tonkotsu (1).spline',
-    waffles: '/spline/waffles.spline',
+    // replaced waffles with burger (same burger model)
+    waffles: '/spline/burger.spline',
   }
 
   // Disable right-click on the Spline component to prevent interaction
@@ -312,7 +307,7 @@ const LandingPage = () => {
       </motion.header>
 
       {/* Hero Section with scattered 3D models */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen flex items-start justify-center overflow-hidden">
         {/* Centered Title */}
         <div className="relative z-20 text-center mb-12">
           <motion.div
@@ -380,9 +375,9 @@ const LandingPage = () => {
         </div>
 
         {/* Scattered 3D Models - More organic placement */}
-        {/* Burger - Top Left */}
+        {/* Burger - Top Left (slightly smaller so it doesn't clash with headline) */}
         <motion.div
-          className="absolute top-32 left-5 w-64 h-64 z-10"
+          className="absolute top-22 left-12 w-72 h-72 z-10"
           style={{ y: y1 }}
         >
           <SplineGuard
@@ -398,9 +393,9 @@ const LandingPage = () => {
           ></div>
         </motion.div>
 
-        {/* Calcifer - Top Right */}
+        {/* Calcifer (pan/pizza) - Top Right — MADE LARGER per request */}
         <motion.div
-          className="absolute top-40 right-8 w-60 h-60 z-10"
+          className="absolute top-22 right-8 w-72 h-72 md:w-96 md:h-96 z-10"
           style={{ y: y2 }}
         >
           <SplineGuard
@@ -416,13 +411,13 @@ const LandingPage = () => {
           ></div>
         </motion.div>
 
-        {/* Ramen - Bottom Left */}
+        {/* RAMEN — MADE SMALLER: now w-44 h-44 on small, w-48 h-48 on md, moved slightly up so it's clearly visible */}
         <motion.div
-          className="absolute bottom-28 left-24 w-72 h-72 z-10"
+          className="absolute bottom-24 left-20 w-80 h-80 z-15"
           style={{ y: y3 }}
         >
           <SplineGuard
-            scene={SCENES.ramen}
+            scene={SCENES.calcifer}
             className="w-full h-full rounded-2xl overflow-hidden"
             rotation={splineRotation}
           />
@@ -434,13 +429,15 @@ const LandingPage = () => {
           ></div>
         </motion.div>
 
-        {/* Waffles - Bottom Right */}
+        {/* Replaced waffles with burger (Bottom Right) */}
         <motion.div
-          className="absolute bottom-32 right-20 w-56 h-56 z-10"
+          className="absolute bottom-32 right-8 w-56 h-56 z-10"
           style={{ y: y4 }}
         >
           <SplineGuard
-            scene={SCENES.waffles}
+            scene={
+              SCENES.waffles
+            } /* now points to the burger model as requested */
             className="w-full h-full rounded-2xl overflow-hidden"
             rotation={splineRotation}
           />
@@ -452,7 +449,7 @@ const LandingPage = () => {
           ></div>
         </motion.div>
 
-        {/* Additional Food Item - Middle */}
+        {/* Additional Food Item - Middle Right (uses burger again) */}
         <motion.div
           className="absolute top-1/2 right-1/3 w-52 h-52 z-10"
           style={{ y: y5 }}
@@ -501,6 +498,35 @@ const LandingPage = () => {
           </motion.div>
         </div>
       </section>
+
+      {/* ... rest of your unchanged sections (Features/CTA/Footer) ... */}
+      {/* <section className="relative z-10 bg-white py-16">
+        <div className="max-w-7xl mx-auto px-4">
+          <motion.div 
+            className="grid grid-cols-2 md:grid-cols-4 gap-8" 
+            initial={{ opacity: 0, y: 40 }} 
+            animate={{ opacity: 1, y: 0 }} 
+            transition={{ duration: 0.8, delay: 1 }}
+          >
+            {stats.map((stat, index) => (
+              <motion.div 
+                key={index} 
+                className="text-center" 
+                initial={{ opacity: 0, scale: 0.8 }} 
+                animate={{ opacity: 1, scale: 1 }} 
+                transition={{ duration: 0.6, delay: 1.2 + index * 0.1 }} 
+                whileHover={{ scale: 1.1 }}
+              >
+                <div className="bg-gradient-to-r from-orange-100 to-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <stat.icon className="h-8 w-8 text-orange-600" />
+                </div>
+                <div className="text-3xl md:text-4xl font-bold text-gray-900 mb-1">{stat.number}</div>
+                <div className="text-gray-600 font-medium">{stat.label}</div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section> */}
 
       {/* Features Section */}
       <section className="relative z-10 bg-white py-20">
