@@ -1,20 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Outlet } from 'react-router-dom';
 import Navbar from './Navbar';
 import Sidebar from './Sidebar';
 
 const DashboardLayout = () => {
+  const [sidebarOpen, setSidebarOpen] = useState(true);
+
+  const toggleSidebar = () => {
+    setSidebarOpen(!sidebarOpen);
+  };
+
   return (
     <div className="min-h-screen bg-background">
       {/* Top Navigation */}
-      <Navbar />
+      <Navbar sidebarOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
       
       <div className="flex">
         {/* Sidebar */}
-        <Sidebar />
+        <Sidebar isOpen={sidebarOpen} />
         
         {/* Main Content */}
-        <main className="flex-1 p-6 ml-64">
+        <main className={`flex-1 p-6 transition-all duration-300 ${
+          sidebarOpen ? 'ml-64' : 'ml-0'
+        }`}>
           <Outlet />
         </main>
       </div>
