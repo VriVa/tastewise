@@ -22,7 +22,15 @@
         "calcium_mg": 20
       }
     },
-    "scaling_notes": "For larger batches, increase rice cooking time by 5 minutes per additional 200 g."
+    "scaling_notes": "For larger batches, increase rice cooking time by 5 minutes per additional 200 g of rice to ensure even water absorption and sticky texture. Prepare extra nori sheets proportionally, keeping them sealed to avoid brittleness during extended prep.",
+    "summary": "A light vegan sushi roll with crisp cucumber, creamy avocado, and carrots wrapped in sushi rice and nori, offering a fresh Japanese-inspired snack or side.",
+    "health_benefits": [
+      "Fiber-rich vegetables support digestive health",
+      "Avocado provides healthy monounsaturated fats for heart function",
+      "Low-calorie profile aids weight management",
+      "Vitamin C boosts immune system",
+      "Iron supports energy levels and oxygen transport"
+    ]
   },
   {
     "name": "Butter Chicken",
@@ -47,7 +55,15 @@
         "calcium_mg": 100
       }
     },
-    "scaling_notes": "Double servings may require 10-15 extra minutes for sauce to thicken."
+    "scaling_notes": "Double servings may require 10-15 extra minutes for sauce to thicken, stirring occasionally to prevent sticking. Use a larger pot to ensure even heat distribution and tender chicken.",
+    "summary": "Rich Indian curry with tender chicken in a creamy tomato-butter sauce, infused with aromatic garam masala for a comforting, flavorful meal.",
+    "health_benefits": [
+      "High lean protein from chicken supports muscle repair",
+      "Tomatoes provide lycopene for antioxidant protection",
+      "Calcium strengthens bones",
+      "Iron aids red blood cell production",
+      "Moderate vitamin C enhances immune function"
+    ]
   },
   {
     "name": "Greek Salad",
@@ -72,7 +88,15 @@
         "calcium_mg": 150
       }
     },
-    "scaling_notes": "No time adjustment needed; chop ingredients in proportion."
+    "scaling_notes": "No time adjustment needed; chop ingredients in proportion and toss gently in a larger bowl to preserve feta's texture and ensure even dressing distribution.",
+    "summary": "A refreshing Greek salad with crisp cucumbers, juicy tomatoes, tangy feta, and olives, dressed in olive oil for a vibrant Mediterranean side.",
+    "health_benefits": [
+      "Vitamin C from vegetables supports immune health",
+      "Olive oil and olives provide monounsaturated fats for heart health",
+      "Feta offers calcium for bone strength",
+      "Low-carb content aids blood sugar control",
+      "Antioxidants from tomatoes protect against cell damage"
+    ]
   },
   {
     "name": "Lentil Curry",
@@ -97,7 +121,15 @@
         "calcium_mg": 50
       }
     },
-    "scaling_notes": "Add 5-10 minutes for larger portions to ensure lentils are fully cooked."
+    "scaling_notes": "Add 5-10 minutes for larger portions to ensure lentils are tender, rinsing them well and adjusting liquid to avoid a watery curry.",
+    "summary": "Hearty vegan Indian curry with protein-rich lentils in a creamy coconut-tomato sauce, spiced with curry powder for a warm, satisfying dish.",
+    "health_benefits": [
+      "Lentils provide plant-based protein for muscle health",
+      "High iron content prevents anemia",
+      "Coconut milk offers medium-chain fats for metabolism",
+      "Vitamin C enhances iron absorption",
+      "Fiber supports digestive health"
+    ]
   },
   {
     "name": "Grilled Cheese Sandwich",
@@ -121,7 +153,15 @@
         "calcium_mg": 200
       }
     },
-    "scaling_notes": "Grill in batches for larger servings; no significant time change."
+    "scaling_notes": "Grill in batches for larger servings using medium heat to ensure even melting without burning; cover to retain moisture.",
+    "summary": "Classic American grilled cheese sandwich with melted cheddar and fresh tomato slices between buttery bread, perfect for a quick, comforting lunch.",
+    "health_benefits": [
+      "Calcium from cheese supports bone density",
+      "Tomatoes provide lycopene for heart health",
+      "Carbohydrates offer quick energy",
+      "Iron aids oxygen transport",
+      "Moderate protein supports muscle maintenance"
+    ]
   },
   {
     "name": "Pad Thai",
@@ -146,7 +186,15 @@
         "calcium_mg": 80
       }
     },
-    "scaling_notes": "Increase stir-fry time by 5 minutes for double portions."
+    "scaling_notes": "Increase stir-fry time by 5 minutes for double portions to meld flavors without overcooking shrimp; wok in stages for crisp textures.",
+    "summary": "Flavorful Thai Pad Thai with chewy rice noodles, succulent shrimp, crunchy peanuts, and bean sprouts in a tangy tamarind sauce.",
+    "health_benefits": [
+      "Shrimp provides lean protein and omega-3s for joint health",
+      "Peanuts offer healthy fats and vitamin E for skin health",
+      "Bean sprouts add fiber for digestive wellness",
+      "Vitamin C supports immunity",
+      "Iron aids energy production"
+    ]
   },
   {
     "name": "Hummus Platter",
@@ -171,7 +219,15 @@
         "calcium_mg": 40
       }
     },
-    "scaling_notes": "No time adjustment needed; blend in larger batches as needed."
+    "scaling_notes": "No time adjustment needed; blend in larger batches, adding liquid gradually for smooth texture and ensuring the processor doesn't overheat.",
+    "summary": "Creamy Middle Eastern hummus made from chickpeas, tahini, lemon, and garlic, served as a versatile vegan dip or spread.",
+    "health_benefits": [
+      "Chickpeas provide fiber for cholesterol control",
+      "Lemon offers vitamin C for collagen production",
+      "Tahini contains sesamol for anti-inflammatory effects",
+      "Iron supports blood health",
+      "Olive oil promotes heart health with monounsaturated fats"
+    ]
   },
   {
     "name": "BBQ Pork Ribs",
@@ -196,7 +252,15 @@
         "calcium_mg": 60
       }
     },
-    "scaling_notes": "Add 15-20 minutes per additional 1000 g of ribs for even cooking."
+    "scaling_notes": "Add 15-20 minutes per additional 1000 g of ribs, basting frequently to lock in moisture and achieve caramelized edges without drying out.",
+    "summary": "Tender, smoky American BBQ pork ribs coated in a sweet-spicy sauce, slow-cooked for a rich, indulgent meal.",
+    "health_benefits": [
+      "High protein from pork supports muscle maintenance",
+      "Iron aids oxygen transport in blood",
+      "Calcium contributes to bone health",
+      "Paprika provides antioxidants for cell protection",
+      "Moderate vitamin C supports tissue repair"
+    ]
   },
   {
     "name": "Spinach Lasagna",
@@ -221,7 +285,15 @@
         "calcium_mg": 250
       }
     },
-    "scaling_notes": "Increase baking time by 10-15 minutes for larger pans."
+    "scaling_notes": "Increase baking time by 10-15 minutes for larger pans, covering with foil initially to prevent drying and ensure even heating of layers.",
+    "summary": "Layered Italian vegetarian lasagna with creamy spinach, ricotta, mozzarella, and tangy tomato sauce, a hearty family favorite.",
+    "health_benefits": [
+      "Spinach provides iron and folate for blood health",
+      "Cheeses offer calcium for bone strength",
+      "Tomatoes supply lycopene for antioxidant protection",
+      "Vitamin C supports immune function",
+      "Protein aids muscle repair"
+    ]
   },
   {
     "name": "Tofu Stir-Fry",
@@ -246,7 +318,15 @@
         "calcium_mg": 150
       }
     },
-    "scaling_notes": "Stir-fry in batches for larger servings to avoid overcrowding."
+    "scaling_notes": "Stir-fry in batches for larger servings to avoid overcrowding, ensuring browning rather than steaming; rotate batches quickly for consistent texture.",
+    "summary": "Quick vegan Chinese stir-fry with crispy tofu, vibrant broccoli, and bell peppers in a savory soy-ginger sauce, perfect for a nutrient-packed meal.",
+    "health_benefits": [
+      "Tofu provides complete plant protein for muscle health",
+      "Broccoli and peppers offer vitamin C for immunity",
+      "Calcium supports bone strength",
+      "Iron aids energy production",
+      "Ginger promotes anti-inflammatory effects"
+    ]
   },
   {
     "name": "Fish and Chips",
@@ -271,7 +351,15 @@
         "calcium_mg": 40
       }
     },
-    "scaling_notes": "Fry in batches for larger portions; add 5 minutes per batch."
+    "scaling_notes": "Fry in batches for larger portions, adding 5 minutes per batch to maintain oil temperature and crispiness; drain excess oil on paper towels.",
+    "summary": "Classic British fish and chips with crispy beer-battered cod and golden potato fries, a hearty pub-style seafood dish.",
+    "health_benefits": [
+      "Cod provides omega-3 fatty acids for heart and brain health",
+      "Potatoes offer potassium for blood pressure control",
+      "Vitamin C enhances nutrient absorption",
+      "Protein supports muscle repair",
+      "Iron aids oxygen transport"
+    ]
   },
   {
     "name": "Quinoa Salad",
@@ -296,7 +384,15 @@
         "calcium_mg": 120
       }
     },
-    "scaling_notes": "No time adjustment needed; prepare ingredients in proportion."
+    "scaling_notes": "No time adjustment needed; rinse quinoa thoroughly to remove bitterness and prepare ingredients in proportion for even flavor distribution.",
+    "summary": "Fresh fusion quinoa salad with crisp cucumber, juicy tomatoes, creamy feta, and olive oil dressing, ideal as a light, wholesome side.",
+    "health_benefits": [
+      "Quinoa provides complete protein for sustained energy",
+      "Vegetables offer vitamin C for skin health",
+      "Feta supplies calcium for bone health",
+      "Olive oil promotes heart health with monounsaturated fats",
+      "Iron supports blood health"
+    ]
   },
   {
     "name": "Eggplant Parmesan",
@@ -321,7 +417,15 @@
         "calcium_mg": 200
       }
     },
-    "scaling_notes": "Increase baking time by 10 minutes for larger portions."
+    "scaling_notes": "Increase baking time by 10 minutes for larger portions to soften eggplant and melt cheese evenly, avoiding over-browning.",
+    "summary": "Hearty Italian vegetarian dish with breaded eggplant slices, layered with mozzarella, parmesan, and tomato sauce, baked to perfection.",
+    "health_benefits": [
+      "Eggplant provides fiber for digestive health",
+      "Cheeses offer calcium for bone strength",
+      "Tomatoes supply lycopene for prostate health",
+      "Protein supports muscle maintenance",
+      "Vitamin C aids tissue repair"
+    ]
   },
   {
     "name": "Beef Bulgogi",
@@ -346,7 +450,15 @@
         "calcium_mg": 30
       }
     },
-    "scaling_notes": "Marinate longer for larger batches; add 5 minutes cooking time."
+    "scaling_notes": "Marinate longer for larger batches (up to 2 hours) for deeper flavor; add 5 minutes cooking time to caramelize without toughening the beef.",
+    "summary": "Savory Korean beef bulgogi with thinly sliced beef marinated in soy-sesame sauce, stir-fried with green onions for a quick, flavorful dish.",
+    "health_benefits": [
+      "Beef provides heme iron for efficient absorption",
+      "Vitamin B12 supports nerve function",
+      "Sesame oil offers anti-inflammatory lignans",
+      "Green onions provide vitamin K for blood clotting",
+      "Protein aids muscle repair"
+    ]
   },
   {
     "name": "Chickpea Tikka Masala",
@@ -371,7 +483,15 @@
         "calcium_mg": 60
       }
     },
-    "scaling_notes": "Add 10 minutes for larger portions to simmer sauce."
+    "scaling_notes": "Add 10 minutes for larger portions to simmer sauce to a velvety thickness, adjusting spices to maintain bold flavors.",
+    "summary": "Vegan Indian chickpea tikka masala with a creamy tomato-coconut sauce, spiced with garam masala for a rich, satisfying curry.",
+    "health_benefits": [
+      "Chickpeas provide fiber for cholesterol control",
+      "Tomatoes offer lycopene for antioxidant protection",
+      "Coconut milk supports metabolism with medium-chain fats",
+      "Iron aids blood health",
+      "Vitamin C enhances nutrient absorption"
+    ]
   },
   {
     "name": "Caesar Salad",
@@ -396,7 +516,15 @@
         "calcium_mg": 100
       }
     },
-    "scaling_notes": "No time adjustment needed; mix ingredients in proportion."
+    "scaling_notes": "No time adjustment needed; mix ingredients in proportion, ensuring romaine is dry for optimal dressing adhesion.",
+    "summary": "Classic American Caesar salad with crisp romaine, crunchy croutons, parmesan, and anchovy-infused dressing for a savory, light side.",
+    "health_benefits": [
+      "Romaine provides vitamin C for immune support",
+      "Parmesan offers calcium for bone health",
+      "Anchovies supply omega-3s for heart health",
+      "Fiber aids digestion",
+      "Iron supports energy levels"
+    ]
   },
   {
     "name": "Mushroom Risotto",
@@ -421,7 +549,15 @@
         "calcium_mg": 150
       }
     },
-    "scaling_notes": "Add 5-10 minutes for larger portions to cook rice evenly."
+    "scaling_notes": "Add 5-10 minutes for larger portions to cook rice evenly, stirring constantly to achieve creamy texture without scorching.",
+    "summary": "Creamy Italian mushroom risotto with arborio rice, savory mushrooms, and parmesan, enriched with white wine for depth.",
+    "health_benefits": [
+      "Mushrooms provide B vitamins for energy metabolism",
+      "Parmesan offers calcium for bone health",
+      "Carbohydrates provide sustained energy",
+      "Iron supports blood health",
+      "Antioxidants from onions protect cells"
+    ]
   },
   {
     "name": "Jerk Chicken",
@@ -446,7 +582,15 @@
         "calcium_mg": 40
       }
     },
-    "scaling_notes": "Increase grilling time by 10 minutes for larger portions."
+    "scaling_notes": "Increase grilling time by 10 minutes for larger portions to ensure chicken is fully cooked, marinating longer for enhanced flavor.",
+    "summary": "Spicy Jamaican jerk chicken marinated with bold seasonings, lime, and thyme, grilled for a smoky, vibrant dish.",
+    "health_benefits": [
+      "Chicken provides lean protein for muscle repair",
+      "Vitamin C from lime supports immunity",
+      "Iron aids red blood cell production",
+      "Thyme offers antioxidants for cell protection",
+      "Low carbs support blood sugar control"
+    ]
   },
   {
     "name": "Sweet Potato Fries",
@@ -470,7 +614,15 @@
         "calcium_mg": 30
       }
     },
-    "scaling_notes": "Bake in batches for larger servings; add 5 minutes per batch."
+    "scaling_notes": "Bake in batches for larger servings, adding 5 minutes per batch to ensure crispiness; spread evenly on trays to avoid steaming.",
+    "summary": "Crispy vegan American sweet potato fries seasoned with paprika and olive oil, offering a healthier alternative to classic fries.",
+    "health_benefits": [
+      "Sweet potatoes provide vitamin A for eye health",
+      "Vitamin C supports immune function",
+      "Fiber aids digestion",
+      "Olive oil offers heart-healthy fats",
+      "Iron supports energy levels"
+    ]
   },
   {
     "name": "Lamb Kofta",
@@ -495,7 +647,15 @@
         "calcium_mg": 50
       }
     },
-    "scaling_notes": "Grill in batches for larger portions; add 5 minutes per batch."
+    "scaling_notes": "Grill in batches for larger portions, adding 5 minutes per batch to ensure even cooking; shape koftas uniformly for consistent results.",
+    "summary": "Flavorful Middle Eastern lamb kofta with aromatic spices, parsley, and garlic, grilled for a juicy, savory protein dish.",
+    "health_benefits": [
+      "Lamb provides high-quality protein for muscle health",
+      "Iron supports red blood cell production",
+      "Parsley offers vitamin C for immunity",
+      "Cumin provides antioxidants for cell protection",
+      "Low carbs aid blood sugar control"
+    ]
   },
   {
     "name": "Veggie Burger",
@@ -520,7 +680,15 @@
         "calcium_mg": 60
       }
     },
-    "scaling_notes": "No significant time change; prepare patties in proportion."
+    "scaling_notes": "No significant time change; prepare patties in proportion, ensuring even cooking by flattening uniformly and grilling in batches if needed.",
+    "summary": "Hearty vegetarian American veggie burger with black bean patties, fresh lettuce, tomato, and onion on a soft bun.",
+    "health_benefits": [
+      "Black beans provide fiber for digestive health",
+      "Protein supports muscle maintenance",
+      "Vegetables offer vitamin C for immunity",
+      "Iron aids energy production",
+      "Low fat content promotes heart health"
+    ]
   },
   {
     "name": "Pho",
@@ -545,7 +713,15 @@
         "calcium_mg": 40
       }
     },
-    "scaling_notes": "Add 10-15 minutes for larger broth volumes to simmer."
+    "scaling_notes": "Add 10-15 minutes for larger broth volumes to simmer and develop flavors; strain carefully to maintain clarity.",
+    "summary": "Aromatic Vietnamese pho with beef, rice noodles, and a fragrant broth infused with star anise, ginger, and cilantro.",
+    "health_benefits": [
+      "Beef provides protein and iron for muscle and blood health",
+      "Ginger offers anti-inflammatory properties",
+      "Cilantro provides vitamin C for immunity",
+      "Low fat content supports heart health",
+      "Carbohydrates provide sustained energy"
+    ]
   },
   {
     "name": "Stuffed Bell Peppers",
@@ -570,7 +746,15 @@
         "calcium_mg": 50
       }
     },
-    "scaling_notes": "Increase baking time by 10 minutes for larger portions."
+    "scaling_notes": "Increase baking time by 10 minutes for larger portions to ensure peppers soften and filling heats through evenly.",
+    "summary": "Vegan Mexican stuffed bell peppers filled with quinoa, black beans, corn, and salsa, baked for a colorful, flavorful dish.",
+    "health_benefits": [
+      "Bell peppers provide high vitamin C for immunity",
+      "Quinoa offers complete protein for energy",
+      "Black beans supply fiber for digestion",
+      "Iron supports blood health",
+      "Low fat content promotes heart health"
+    ]
   },
   {
     "name": "Chicken Shawarma",
@@ -595,7 +779,15 @@
         "calcium_mg": 120
       }
     },
-    "scaling_notes": "Grill in batches for larger servings; add 5 minutes per batch."
+    "scaling_notes": "Grill in batches for larger servings, adding 5 minutes per batch to ensure juicy chicken; marinate longer for enhanced flavor.",
+    "summary": "Savory Middle Eastern chicken shawarma with spiced chicken, creamy tahini-yogurt sauce, and soft pita for a satisfying wrap.",
+    "health_benefits": [
+      "Chicken provides lean protein for muscle repair",
+      "Yogurt offers probiotics for gut health",
+      "Calcium supports bone strength",
+      "Iron aids energy production",
+      "Tahini provides healthy fats for heart health"
+    ]
   },
   {
     "name": "Zucchini Noodles",
@@ -619,7 +811,15 @@
         "calcium_mg": 30
       }
     },
-    "scaling_notes": "No time adjustment needed; spiralize zucchini in proportion."
+    "scaling_notes": "No time adjustment needed; spiralize zucchini in proportion, sautéing lightly to maintain texture without wateriness.",
+    "summary": "Light Italian vegan zucchini noodles tossed in garlic-tomato sauce with olive oil, offering a low-carb pasta alternative.",
+    "health_benefits": [
+      "Zucchini provides vitamin C for immunity",
+      "Low-carb content aids blood sugar control",
+      "Olive oil offers heart-healthy fats",
+      "Fiber supports digestion",
+      "Iron aids energy levels"
+    ]
   },
   {
     "name": "Pork Dumplings",
@@ -644,7 +844,15 @@
         "calcium_mg": 40
       }
     },
-    "scaling_notes": "Steam in batches for larger portions; add 5 minutes per batch."
+    "scaling_notes": "Steam in batches for larger portions, adding 5 minutes per batch to ensure even cooking; keep wrappers moist to prevent tearing.",
+    "summary": "Savory Chinese pork dumplings with ginger and cabbage filling, wrapped in soft wrappers and steamed for a delicious appetizer.",
+    "health_benefits": [
+      "Pork provides protein for muscle health",
+      "Cabbage offers vitamin C for immunity",
+      "Ginger supports anti-inflammatory effects",
+      "Iron aids blood health",
+      "Moderate carbs provide energy"
+    ]
   },
   {
     "name": "Caponata",
@@ -669,7 +877,15 @@
         "calcium_mg": 30
       }
     },
-    "scaling_notes": "Increase simmering time by 5-10 minutes for larger portions."
+    "scaling_notes": "Increase simmering time by 5-10 minutes for larger portions to meld flavors, stirring occasionally to prevent sticking.",
+    "summary": "Sicilian vegan caponata with sweet-sour eggplant, tomatoes, olives, and capers, simmered in olive oil for a rich side dish.",
+    "health_benefits": [
+      "Eggplant provides fiber for digestion",
+      "Tomatoes offer lycopene for antioxidant protection",
+      "Olive oil supports heart health with monounsaturated fats",
+      "Vitamin C boosts immunity",
+      "Iron aids energy production"
+    ]
   },
   {
     "name": "Salmon Sushi",
@@ -694,7 +910,15 @@
         "calcium_mg": 20
       }
     },
-    "scaling_notes": "Increase rice cooking time by 5 minutes per additional 200 g."
+    "scaling_notes": "Increase rice cooking time by 5 minutes per additional 200 g to ensure proper texture; use fresh salmon and keep nori sealed to maintain quality.",
+    "summary": "Fresh Japanese salmon sushi with creamy avocado, sticky rice, and nori, served with soy sauce for a light, flavorful bite.",
+    "health_benefits": [
+      "Salmon provides omega-3s for heart and brain health",
+      "Avocado offers healthy fats for cardiovascular support",
+      "Protein supports muscle repair",
+      "Iron aids blood health",
+      "Vitamin C enhances nutrient absorption"
+    ]
   },
   {
     "name": "Black Bean Enchiladas",
@@ -719,7 +943,15 @@
         "calcium_mg": 200
       }
     },
-    "scaling_notes": "Increase baking time by 10 minutes for larger portions."
+    "scaling_notes": "Increase baking time by 10 minutes for larger portions to heat filling thoroughly and melt cheese evenly.",
+    "summary": "Hearty Mexican vegetarian enchiladas filled with black beans and onions, topped with cheddar and enchilada sauce, baked to perfection.",
+    "health_benefits": [
+      "Black beans provide fiber for digestive health",
+      "Cheddar offers calcium for bone strength",
+      "Protein supports muscle maintenance",
+      "Iron aids energy production",
+      "Vitamin C supports immunity"
+    ]
   },
   {
     "name": "Palak Paneer",
@@ -744,7 +976,15 @@
         "calcium_mg": 250
       }
     },
-    "scaling_notes": "Add 5-10 minutes for larger portions to cook spinach evenly."
+    "scaling_notes": "Add 5-10 minutes for larger portions to cook spinach evenly, blending thoroughly for a smooth sauce texture.",
+    "summary": "Creamy Indian vegetarian palak paneer with soft paneer cubes in a spiced spinach-tomato sauce, enriched with cream.",
+    "health_benefits": [
+      "Spinach provides iron and folate for blood health",
+      "Paneer offers calcium for bone strength",
+      "Vitamin C boosts immunity",
+      "Protein supports muscle repair",
+      "Tomatoes provide lycopene for antioxidant protection"
+    ]
   },
   {
     "name": "Teriyaki Tofu",
@@ -769,7 +1009,15 @@
         "calcium_mg": 150
       }
     },
-    "scaling_notes": "Stir-fry in batches for larger servings; add 5 minutes per batch."
+    "scaling_notes": "Stir-fry in batches for larger servings, adding 5 minutes per batch to maintain crisp tofu texture; adjust sauce proportions for balance.",
+    "summary": "Vegan Japanese teriyaki tofu with a sweet-savory soy-mirin glaze, garnished with green onions for a quick, flavorful dish.",
+    "health_benefits": [
+      "Tofu provides complete protein for muscle health",
+      "Calcium supports bone strength",
+      "Ginger offers anti-inflammatory properties",
+      "Iron aids blood health",
+      "Green onions provide vitamin K for clotting"
+    ]
   },
   {
     "name": "Steak Fajitas",
@@ -794,7 +1042,15 @@
         "calcium_mg": 50
       }
     },
-    "scaling_notes": "Cook in batches for larger portions; add 5 minutes per batch."
+    "scaling_notes": "Cook in batches for larger portions, adding 5 minutes per batch to ensure beef stays tender and vegetables remain crisp.",
+    "summary": "Sizzling Mexican steak fajitas with juicy beef, colorful bell peppers, and onions, served in warm tortillas with a lime squeeze.",
+    "health_benefits": [
+      "Beef provides protein and iron for muscle and blood health",
+      "Bell peppers offer vitamin C for immunity",
+      "Low carbs support blood sugar control",
+      "Lime enhances nutrient absorption",
+      "Fiber from vegetables aids digestion"
+    ]
   },
   {
     "name": "Ratatouille",
@@ -819,7 +1075,15 @@
         "calcium_mg": 40
       }
     },
-    "scaling_notes": "Increase simmering time by 10 minutes for larger portions."
+    "scaling_notes": "Increase simmering time by 10 minutes for larger portions to meld flavors, stirring occasionally to prevent sticking.",
+    "summary": "Vibrant French vegan ratatouille with zucchini, eggplant, tomatoes, and bell peppers, simmered in olive oil for a hearty vegetable stew.",
+    "health_benefits": [
+      "High vitamin C from vegetables boosts immunity",
+      "Eggplant provides fiber for digestion",
+      "Tomatoes offer lycopene for antioxidant protection",
+      "Olive oil supports heart health",
+      "Iron aids energy production"
+    ]
   },
   {
     "name": "Chicken Alfredo",
@@ -844,1006 +1108,14 @@
         "calcium_mg": 200
       }
     },
-    "scaling_notes": "Add 5-10 minutes for larger portions to cook pasta and sauce."
-  },
-  {
-    "name": "Dal Tadka",
-    "diet": "vegan",
-    "cuisine": "Indian",
-    "time": 40,
-    "ingredients": [
-      { "name": "lentils", "measurement": "200 g" },
-      { "name": "tomato", "measurement": "150 g" },
-      { "name": "onion", "measurement": "100 g" },
-      { "name": "cumin", "measurement": "2 g" },
-      { "name": "oil", "measurement": "30 g" }
-    ],
-    "nutrition": {
-      "calories": 300,
-      "protein": 15,
-      "carbs": 40,
-      "fat": 8,
-      "vitamins_minerals": {
-        "vitamin_c_mg": 12,
-        "iron_mg": 4.0,
-        "calcium_mg": 50
-      }
-    },
-    "scaling_notes": "Add 5-10 minutes for larger portions to cook lentils."
-  },
-  {
-    "name": "Cobb Salad",
-    "diet": "non-vegetarian",
-    "cuisine": "American",
-    "time": 20,
-    "ingredients": [
-      { "name": "chicken", "measurement": "200 g" },
-      { "name": "bacon", "measurement": "50 g" },
-      { "name": "avocado", "measurement": "140 g" },
-      { "name": "cheese", "measurement": "50 g" },
-      { "name": "lettuce", "measurement": "100 g" }
-    ],
-    "nutrition": {
-      "calories": 450,
-      "protein": 25,
-      "carbs": 10,
-      "fat": 35,
-      "vitamins_minerals": {
-        "vitamin_c_mg": 15,
-        "iron_mg": 2.0,
-        "calcium_mg": 120
-      }
-    },
-    "scaling_notes": "No time adjustment needed; assemble in proportion."
-  },
-  {
-    "name": "Veggie Spring Rolls",
-    "diet": "vegan",
-    "cuisine": "Chinese",
-    "time": 30,
-    "ingredients": [
-      { "name": "dumpling wrappers", "measurement": "200 g" },
-      { "name": "carrots", "measurement": "100 g" },
-      { "name": "cucumber", "measurement": "150 g" },
-      { "name": "avocado", "measurement": "140 g" },
-      { "name": "cilantro", "measurement": "20 g" }
-    ],
-    "nutrition": {
-      "calories": 200,
-      "protein": 5,
-      "carbs": 30,
-      "fat": 5,
-      "vitamins_minerals": {
-        "vitamin_c_mg": 20,
-        "iron_mg": 1.0,
-        "calcium_mg": 30
-      }
-    },
-    "scaling_notes": "Roll in batches for larger servings; no significant time change."
-  },
-  {
-    "name": "Shepherd’s Pie",
-    "diet": "non-vegetarian",
-    "cuisine": "British",
-    "time": 60,
-    "ingredients": [
-      { "name": "beef", "measurement": "400 g" },
-      { "name": "potatoes", "measurement": "500 g" },
-      { "name": "carrots", "measurement": "100 g" },
-      { "name": "peas", "measurement": "100 g" },
-      { "name": "onion", "measurement": "100 g" }
-    ],
-    "nutrition": {
-      "calories": 550,
-      "protein": 30,
-      "carbs": 50,
-      "fat": 25,
-      "vitamins_minerals": {
-        "vitamin_c_mg": 15,
-        "iron_mg": 3.0,
-        "calcium_mg": 50
-      }
-    },
-    "scaling_notes": "Increase baking time by 10-15 minutes for larger pans."
-  },
-  {
-    "name": "Tabouleh",
-    "diet": "vegan",
-    "cuisine": "Middle Eastern",
-    "time": 20,
-    "ingredients": [
-      { "name": "bulgur", "measurement": "150 g" },
-      { "name": "parsley", "measurement": "50 g" },
-      { "name": "tomato", "measurement": "200 g" },
-      { "name": "lemon", "measurement": "50 g" },
-      { "name": "olive oil", "measurement": "30 g" }
-    ],
-    "nutrition": {
-      "calories": 200,
-      "protein": 5,
-      "carbs": 25,
-      "fat": 10,
-      "vitamins_minerals": {
-        "vitamin_c_mg": 30,
-        "iron_mg": 1.5,
-        "calcium_mg": 40
-      }
-    },
-    "scaling_notes": "No time adjustment needed; mix ingredients in proportion."
-  },
-  {
-    "name": "Shrimp Scampi",
-    "diet": "non-vegetarian",
-    "cuisine": "Italian",
-    "time": 25,
-    "ingredients": [
-      { "name": "shrimp", "measurement": "300 g" },
-      { "name": "gluten-free pasta", "measurement": "200 g" },
-      { "name": "garlic", "measurement": "10 g" },
-      { "name": "white wine", "measurement": "120 g" },
-      { "name": "butter", "measurement": "30 g" }
-    ],
-    "nutrition": {
-      "calories": 450,
-      "protein": 25,
-      "carbs": 50,
-      "fat": 15,
-      "vitamins_minerals": {
-        "vitamin_c_mg": 5,
-        "iron_mg": 2.0,
-        "calcium_mg": 80
-      }
-    },
-    "scaling_notes": "Cook pasta in batches for larger servings; add 5 minutes."
-  },
-  {
-    "name": "Chana Masala",
-    "diet": "vegan",
-    "cuisine": "Indian",
-    "time": 40,
-    "ingredients": [
-      { "name": "chickpeas", "measurement": "200 g" },
-      { "name": "tomato", "measurement": "300 g" },
-      { "name": "onion", "measurement": "100 g" },
-      { "name": "garam masala", "measurement": "2 g" },
-      { "name": "cilantro", "measurement": "20 g" }
-    ],
-    "nutrition": {
-      "calories": 350,
-      "protein": 12,
-      "carbs": 50,
-      "fat": 10,
-      "vitamins_minerals": {
-        "vitamin_c_mg": 15,
-        "iron_mg": 3.0,
-        "calcium_mg": 60
-      }
-    },
-    "scaling_notes": "Add 5-10 minutes for larger portions to simmer sauce."
-  },
-  {
-    "name": "Tuna Salad",
-    "diet": "non-vegetarian",
-    "cuisine": "American",
-    "time": 15,
-    "ingredients": [
-      { "name": "tuna", "measurement": "200 g" },
-      { "name": "mayonnaise", "measurement": "50 g" },
-      { "name": "celery", "measurement": "50 g" },
-      { "name": "onion", "measurement": "50 g" },
-      { "name": "lettuce", "measurement": "100 g" }
-    ],
-    "nutrition": {
-      "calories": 300,
-      "protein": 20,
-      "carbs": 10,
-      "fat": 18,
-      "vitamins_minerals": {
-        "vitamin_c_mg": 10,
-        "iron_mg": 1.5,
-        "calcium_mg": 30
-      }
-    },
-    "scaling_notes": "No time adjustment needed; mix ingredients in proportion."
-  },
-  {
-    "name": "Stuffed Zucchini",
-    "diet": "vegetarian",
-    "cuisine": "Italian",
-    "time": 45,
-    "ingredients": [
-      { "name": "zucchini", "measurement": "300 g" },
-      { "name": "quinoa", "measurement": "150 g" },
-      { "name": "mozzarella", "measurement": "100 g" },
-      { "name": "tomato sauce", "measurement": "120 g" },
-      { "name": "basil", "measurement": "10 g" }
-    ],
-    "nutrition": {
-      "calories": 300,
-      "protein": 12,
-      "carbs": 35,
-      "fat": 10,
-      "vitamins_minerals": {
-        "vitamin_c_mg": 25,
-        "iron_mg": 2.0,
-        "calcium_mg": 150
-      }
-    },
-    "scaling_notes": "Increase baking time by 10 minutes for larger portions."
-  },
-  {
-    "name": "Vegetable Biryani",
-    "diet": "vegan",
-    "cuisine": "Indian",
-    "time": 50,
-    "ingredients": [
-      { "name": "basmati rice", "measurement": "200 g" },
-      { "name": "carrots", "measurement": "100 g" },
-      { "name": "peas", "measurement": "100 g" },
-      { "name": "spices", "measurement": "5 g" },
-      { "name": "cilantro", "measurement": "20 g" }
-    ],
-    "nutrition": {
-      "calories": 400,
-      "protein": 10,
-      "carbs": 65,
-      "fat": 10,
-      "vitamins_minerals": {
-        "vitamin_c_mg": 15,
-        "iron_mg": 2.0,
-        "calcium_mg": 40
-      }
-    },
-    "scaling_notes": "Add 5-10 minutes for larger portions to cook rice evenly."
-  },
-  {
-    "name": "Grilled Tofu Skewers",
-    "diet": "vegan",
-    "cuisine": "Fusion",
-    "time": 30,
-    "ingredients": [
-      { "name": "tofu", "measurement": "200 g" },
-      { "name": "bell peppers", "measurement": "150 g" },
-      { "name": "soy sauce", "measurement": "30 g" },
-      { "name": "ginger", "measurement": "5 g" },
-      { "name": "zucchini", "measurement": "150 g" }
-    ],
-    "nutrition": {
-      "calories": 250,
-      "protein": 12,
-      "carbs": 15,
-      "fat": 15,
-      "vitamins_minerals": {
-        "vitamin_c_mg": 30,
-        "iron_mg": 2.0,
-        "calcium_mg": 150
-      }
-    },
-    "scaling_notes": "Grill in batches for larger servings; add 5 minutes per batch."
-  },
-  {
-    "name": "Chicken Parmesan",
-    "diet": "non-vegetarian",
-    "cuisine": "Italian",
-    "time": 50,
-    "ingredients": [
-      { "name": "chicken", "measurement": "400 g" },
-      { "name": "mozzarella", "measurement": "150 g" },
-      { "name": "parmesan", "measurement": "50 g" },
-      { "name": "tomato sauce", "measurement": "240 g" },
-      { "name": "breadcrumbs", "measurement": "100 g" }
-    ],
-    "nutrition": {
-      "calories": 550,
-      "protein": 40,
-      "carbs": 30,
-      "fat": 25,
-      "vitamins_minerals": {
-        "vitamin_c_mg": 10,
-        "iron_mg": 2.5,
-        "calcium_mg": 200
-      }
-    },
-    "scaling_notes": "Increase baking time by 10 minutes for larger portions."
-  },
-  {
-    "name": "Miso Soup",
-    "diet": "vegan",
-    "cuisine": "Japanese",
-    "time": 20,
-    "ingredients": [
-      { "name": "miso paste", "measurement": "30 g" },
-      { "name": "tofu", "measurement": "100 g" },
-      { "name": "seaweed", "measurement": "10 g" },
-      { "name": "green onions", "measurement": "20 g" },
-      { "name": "dashi", "measurement": "240 g" }
-    ],
-    "nutrition": {
-      "calories": 150,
-      "protein": 8,
-      "carbs": 15,
-      "fat": 5,
-      "vitamins_minerals": {
-        "vitamin_c_mg": 5,
-        "iron_mg": 1.0,
-        "calcium_mg": 30
-      }
-    },
-    "scaling_notes": "No time adjustment needed; simmer broth in proportion."
-  },
-  {
-    "name": "Pork Carnitas",
-    "diet": "non-vegetarian",
-    "cuisine": "Mexican",
-    "time": 120,
-    "ingredients": [
-      { "name": "pork", "measurement": "1000 g" },
-      { "name": "orange", "measurement": "100 g" },
-      { "name": "onion", "measurement": "100 g" },
-      { "name": "garlic", "measurement": "10 g" },
-      { "name": "tortillas", "measurement": "200 g" }
-    ],
-    "nutrition": {
-      "calories": 500,
-      "protein": 35,
-      "carbs": 40,
-      "fat": 20,
-      "vitamins_minerals": {
-        "vitamin_c_mg": 20,
-        "iron_mg": 3.0,
-        "calcium_mg": 50
-      }
-    },
-    "scaling_notes": "Add 15-20 minutes per additional 1000 g of pork for braising."
-  },
-  {
-    "name": "Veggie Paella",
-    "diet": "vegan",
-    "cuisine": "Spanish",
-    "time": 45,
-    "ingredients": [
-      { "name": "rice", "measurement": "200 g" },
-      { "name": "artichokes", "measurement": "150 g" },
-      { "name": "peas", "measurement": "100 g" },
-      { "name": "bell peppers", "measurement": "150 g" },
-      { "name": "saffron", "measurement": "1 g" }
-    ],
-    "nutrition": {
-      "calories": 350,
-      "protein": 8,
-      "carbs": 60,
-      "fat": 8,
-      "vitamins_minerals": {
-        "vitamin_c_mg": 30,
-        "iron_mg": 1.8,
-        "calcium_mg": 40
-      }
-    },
-    "scaling_notes": "Add 5-10 minutes for larger portions to cook rice evenly."
-  },
-  {
-    "name": "Beef Stroganoff",
-    "diet": "non-vegetarian",
-    "cuisine": "Russian",
-    "time": 40,
-    "ingredients": [
-      { "name": "beef", "measurement": "400 g" },
-      { "name": "mushrooms", "measurement": "150 g" },
-      { "name": "sour cream", "measurement": "100 g" },
-      { "name": "onion", "measurement": "100 g" },
-      { "name": "noodles", "measurement": "200 g" }
-    ],
-    "nutrition": {
-      "calories": 550,
-      "protein": 35,
-      "carbs": 40,
-      "fat": 25,
-      "vitamins_minerals": {
-        "vitamin_c_mg": 5,
-        "iron_mg": 3.0,
-        "calcium_mg": 80
-      }
-    },
-    "scaling_notes": "Add 5-10 minutes for larger portions to cook sauce and noodles."
-  },
-  {
-    "name": "Falafel Bowl",
-    "diet": "vegan",
-    "cuisine": "Middle Eastern",
-    "time": 30,
-    "ingredients": [
-      { "name": "chickpeas", "measurement": "200 g" },
-      { "name": "tahini", "measurement": "30 g" },
-      { "name": "cucumber", "measurement": "150 g" },
-      { "name": "tomato", "measurement": "200 g" },
-      { "name": "parsley", "measurement": "20 g" }
-    ],
-    "nutrition": {
-      "calories": 400,
-      "protein": 12,
-      "carbs": 50,
-      "fat": 15,
-      "vitamins_minerals": {
-        "vitamin_c_mg": 20,
-        "iron_mg": 3.0,
-        "calcium_mg": 60
-      }
-    },
-    "scaling_notes": "Fry falafel in batches for larger servings; add 5 minutes per batch."
-  },
-  {
-    "name": "Chicken Satay",
-    "diet": "non-vegetarian",
-    "cuisine": "Thai",
-    "time": 35,
-    "ingredients": [
-      { "name": "chicken", "measurement": "400 g" },
-      { "name": "peanut butter", "measurement": "50 g" },
-      { "name": "coconut milk", "measurement": "120 g" },
-      { "name": "lime", "measurement": "50 g" },
-      { "name": "cilantro", "measurement": "20 g" }
-    ],
-    "nutrition": {
-      "calories": 450,
-      "protein": 30,
-      "carbs": 15,
-      "fat": 25,
-      "vitamins_minerals": {
-        "vitamin_c_mg": 15,
-        "iron_mg": 2.0,
-        "calcium_mg": 50
-      }
-    },
-    "scaling_notes": "Grill in batches for larger servings; add 5 minutes per batch."
-  },
-  {
-    "name": "Veggie Quesadilla",
-    "diet": "vegetarian",
-    "cuisine": "Mexican",
-    "time": 20,
-    "ingredients": [
-      { "name": "tortillas", "measurement": "200 g" },
-      { "name": "cheddar", "measurement": "100 g" },
-      { "name": "bell peppers", "measurement": "150 g" },
-      { "name": "onion", "measurement": "100 g" },
-      { "name": "salsa", "measurement": "120 g" }
-    ],
-    "nutrition": {
-      "calories": 350,
-      "protein": 12,
-      "carbs": 40,
-      "fat": 15,
-      "vitamins_minerals": {
-        "vitamin_c_mg": 30,
-        "iron_mg": 1.5,
-        "calcium_mg": 200
-      }
-    },
-    "scaling_notes": "Cook in batches for larger servings; no significant time change."
-  },
-  {
-    "name": "Lamb Curry",
-    "diet": "non-vegetarian",
-    "cuisine": "Indian",
-    "time": 60,
-    "ingredients": [
-      { "name": "lamb", "measurement": "500 g" },
-      { "name": "tomatoes", "measurement": "300 g" },
-      { "name": "yogurt", "measurement": "100 g" },
-      { "name": "spices", "measurement": "5 g" },
-      { "name": "onion", "measurement": "100 g" }
-    ],
-    "nutrition": {
-      "calories": 550,
-      "protein": 35,
-      "carbs": 20,
-      "fat": 30,
-      "vitamins_minerals": {
-        "vitamin_c_mg": 15,
-        "iron_mg": 3.5,
-        "calcium_mg": 80
-      }
-    },
-    "scaling_notes": "Add 10-15 minutes for larger portions to simmer sauce."
-  },
-  {
-    "name": "Cauliflower Wings",
-    "diet": "vegan",
-    "cuisine": "American",
-    "time": 35,
-    "ingredients": [
-      { "name": "cauliflower", "measurement": "300 g" },
-      { "name": "hot sauce", "measurement": "50 g" },
-      { "name": "flour", "measurement": "100 g" },
-      { "name": "almond milk", "measurement": "120 g" },
-      { "name": "paprika", "measurement": "2 g" }
-    ],
-    "nutrition": {
-      "calories": 300,
-      "protein": 8,
-      "carbs": 40,
-      "fat": 10,
-      "vitamins_minerals": {
-        "vitamin_c_mg": 40,
-        "iron_mg": 1.5,
-        "calcium_mg": 40
-      }
-    },
-    "scaling_notes": "Bake in batches for larger servings; add 5 minutes per batch."
-  },
-  {
-    "name": "Shrimp Ceviche",
-    "diet": "non-vegetarian",
-    "cuisine": "Mexican",
-    "time": 20,
-    "ingredients": [
-      { "name": "shrimp", "measurement": "200 g" },
-      { "name": "lime", "measurement": "100 g" },
-      { "name": "tomato", "measurement": "200 g" },
-      { "name": "cilantro", "measurement": "20 g" },
-      { "name": "avocado", "measurement": "140 g" }
-    ],
-    "nutrition": {
-      "calories": 250,
-      "protein": 20,
-      "carbs": 15,
-      "fat": 10,
-      "vitamins_minerals": {
-        "vitamin_c_mg": 50,
-        "iron_mg": 1.8,
-        "calcium_mg": 50
-      }
-    },
-    "scaling_notes": "No time adjustment needed; marinate in proportion."
-  },
-  {
-    "name": "Vegetable Korma",
-    "diet": "vegetarian",
-    "cuisine": "Indian",
-    "time": 45,
-    "ingredients": [
-      { "name": "mixed vegetables", "measurement": "300 g" },
-      { "name": "coconut milk", "measurement": "240 g" },
-      { "name": "cashews", "measurement": "50 g" },
-      { "name": "spices", "measurement": "5 g" },
-      { "name": "onion", "measurement": "100 g" }
-    ],
-    "nutrition": {
-      "calories": 400,
-      "protein": 10,
-      "carbs": 35,
-      "fat": 20,
-      "vitamins_minerals": {
-        "vitamin_c_mg": 20,
-        "iron_mg": 2.0,
-        "calcium_mg": 60
-      }
-    },
-    "scaling_notes": "Add 5-10 minutes for larger portions to simmer sauce."
-  },
-  {
-    "name": "Tuna Sushi Roll",
-    "diet": "non-vegetarian",
-    "cuisine": "Japanese",
-    "time": 30,
-    "ingredients": [
-      { "name": "tuna", "measurement": "200 g" },
-      { "name": "sushi rice", "measurement": "200 g" },
-      { "name": "nori", "measurement": "10 g" },
-      { "name": "avocado", "measurement": "140 g" },
-      { "name": "cucumber", "measurement": "150 g" }
-    ],
-    "nutrition": {
-      "calories": 300,
-      "protein": 20,
-      "carbs": 35,
-      "fat": 8,
-      "vitamins_minerals": {
-        "vitamin_c_mg": 10,
-        "iron_mg": 1.5,
-        "calcium_mg": 20
-      }
-    },
-    "scaling_notes": "Increase rice cooking time by 5 minutes per additional 200 g."
-  },
-  {
-    "name": "Mushroom Tacos",
-    "diet": "vegan",
-    "cuisine": "Mexican",
-    "time": 25,
-    "ingredients": [
-      { "name": "mushrooms", "measurement": "200 g" },
-      { "name": "tortillas", "measurement": "200 g" },
-      { "name": "avocado", "measurement": "140 g" },
-      { "name": "salsa", "measurement": "120 g" },
-      { "name": "cilantro", "measurement": "20 g" }
-    ],
-    "nutrition": {
-      "calories": 300,
-      "protein": 8,
-      "carbs": 40,
-      "fat": 12,
-      "vitamins_minerals": {
-        "vitamin_c_mg": 15,
-        "iron_mg": 1.5,
-        "calcium_mg": 40
-      }
-    },
-    "scaling_notes": "Cook in batches for larger servings; no significant time change."
-  },
-  {
-    "name": "Chicken Noodle Soup",
-    "diet": "non-vegetarian",
-    "cuisine": "American",
-    "time": 40,
-    "ingredients": [
-      { "name": "chicken", "measurement": "300 g" },
-      { "name": "noodles", "measurement": "200 g" },
-      { "name": "carrots", "measurement": "100 g" },
-      { "name": "celery", "measurement": "100 g" },
-      { "name": "onion", "measurement": "100 g" }
-    ],
-    "nutrition": {
-      "calories": 350,
-      "protein": 25,
-      "carbs": 30,
-      "fat": 12,
-      "vitamins_minerals": {
-        "vitamin_c_mg": 10,
-        "iron_mg": 2.0,
-        "calcium_mg": 40
-      }
-    },
-    "scaling_notes": "Add 5-10 minutes for larger portions to simmer broth."
-  },
-  {
-    "name": "Veggie Pad See Ew",
-    "diet": "vegan",
-    "cuisine": "Thai",
-    "time": 30,
-    "ingredients": [
-      { "name": "rice noodles", "measurement": "200 g" },
-      { "name": "broccoli", "measurement": "100 g" },
-      { "name": "soy sauce", "measurement": "30 g" },
-      { "name": "tofu", "measurement": "200 g" },
-      { "name": "garlic", "measurement": "10 g" }
-    ],
-    "nutrition": {
-      "calories": 400,
-      "protein": 15,
-      "carbs": 55,
-      "fat": 12,
-      "vitamins_minerals": {
-        "vitamin_c_mg": 25,
-        "iron_mg": 2.0,
-        "calcium_mg": 150
-      }
-    },
-    "scaling_notes": "Stir-fry in batches for larger servings; add 5 minutes per batch."
-  },
-  {
-    "name": "Pork Ramen",
-    "diet": "non-vegetarian",
-    "cuisine": "Japanese",
-    "time": 60,
-    "ingredients": [
-      { "name": "pork", "measurement": "300 g" },
-      { "name": "ramen noodles", "measurement": "200 g" },
-      { "name": "soy sauce", "measurement": "30 g" },
-      { "name": "nori", "measurement": "10 g" },
-      { "name": "egg", "measurement": "50 g" }
-    ],
-    "nutrition": {
-      "calories": 500,
-      "protein": 30,
-      "carbs": 50,
-      "fat": 20,
-      "vitamins_minerals": {
-        "vitamin_c_mg": 5,
-        "iron_mg": 2.5,
-        "calcium_mg": 40
-      }
-    },
-    "scaling_notes": "Add 10-15 minutes for larger broth volumes to simmer."
-  },
-  {
-    "name": "Spinach Quiche",
-    "diet": "vegetarian",
-    "cuisine": "French",
-    "time": 50,
-    "ingredients": [
-      { "name": "spinach", "measurement": "200 g" },
-      { "name": "eggs", "measurement": "150 g" },
-      { "name": "cream", "measurement": "120 g" },
-      { "name": "cheddar", "measurement": "100 g" },
-      { "name": "pie crust", "measurement": "200 g" }
-    ],
-    "nutrition": {
-      "calories": 450,
-      "protein": 15,
-      "carbs": 30,
-      "fat": 25,
-      "vitamins_minerals": {
-        "vitamin_c_mg": 20,
-        "iron_mg": 2.5,
-        "calcium_mg": 200
-      }
-    },
-    "scaling_notes": "Increase baking time by 10-15 minutes for larger pans."
-  },
-  {
-    "name": "Beef Pho",
-    "diet": "non-vegetarian",
-    "cuisine": "Vietnamese",
-    "time": 60,
-    "ingredients": [
-      { "name": "beef", "measurement": "300 g" },
-      { "name": "rice noodles", "measurement": "200 g" },
-      { "name": "star anise", "measurement": "2 g" },
-      { "name": "ginger", "measurement": "10 g" },
-      { "name": "cilantro", "measurement": "20 g" }
-    ],
-    "nutrition": {
-      "calories": 450,
-      "protein": 25,
-      "carbs": 50,
-      "fat": 12,
-      "vitamins_minerals": {
-        "vitamin_c_mg": 10,
-        "iron_mg": 2.8,
-        "calcium_mg": 40
-      }
-    },
-    "scaling_notes": "Add 10-15 minutes for larger broth volumes to simmer."
-  },
-  {
-    "name": "Veggie Fried Rice",
-    "diet": "vegan",
-    "cuisine": "Chinese",
-    "time": 25,
-    "ingredients": [
-      { "name": "rice", "measurement": "200 g" },
-      { "name": "peas", "measurement": "100 g" },
-      { "name": "carrots", "measurement": "100 g" },
-      { "name": "soy sauce", "measurement": "30 g" },
-      { "name": "green onions", "measurement": "50 g" }
-    ],
-    "nutrition": {
-      "calories": 300,
-      "protein": 8,
-      "carbs": 50,
-      "fat": 8,
-      "vitamins_minerals": {
-        "vitamin_c_mg": 15,
-        "iron_mg": 1.5,
-        "calcium_mg": 30
-      }
-    },
-    "scaling_notes": "Stir-fry in batches for larger servings; add 5 minutes per batch."
-  },
-  {
-    "name": "Chicken Enchiladas",
-    "diet": "non-vegetarian",
-    "cuisine": "Mexican",
-    "time": 45,
-    "ingredients": [
-      { "name": "chicken", "measurement": "400 g" },
-      { "name": "tortillas", "measurement": "200 g" },
-      { "name": "enchilada sauce", "measurement": "240 g" },
-      { "name": "cheddar", "measurement": "100 g" },
-      { "name": "onion", "measurement": "100 g" }
-    ],
-    "nutrition": {
-      "calories": 500,
-      "protein": 30,
-      "carbs": 40,
-      "fat": 20,
-      "vitamins_minerals": {
-        "vitamin_c_mg": 10,
-        "iron_mg": 2.5,
-        "calcium_mg": 200
-      }
-    },
-    "scaling_notes": "Increase baking time by 10 minutes for larger portions."
-  },
-  {
-    "name": "Lentil Soup",
-    "diet": "vegan",
-    "cuisine": "Mediterranean",
-    "time": 40,
-    "ingredients": [
-      { "name": "lentils", "measurement": "200 g" },
-      { "name": "carrots", "measurement": "100 g" },
-      { "name": "celery", "measurement": "100 g" },
-      { "name": "tomato", "measurement": "150 g" },
-      { "name": "onion", "measurement": "100 g" }
-    ],
-    "nutrition": {
-      "calories": 300,
-      "protein": 15,
-      "carbs": 45,
-      "fat": 5,
-      "vitamins_minerals": {
-        "vitamin_c_mg": 15,
-        "iron_mg": 4.0,
-        "calcium_mg": 50
-      }
-    },
-    "scaling_notes": "Add 5-10 minutes for larger portions to simmer soup."
-  },
-  {
-    "name": "Beef Tacos",
-    "diet": "non-vegetarian",
-    "cuisine": "Mexican",
-    "time": 25,
-    "ingredients": [
-      { "name": "beef", "measurement": "300 g" },
-      { "name": "tortillas", "measurement": "200 g" },
-      { "name": "salsa", "measurement": "120 g" },
-      { "name": "lettuce", "measurement": "100 g" },
-      { "name": "cheddar", "measurement": "100 g" }
-    ],
-    "nutrition": {
-      "calories": 450,
-      "protein": 25,
-      "carbs": 35,
-      "fat": 20,
-      "vitamins_minerals": {
-        "vitamin_c_mg": 10,
-        "iron_mg": 3.0,
-        "calcium_mg": 150
-      }
-    },
-    "scaling_notes": "Cook in batches for larger servings; no significant time change."
-  },
-  {
-    "name": "Caprese Salad",
-    "diet": "vegetarian",
-    "cuisine": "Italian",
-    "time": 15,
-    "ingredients": [
-      { "name": "tomato", "measurement": "300 g" },
-      { "name": "mozzarella", "measurement": "150 g" },
-      { "name": "basil", "measurement": "20 g" },
-      { "name": "olive oil", "measurement": "30 g" },
-      { "name": "balsamic vinegar", "measurement": "15 g" }
-    ],
-    "nutrition": {
-      "calories": 250,
-      "protein": 10,
-      "carbs": 10,
-      "fat": 20,
-      "vitamins_minerals": {
-        "vitamin_c_mg": 20,
-        "iron_mg": 1.0,
-        "calcium_mg": 200
-      }
-    },
-    "scaling_notes": "No time adjustment needed; assemble in proportion."
-  },
-  {
-    "name": "Veggie Curry",
-    "diet": "vegan",
-    "cuisine": "Indian",
-    "time": 40,
-    "ingredients": [
-      { "name": "mixed vegetables", "measurement": "300 g" },
-      { "name": "coconut milk", "measurement": "240 g" },
-      { "name": "curry powder", "measurement": "6 g" },
-      { "name": "tomato", "measurement": "150 g" },
-      { "name": "onion", "measurement": "100 g" }
-    ],
-    "nutrition": {
-      "calories": 350,
-      "protein": 10,
-      "carbs": 40,
-      "fat": 15,
-      "vitamins_minerals": {
-        "vitamin_c_mg": 25,
-        "iron_mg": 2.0,
-        "calcium_mg": 50
-      }
-    },
-    "scaling_notes": "Add 5-10 minutes for larger portions to simmer sauce."
-  },
-  {
-    "name": "Salmon Teriyaki",
-    "diet": "non-vegetarian",
-    "cuisine": "Japanese",
-    "time": 30,
-    "ingredients": [
-      { "name": "salmon", "measurement": "400 g" },
-      { "name": "soy sauce", "measurement": "30 g" },
-      { "name": "mirin", "measurement": "30 g" },
-      { "name": "ginger", "measurement": "5 g" },
-      { "name": "green onions", "measurement": "50 g" }
-    ],
-    "nutrition": {
-      "calories": 450,
-      "protein": 35,
-      "carbs": 15,
-      "fat": 25,
-      "vitamins_minerals": {
-        "vitamin_c_mg": 10,
-        "iron_mg": 2.0,
-        "calcium_mg": 40
-      }
-    },
-    "scaling_notes": "Grill in batches for larger servings; add 5 minutes per batch."
-  },
-  {
-    "name": "Vegetable Lasagna",
-    "diet": "vegetarian",
-    "cuisine": "Italian",
-    "time": 60,
-    "ingredients": [
-      { "name": "lasagna noodles", "measurement": "200 g" },
-      { "name": "zucchini", "measurement": "200 g" },
-      { "name": "ricotta", "measurement": "250 g" },
-      { "name": "mozzarella", "measurement": "150 g" },
-      { "name": "tomato sauce", "measurement": "240 g" }
-    ],
-    "nutrition": {
-      "calories": 400,
-      "protein": 18,
-      "carbs": 45,
-      "fat": 15,
-      "vitamins_minerals": {
-        "vitamin_c_mg": 20,
-        "iron_mg": 2.0,
-        "calcium_mg": 250
-      }
-    },
-    "scaling_notes": "Increase baking time by 10-15 minutes for larger pans."
-  },
-  {
-    "name": "Beef Stir-Fry",
-    "diet": "non-vegetarian",
-    "cuisine": "Chinese",
-    "time": 25,
-    "ingredients": [
-      { "name": "beef", "measurement": "300 g" },
-      { "name": "broccoli", "measurement": "100 g" },
-      { "name": "soy sauce", "measurement": "30 g" },
-      { "name": "ginger", "measurement": "5 g" },
-      { "name": "bell peppers", "measurement": "150 g" }
-    ],
-    "nutrition": {
-      "calories": 400,
-      "protein": 30,
-      "carbs": 20,
-      "fat": 20,
-      "vitamins_minerals": {
-        "vitamin_c_mg": 30,
-        "iron_mg": 3.0,
-        "calcium_mg": 50
-      }
-    },
-    "scaling_notes": "Stir-fry in batches for larger servings; add 5 minutes per batch."
-  },
-  {
-    "name": "Avocado Toast",
-    "diet": "vegan",
-    "cuisine": "American",
-    "time": 10,
-    "ingredients": [
-      { "name": "bread", "measurement": "100 g" },
-      { "name": "avocado", "measurement": "140 g" },
-      { "name": "tomato", "measurement": "100 g" },
-      { "name": "olive oil", "measurement": "15 g" },
-      { "name": "lemon", "measurement": "10 g" }
-    ],
-    "nutrition": {
-      "calories": 250,
-      "protein": 5,
-      "carbs": 25,
-      "fat": 15,
-      "vitamins_minerals": {
-        "vitamin_c_mg": 15,
-        "iron_mg": 1.0,
-        "calcium_mg": 30
-      }
-    },
-    "scaling_notes": "No time adjustment needed; toast in batches for larger servings."
+    "scaling_notes": "Add 5-10 minutes for larger portions to cook pasta and thicken sauce, stirring to prevent cream from curdling.",
+    "summary": "Creamy Italian chicken Alfredo with gluten-free pasta, tender chicken, and a rich parmesan-cream sauce, flavored with garlic.",
+    "health_benefits": [
+      "Chicken provides lean protein for muscle repair",
+      "Parmesan offers calcium for bone strength",
+      "Iron supports blood health",
+      "Gluten-free pasta suits dietary restrictions",
+      "Garlic provides anti-inflammatory properties"
+    ]
   }
 ]

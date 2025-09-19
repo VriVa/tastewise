@@ -4,14 +4,13 @@ import {
   Search,
   Filter,
   Clock,
-  Star,
   ChefHat,
   X,
   SlidersHorizontal,
-  Heart,
-  ArrowLeft,
+  ArrowRight,
 } from 'lucide-react'
 import Fuse from 'fuse.js'
+import { useNavigate } from 'react-router-dom'
 
 // Import theme and data
 import { theme } from '../../lib/theme.js'
@@ -30,6 +29,8 @@ const RecipeSearch = () => {
     maxCalories: '',
     ingredients: '',
   })
+
+  const navigate = useNavigate()
 
   // Initialize Fuse.js for fuzzy search with different thresholds
   useEffect(() => {
@@ -163,13 +164,15 @@ const RecipeSearch = () => {
     }))
   }
 
-  // Extract unique values for suggestions
-  const dietOptions = [...new Set(recipes.map((recipe) => recipe.diet))]
-  const cuisineOptions = [...new Set(recipes.map((recipe) => recipe.cuisine))]
-  const allIngredients = recipes.flatMap((recipe) =>
-    recipe.ingredients.map((i) => i.name)
-  )
-  const ingredientOptions = [...new Set(allIngredients)]
+  // Handle view recipe click
+  const handleViewRecipe = (recipe) => {
+    // e.preventDefault()
+    // Store recipe in localStorage
+    console.log('Selected Recipe:', recipe)
+    localStorage.setItem('selectedRecipe', JSON.stringify(recipe))
+    // Navigate to nutrition page
+    navigate('/nutrition')
+  }
 
   return (
     <div
@@ -554,12 +557,14 @@ const RecipeSearch = () => {
                   <motion.button
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
-                    className="w-full py-3 rounded-xl font-medium text-white text-center"
+                    onClick={() => handleViewRecipe(recipe)}
+                    className="w-full py-3 rounded-xl font-medium text-white text-center flex items-center justify-center"
                     style={{
                       background: `linear-gradient(to right, ${theme.colors.primary[500]}, ${theme.colors.secondary[500]})`,
                     }}
                   >
                     View Recipe & Nutrition
+                    <ArrowRight size={18} className="ml-2" />
                   </motion.button>
                 </div>
               </motion.div>

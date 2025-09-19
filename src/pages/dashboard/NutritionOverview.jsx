@@ -28,8 +28,15 @@ const NutritionalAnalysis = () => {
 
   // Select a random recipe on component mount
   useEffect(() => {
-    const randomIndex = Math.floor(Math.random() * recipesData.length)
-    setSelectedRecipe(recipesData[randomIndex])
+    const storedRecipe = localStorage.getItem('selectedRecipe')
+    if (storedRecipe) {
+      setSelectedRecipe(JSON.parse(storedRecipe))
+    } else {
+      const randomRecipe =
+        recipesData[Math.floor(Math.random() * recipesData.length)]
+      setSelectedRecipe(randomRecipe)
+      localStorage.setItem('selectedRecipe', JSON.stringify(randomRecipe))
+    }
   }, [])
 
   // Animation variants
@@ -59,8 +66,18 @@ const NutritionalAnalysis = () => {
     return <div>Loading...</div>
   }
 
-  const { name, diet, cuisine, time, ingredients, nutrition, scaling_notes } =
-    selectedRecipe
+  const {
+    name,
+    diet,
+    cuisine,
+    time,
+    ingredients,
+    nutrition,
+    scaling_notes,
+    summary,
+    health_benefits,
+  } = selectedRecipe
+  console.log(selectedRecipe)
 
   // Calculate scaled nutritional values
   const scaledNutrition = {
@@ -248,6 +265,15 @@ const NutritionalAnalysis = () => {
                     {cuisine}
                   </motion.span>
                 </div>
+                <motion.p
+                  className="text-sm"
+                  style={{ color: theme.colors.gray[600] }}
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.7 }}
+                >
+                  {summary}
+                </motion.p>
               </div>
 
               <motion.div
@@ -640,37 +666,41 @@ const NutritionalAnalysis = () => {
             animate="visible"
             className="grid grid-cols-1 md:grid-cols-2 gap-4"
           >
-            {[
-              'Supports muscle growth and repair with high-quality protein',
-              'Provides sustained energy release from complex carbohydrates',
-              'Promotes heart health with balanced fats',
-              'Rich in essential vitamins and minerals for overall wellness',
-            ].map((benefit, index) => (
-              <motion.div
-                key={index}
-                variants={itemVariants}
-                className="flex items-start space-x-3 p-3 rounded-xl"
-                style={{ backgroundColor: theme.colors.primary[50] }}
-                whileHover={{
-                  scale: 1.02,
-                  backgroundColor: theme.colors.primary[100],
-                }}
-              >
+            {health_benefits && health_benefits.length > 0 ? (
+              health_benefits.map((benefit, index) => (
                 <motion.div
-                  animate={{
-                    scale: [1, 1.2, 1],
-                  }}
-                  transition={{
-                    duration: 2,
-                    repeat: Infinity,
-                    delay: index * 0.5,
+                  key={index}
+                  variants={itemVariants}
+                  className="flex items-start space-x-3 p-3 rounded-xl"
+                  style={{ backgroundColor: theme.colors.primary[50] }}
+                  whileHover={{
+                    scale: 1.02,
+                    backgroundColor: theme.colors.primary[100],
                   }}
                 >
-                  <Zap size={20} style={{ color: theme.colors.primary[500] }} />
+                  <motion.div
+                    animate={{
+                      scale: [1, 1.2, 1],
+                    }}
+                    transition={{
+                      duration: 2,
+                      repeat: Infinity,
+                      delay: index * 0.5,
+                    }}
+                  >
+                    <Zap
+                      size={20}
+                      style={{ color: theme.colors.primary[500] }}
+                    />
+                  </motion.div>
+                  <p style={{ color: theme.colors.gray[700] }}>{benefit}</p>
                 </motion.div>
-                <p style={{ color: theme.colors.gray[700] }}>{benefit}</p>
-              </motion.div>
-            ))}
+              ))
+            ) : (
+              <p style={{ color: theme.colors.gray[600] }}>
+                No health benefits available for this recipe.
+              </p>
+            )}
           </motion.div>
         </motion.div>
       </div>
