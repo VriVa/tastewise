@@ -27,8 +27,6 @@ const Sidebar = ({ isOpen, setIsOpen, activeTab, setActiveTab }) => {
     ]},
     { id: 'planning', label: 'Meal Planning', icon: Calendar, subItems: [
       { id: 'calendar', label: 'Weekly Calendar' },
-      { id: 'planner', label: 'Daily Planner' },
-      { id: 'generate', label: 'Generate Plans' }
     ]},
     { id: 'grocery', label: 'Smart Grocery List', icon: ShoppingCart },
     { id: 'nutrition', label: 'Nutrition Analytics', icon: BarChart3 },
