@@ -8,15 +8,9 @@ import {
 
 // Import your components
 import LandingPage from './pages/LandingPage'
-<<<<<<< HEAD
-import ShadcnTest from './components/ShadcnTest'
-import ThemedShadcnTest from './components/ThemedShadcnTest'
-import RecipeSearch from './pages/SearchPage'
-// import Dashboard from './components/Dashboard'
-=======
 import DashboardHome from './pages/DashboardHome'
->>>>>>> 58ff1362665030ee98234222713474d52a1a1d01
-// import SearchPage from './components/SearchPage'
+import RecipeSearch from './pages/SearchPage'
+import MealPlan from './pages/MealPlan'
 // import AIAssistantPage from './components/AIAssistantPage'
 // import NutritionPage from './components/NutritionPage'
 // import CalculatorPage from './components/CalculatorPage'
@@ -37,13 +31,10 @@ function App() {
           {/* Protected Routes */}
           <Route path="/dashboard" element={<DashboardHome />} />
 
-          {/* <Route path="/search" element={<SearchPage />} />
+        <Route path="/mealplan" element={<MealPlan />} />
 
-          <Route path="/ai-assistant" element={<AIAssistantPage />} />
+         
 
-          <Route path="/nutrition" element={<NutritionPage />} />
-
-          <Route path="/calculator" element={<CalculatorPage />} /> */} 
 
           {/* Catch all route - redirect to dashboard if authenticated, otherwise to landing */}
           {/* <Route
