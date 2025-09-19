@@ -25,6 +25,7 @@ function App() {
         <Routes>
           {/* Public Routes */}
           <Route path="/" element={<LandingPage />} />
+         
 
           {/* Protected Routes */}
           <Route path="/dashboard" element={<DashboardHome />} />

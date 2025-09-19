@@ -1,3 +1,70 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    /* Orange/Red Theme based on your custom colors */
+    --background: 27 100% 97%; /* orange-50 (#fff7ed) */
+    --foreground: 210 11% 7%; /* gray-900 (#111827) */
+    --card: 0 0% 100%; /* white */
+    --card-foreground: 210 11% 7%; /* gray-900 */
+    --popover: 0 0% 100%; /* white */
+    --popover-foreground: 210 11% 7%; /* gray-900 */
+    --primary: 21 95% 51%; /* orange-500 (#f97316) */
+    --primary-foreground: 0 0% 100%; /* white */
+    --secondary: 0 84% 60%; /* red-500 (#ef4444) */
+    --secondary-foreground: 0 0% 100%; /* white */
+    --muted: 220 14% 96%; /* gray-100 (#f3f4f6) */
+    --muted-foreground: 220 9% 46%; /* gray-500 (#6b7280) */
+    --accent: 27 100% 97%; /* orange-50 */
+    --accent-foreground: 21 95% 51%; /* orange-500 */
+    --destructive: 0 84% 60%; /* red-500 */
+    --destructive-foreground: 0 0% 100%; /* white */
+    --border: 220 13% 91%; /* gray-200 (#e5e7eb) */
+    --input: 220 13% 91%; /* gray-200 */
+    --ring: 21 95% 51%; /* orange-500 */
+    --chart-1: 21 95% 51%; /* orange-500 */
+    --chart-2: 17 88% 40%; /* orange-600 */
+    --chart-3: 0 84% 60%; /* red-500 */
+    --chart-4: 220 9% 46%; /* gray-500 */
+    --chart-5: 220 9% 36%; /* gray-600 */
+    --radius: 0.5rem
+  }
+  .dark {
+    /* Dark mode with orange/red accents */
+    --background: 210 11% 7%; /* gray-900 (#111827) */
+    --foreground: 27 100% 97%; /* orange-50 */
+    --card: 220 13% 23%; /* gray-700 (#374151) */
+    --card-foreground: 27 100% 97%; /* orange-50 */
+    --popover: 220 13% 23%; /* gray-700 */
+    --popover-foreground: 27 100% 97%; /* orange-50 */
+    --primary: 21 95% 51%; /* orange-500 */
+    --primary-foreground: 0 0% 100%; /* white */
+    --secondary: 220 9% 39%; /* gray-600 (#4b5563) */
+    --secondary-foreground: 27 100% 97%; /* orange-50 */
+    --muted: 220 13% 23%; /* gray-700 */
+    --muted-foreground: 220 9% 46%; /* gray-500 */
+    --accent: 220 13% 23%; /* gray-700 */
+    --accent-foreground: 21 95% 51%; /* orange-500 */
+    --destructive: 0 84% 60%; /* red-500 */
+    --destructive-foreground: 27 100% 97%; /* orange-50 */
+    --border: 220 9% 39%; /* gray-600 */
+    --input: 220 9% 39%; /* gray-600 */
+    --ring: 21 95% 51%; /* orange-500 */
+    --chart-1: 21 95% 51%; /* orange-500 */
+    --chart-2: 17 88% 40%; /* orange-600 */
+    --chart-3: 0 84% 60%; /* red-500 */
+    --chart-4: 220 9% 46%; /* gray-500 */
+    --chart-5: 220 9% 36%; /* gray-600 */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
